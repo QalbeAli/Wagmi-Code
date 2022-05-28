@@ -15,15 +15,31 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 export default function Staking() {
 const showContent=()=>{
+
  let show=document.getElementById("show");
+
  if (show.style.display === "block") {
   show.style.display = "none";
 } else {
   show.style.display = "block";
   
 }
+ 
 
 }
+const showContent2=()=>{
+
+  let shows=document.getElementById("shows");
+ 
+  if (shows.style.display === "block") {
+   shows.style.display = "none";
+ } else {
+   shows.style.display = "block";
+   
+ }
+  
+ 
+ }
   return (
 
     <>
@@ -72,7 +88,8 @@ const showContent=()=>{
            
           </div>
           <div className={styles.baricon} >
-          <i className="fa-solid fa-bars" onClick={showContent} style={{color:"white",marginLeft:"10px",cursor:"pointer"}}></i>
+          <i className="fa-solid fa-bars" onClick={showContent} style={{color:"white",marginLeft:"10px",cursor:"pointer",marginTop:"10px"}}></i>
+          <i className="fa-solid fa-bars" onClick={showContent2} style={{color:"white",marginRight:"10px",cursor:"pointer",marginTop:"10px",float:"right"}}></i>
           </div>
         </div>
       </div>
@@ -230,15 +247,17 @@ const showContent=()=>{
     </div>
     
     </div>
-    {/* <div className="col-3 col-md-3 col-xl-3 px-sm-2 px-0 " style={{backgroundImage:"linear-gradient(#331939, #191729)"}}>
+    <div className="col-12 col-md-12 col-xl-3 order-md-last order-lg-last order-first " style={{backgroundImage:"linear-gradient(#331939, #191729)"}}>
+     <div className={styles.column4} id="shows">
       <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
       <div className="accordion" id="accordionExample" style={{width:"fit-content"}} >
   <div className="accordion-item" style={{backgroundColor:"#25242d"}}>
     <h2 className="accordion-header" id="headingOne">
       <button
         className="accordion-button"
-        style={{width:"270px",backgroundColor:"#25242d", color:"white"}}
+        style={{backgroundColor:"#25242d", color:"white"}}
         type="button"
+        disabled
         data-bs-toggle="collapse"
         data-bs-target="#collapseOne"
         aria-expanded="false"
@@ -287,8 +306,9 @@ const showContent=()=>{
     <h2 className="accordion-header" id="headingTwo">
       <button
         className="accordion-button"
-        style={{width:"270px",backgroundColor:"#25242d", color:"white"}}
+        style={{backgroundColor:"#25242d", color:"white"}}
         type="button"
+        disabled
         data-bs-toggle="collapse"
         data-bs-target="#collapseTwo"
         aria-expanded="false"
@@ -339,11 +359,11 @@ const showContent=()=>{
     <h2 className="accordion-header" id="headingThree">
       <button
         className="accordion-button "
-        style={{width:"270px",backgroundColor:"#25242d", color:"white"}}
+        style={{backgroundColor:"#25242d", color:"white"}}
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#collapseThree"
-        aria-expanded="true"
+        disabled
         aria-controls="collapseThree"
       >
        Renting
@@ -397,20 +417,21 @@ const showContent=()=>{
   </div>
 </div>
 <div className='container'>
-<div className='row' style={{marginTop:"100px"}}>
-  <div className='col-lg-6' style={{textAlign:"right"}}>
+<div className='row' style={{marginTop:"100px", paddingBottom:"20px"}}>
+  <div className='col-lg-6 col-6' style={{textAlign:"right"}}>
 <p style={{color:"#878787",fontWeight:"bold"}}>
 Wallet<br></br> powered by
 </p>
   </div>
-  <div className='col-lg-6'>
+  <div className='col-lg-6 col-6'>
     <img src="logos.png"></img>
     </div>
 </div>
 </div>
         
       </div>
-    </div> */}
+    </div>
+    </div>
   </div>
 </div>
 
