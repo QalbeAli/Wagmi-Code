@@ -181,3 +181,18 @@ color: #878787;
   }
 
 }
+@media only screen and (max-width: 400px){
+  .input11{
+    width: 330px;
+  }
+.network{
+    padding-right: 30px;
+  }
+  .div3{
+    text-align: left;
+    margin-left: 3px;
+  }
+  .level1{
+    padding-right: 5px;
+  }
+}
