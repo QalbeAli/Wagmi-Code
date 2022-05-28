@@ -164,6 +164,13 @@ color: #878787;
 .div2{
   text-align: center;
   }
+  .baricon{
+    display: none;
+  }
+  .addMar{
+    margin-top: 300px;
+    padding-bottom: 20px;
+  }
 @media only screen and (max-width: 800px){
   .logoimg{
   text-align: center;
@@ -204,7 +211,6 @@ color: #878787;
 
 }
 
-
 }
 @media only screen and (max-width: 400px){
   .input11{
@@ -220,5 +226,20 @@ color: #878787;
   .level1{
     padding-right: 5px;
   }
+ 
   
+}
+@media only screen and (min-width: 300px) and (max-width:1200px){
+  .column33{
+    display: none;
+   
+  }
+ .baricon{
+   display: block;
+ }
+ .addMar{
+  margin-top: 100px;
+  padding-bottom: 20px;
+  margin-left: 40px;
+}
 }

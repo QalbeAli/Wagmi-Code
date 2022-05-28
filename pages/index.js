@@ -9,9 +9,21 @@ import {
   faSearch,
   faAmbulance,
   faAnchor,
+  faBars,
+  faToggleOff
+  
 } from "@fortawesome/free-solid-svg-icons";
 export default function Staking() {
+const showContent=()=>{
+ let show=document.getElementById("show");
+ if (show.style.display === "block") {
+  show.style.display = "none";
+} else {
+  show.style.display = "block";
+  
+}
 
+}
   return (
 
     <>
@@ -43,7 +55,9 @@ export default function Staking() {
 
 
           </div>
+     
           <div className='col-lg-5 col-sm-12 col-12' style={{ textAlign: "center" }} >
+             
             <div className={styles.div3}>
               <span className={styles.network}>
                 <img src="v1.png"></img>
@@ -53,14 +67,19 @@ export default function Staking() {
                 &nbsp; 0x24485..3483
                 <img src="ellipse1.png" className={styles.img1}></img>
               </span>
-
+            
             </div>
+           
+          </div>
+          <div className={styles.baricon} >
+          <i className="fa-solid fa-bars" onClick={showContent} style={{color:"white",marginLeft:"10px",cursor:"pointer"}}></i>
           </div>
         </div>
       </div>
       <div className="container-fluid" >
-  <div className="row flex-nowrap">
-    {/* <div className="col-3 col-md-3 col-xl-2 px-sm-2 px-0 " style={{backgroundImage:"linear-gradient(#331939, #191729)"}}>
+  <div className="row ">
+    <div className="col-12 col-md-12 col-xl-2 px-sm-2 px-0 " style={{backgroundImage:"linear-gradient(#331939, #191729)"}}>
+     <div className={styles.column33} id="show">
       <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
         <ul
           className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
@@ -68,24 +87,24 @@ export default function Staking() {
         >
           <li className="nav-item">
             <a href="#" className="nav-link align-middle px-0">
-              <span className="ms-1 d-none d-sm-inline" style={{color:"#6a8eff",fontWeight:"bold"}}>Home</span>
+              <span className="ms-1 d-sm-inline" style={{color:"#6a8eff",fontWeight:"bold"}}>Home</span>
             </a>
           </li>
           <li>
             <a
               href="#submenu1"
-              data-bs-toggle="collapse"
+             
               className="nav-link px-0 align-middle"
             >
             
-              <span className="ms-1 d-none d-sm-inline"  style={{color:"#878787",fontWeight:"bold"}}>Marketplace</span>{" "}
+              <span className="ms-1 d-sm-inline"  style={{color:"#878787",fontWeight:"bold"}}>Marketplace</span>{" "}
             </a>
            
           </li>
           <li>
             <a href="#" className="nav-link px-0 align-middle">
               
-              <span className="ms-1 d-none d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Defi Union</span>
+              <span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Defi Union</span>
             </a>
           </li>
           <li>
@@ -95,7 +114,7 @@ export default function Staking() {
               className="nav-link px-0 align-middle "
             >
            
-              <span className="ms-1 d-none d-sm-inline" style={{color:"white",fontWeight:"bold"}}>Play 2 Earn</span>
+              <span className="ms-1 d-sm-inline" style={{color:"white",fontWeight:"bold"}}>Play 2 Earn</span>
             </a>
             
           </li>
@@ -106,7 +125,7 @@ export default function Staking() {
               className="nav-link px-0 align-middle"
             >
         
-              <span className="ms-1 d-none d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Streamer Hub</span>{" "}
+              <span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Streamer Hub</span>{" "}
             </a>
            </li>
            <li>
@@ -116,7 +135,7 @@ export default function Staking() {
               className="nav-link px-0 align-middle"
             >
         
-              <span className="ms-1 d-none d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>GEMS Academy </span>{" "}
+              <span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>GEMS Academy </span>{" "}
             </a>
            </li>
            <li>
@@ -126,7 +145,7 @@ export default function Staking() {
               className="nav-link px-0 align-middle"
             >
         
-              <span className="ms-1 d-none d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Talent Agency</span>{" "}
+              <span className="ms-1 d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Talent Agency</span>{" "}
             </a>
            </li>
            <li>
@@ -136,7 +155,7 @@ export default function Staking() {
               className="nav-link px-0 align-middle"
             >
         
-              <span className="ms-1 d-none d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Guild DAO</span>{" "}
+              <span className="ms-1 d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Guild DAO</span>{" "}
             </a>
            </li>
            <li>
@@ -146,12 +165,12 @@ export default function Staking() {
               className="nav-link px-0 align-middle"
             >
         
-              <span className="ms-1 d-none d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Play with gems</span>{" "}
+              <span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Play with gems</span>{" "}
             </a>
            </li>
            </ul>
         <hr />
-      <div style={{marginTop:"500px"}}>
+      <div className={styles.addMar}>
        <a href="#"><img src="v2.png" className={styles.imgss}></img></a>
        <a href="#"><img src="v3.png" className={styles.imgs}></img></a>
        <a href="#"><img src="v4.png" className={styles.imgs}></img></a>
@@ -162,9 +181,11 @@ export default function Staking() {
        <a style={{color:"#878787",textDecoration:"none"}}  href="#">Terms and Conditions</a>
       </div>
       </div>
-    </div> */}
+    </div>
+    </div>
+   
     <div className="col-xl-7 col-md-12 col-12" style={{backgroundImage:"linear-gradient(#31396E,#121216)"}}>
-
+    
     <div className={styles.centerCol}>
       <h1 className={styles.heading}>$GEMS Staking</h1>
       <p className={styles.heading1}>Stake your $GEMS in GEMS ecosystem</p>
