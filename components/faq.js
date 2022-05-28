@@ -3,7 +3,7 @@ const FAQ=()=>{
     return(
         <>
    <div className='container' style={{marginTop:"20px"}}>
-       <h2 style={{color:"white",}}>FAQ</h2>
+       <h2 className={faqstyles.f}>FAQ</h2>
        <br></br>
    <div className="accordion accordion-flush" id="accordionFlushExample" >
   <div className="accordion-item" style={{backgroundColor:"#1d1d37"}}>

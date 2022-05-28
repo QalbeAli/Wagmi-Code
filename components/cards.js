@@ -5,20 +5,21 @@ const Card1 = () => {
             <div className='container-fluid' >
                 <div className='row'>
                     <div className='col-sm-6 col col-lg-6'>
+                        <div className={cardstyles.col1}>
                         <div className="card" style={{ width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
                             <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
                             <h5 className={cardstyles.head5}>Bronze Tier</h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-4 col-sm 4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
                                         <h6 style={{ color: "white" }}>3 Months</h6>
                                     </div>
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-4 col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "10px" }}> Lock-Up Period</p>
                                         <h6 style={{ color: "white" }}>2 Weeks</h6>
                                     </div>
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-4 col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
                                         <h6 style={{ color: "white" }}>12%</h6>
                                     </div>
@@ -44,11 +45,11 @@ const Card1 = () => {
                                         <h5 style={{color:"white"}}>-</h5>
                                     </div>
                                     <div className='row'>
-                                        <div className='col-sm-6'>
+                                        <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Balance</p>
                                         <h5 style={{color:"white"}}>-</h5>
                                         </div>
-                                        <div className='col-sm-6'>
+                                        <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Rewards</p>
                                         <h5 style={{color:"#815efa"}}>-</h5>
                                         </div>
@@ -58,22 +59,24 @@ const Card1 = () => {
                                 </div>
                             </div>
                         </div>
+                        </div>
                     </div>
                     <div className='col-sm-6 col col-lg-6'>
+                        <div className={cardstyles.col2}>
                     <div className="card" style={{ width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
                             <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
                             <h5 className={cardstyles.head5}>Silver Tier</h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-4 col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
                                         <h6 style={{ color: "white" }}>6 Months</h6>
                                     </div>
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-4 col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "10px" }}> Lock-Up Period</p>
                                         <h6 style={{ color: "white" }}>4 Weeks</h6>
                                     </div>
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-4 col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
                                         <h6 style={{ color: "white" }}>15%</h6>
                                     </div>
@@ -99,11 +102,11 @@ const Card1 = () => {
                                         <h5 style={{color:"white"}}>-</h5>
                                     </div>
                                     <div className='row'>
-                                        <div className='col-sm-6'>
+                                        <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Balance</p>
                                         <h5 style={{color:"white"}}>-</h5>
                                         </div>
-                                        <div className='col-sm-6'>
+                                        <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Rewards</p>
                                         <h5 style={{color:"#815efa"}}>-</h5>
                                         </div>
@@ -115,23 +118,25 @@ const Card1 = () => {
                         </div>
 
                     </div>
+                    </div>
                 </div>
                 <div className='row' style={{marginTop:"20px"}}>
                     <div className='col-sm-6 col col-lg-6'>
+                    <div className={cardstyles.col3}>
                         <div className="card" style={{ width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
                             <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
                             <h5 className={cardstyles.head5}>Gold Tier</h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-4 col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
                                         <h6 style={{ color: "white" }}>9 Months</h6>
                                     </div>
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-4  col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "10px" }}> Lock-Up Period</p>
                                         <h6 style={{ color: "white" }}>6 Weeks</h6>
                                     </div>
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-4  col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
                                         <h6 style={{ color: "white" }}>18%</h6>
                                     </div>
@@ -157,11 +162,11 @@ const Card1 = () => {
                                         <h5 style={{color:"white"}}>-</h5>
                                     </div>
                                     <div className='row'>
-                                        <div className='col-sm-6'>
+                                        <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Balance</p>
                                         <h5 style={{color:"white"}}>-</h5>
                                         </div>
-                                        <div className='col-sm-6'>
+                                        <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Rewards</p>
                                         <h5 style={{color:"#815efa"}}>-</h5>
                                         </div>
@@ -172,21 +177,23 @@ const Card1 = () => {
                             </div>
                         </div>
                     </div>
+                    </div>
                     <div className='col-sm-6 col col-lg-6'>
+                        <div className={cardstyles.col4}>
                     <div className="card" style={{boxShadow:"0px 0px 9px 3px #6A8EFFCC;", width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
                             <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
                             <h5 className={cardstyles.head5}>Platinum Tier</h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-4  col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
                                         <h6 style={{ color: "white" }}>12 Month</h6>
                                     </div>
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-4  col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "10px" }}> Lock-Up Period</p>
                                         <h6 style={{ color: "white" }}>8 Weeks</h6>
                                     </div>
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-4  col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
                                         <h6 style={{ color: "white" }}>21%</h6>
                                     </div>
@@ -212,11 +219,11 @@ const Card1 = () => {
                                         <h5 style={{color:"white"}}>-</h5>
                                     </div>
                                     <div className='row'>
-                                        <div className='col-sm-6'>
+                                        <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Balance</p>
                                         <h5 style={{color:"white"}}>-</h5>
                                         </div>
-                                        <div className='col-sm-6'>
+                                        <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Rewards</p>
                                         <h5 style={{color:"#815efa"}}>-</h5>
                                         </div>
@@ -227,6 +234,7 @@ const Card1 = () => {
                             </div>
                         </div>
 
+                    </div>
                     </div>
                 </div>
             </div>

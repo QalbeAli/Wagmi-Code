@@ -58,9 +58,9 @@ export default function Staking() {
           </div>
         </div>
       </div>
-      {/* <div className="container-fluid" >
+      <div className="container-fluid" >
   <div className="row flex-nowrap">
-    <div className="col-3 col-md-3 col-xl-2 px-sm-2 px-0 " style={{backgroundImage:"linear-gradient(#331939, #191729)"}}>
+    {/* <div className="col-3 col-md-3 col-xl-2 px-sm-2 px-0 " style={{backgroundImage:"linear-gradient(#331939, #191729)"}}>
       <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
         <ul
           className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
@@ -162,10 +162,10 @@ export default function Staking() {
        <a style={{color:"#878787",textDecoration:"none"}}  href="#">Terms and Conditions</a>
       </div>
       </div>
-    </div>
-    <div className="col-xl-7 col-md-6 col-6" style={{backgroundImage:"linear-gradient(#31396E,#121216)"}}>
+    </div> */}
+    <div className="col-xl-7 col-md-12 col-12" style={{backgroundImage:"linear-gradient(#31396E,#121216)"}}>
 
-    <div>
+    <div className={styles.centerCol}>
       <h1 className={styles.heading}>$GEMS Staking</h1>
       <p className={styles.heading1}>Stake your $GEMS in GEMS ecosystem</p>
       <br></br>
@@ -173,15 +173,15 @@ export default function Staking() {
       <h5 className={styles.heading1}>Dashboard</h5>
       <div className='container' style={{marginTop:"20px"}}>
         <div className='row' style={{backgroundColor:"#1d1d37",padding:"20px",borderRadius:"10px"}}>
-          <div className='col-sm-4 col-lg-4' style={{textAlign:"center"}}>
+          <div className='col-sm-4 col-4 col-lg-4' style={{textAlign:"center"}}>
         <p className={styles.para}>Total Value Locked:</p>
         <h6 className={styles.head1}>20,834,315 $GEMS</h6>
           </div>
-          <div className='col-sm-4 col-lg-4' style={{textAlign:"center"}}>
+          <div className='col-sm-4 col-4 col-lg-4' style={{textAlign:"center"}}>
         <p className={styles.para}>Available Balance:</p>
         <h6 className={styles.head1}>-</h6>
           </div>
-          <div className='col-sm-4 col-lg-4' style={{textAlign:"center"}}>
+          <div className='col-sm-4 col-4 col-lg-4' style={{textAlign:"center"}}>
         <p className={styles.para}>Total Earnings:</p>
         <h6 className={styles.head1}>-</h6>
           </div>
@@ -191,7 +191,7 @@ export default function Staking() {
 
             <div className='container'>
               <br></br>
-              <h4 style={{color:"white"}}>Staking Pools</h4>
+              <h4 className={styles.pool}>Staking Pools</h4>
               <br></br>
                 <div className={styles.myBox}>
               <a href="#"><h4 className={styles.details} onClick={()=>alert("shdsakjdh")}>All Pools</h4></a>
@@ -209,7 +209,7 @@ export default function Staking() {
     </div>
     
     </div>
-    <div className="col-3 col-md-3 col-xl-3 px-sm-2 px-0 " style={{backgroundImage:"linear-gradient(#331939, #191729)"}}>
+    {/* <div className="col-3 col-md-3 col-xl-3 px-sm-2 px-0 " style={{backgroundImage:"linear-gradient(#331939, #191729)"}}>
       <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
       <div className="accordion" id="accordionExample" style={{width:"fit-content"}} >
   <div className="accordion-item" style={{backgroundColor:"#25242d"}}>
@@ -389,10 +389,10 @@ Wallet<br></br> powered by
 </div>
         
       </div>
-    </div>
+    </div> */}
   </div>
 </div>
- */}
+
 
     </>
 

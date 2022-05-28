@@ -1,0 +1,8 @@
+.f{
+    color: white;
+}
+@media only screen and (max-width: 800px){
+    .f{
+        text-align: center;
+    }
+}

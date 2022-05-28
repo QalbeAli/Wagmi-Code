@@ -23,6 +23,9 @@
   padding-right: 40px;
 
 }
+.pool{
+  color: white;
+}
 .address{
   background-color: #202544;
   border: none;
@@ -178,7 +181,24 @@ color: #878787;
   }
   .div3{
     margin-top: 15px;
-  }
+
+}
+.heading{
+  text-align: center;
+}
+.heading1{
+  text-align: center;
+}
+.para{
+  font-size: 12px;
+}
+.head1{
+  font-size: 14px;
+}
+.pool{
+  text-align: center;
+}
+
 
 }
 @media only screen and (max-width: 400px){
@@ -195,4 +215,5 @@ color: #878787;
   .level1{
     padding-right: 5px;
   }
+  
 }
