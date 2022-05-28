@@ -21,21 +21,12 @@ background-color: #815efa;
 @media only screen and (max-width: 800px){
     .col2{
         margin-top: 15px;
-       margin-left: 30px;
+      
     }
     .col4{
         margin-top: 15px;
-        margin-left: 30px;
+     
        
     }
-    .col3{
-      
-        margin-left: 30px;
-       
-    }
-    .col1{
-      
-        margin-left: 30px;
-       
-    }
+ 
 }
