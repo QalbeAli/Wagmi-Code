@@ -1,0 +1,101 @@
+.img33{
+    background-color: #2821a1;
+}
+.head5{
+    color: white;
+    position: absolute;
+    top:40px;
+    left:30px;
+
+}
+.progress{
+background-color: #815efa;
+}
+
+.btn10{
+    background-color: #815efa;
+    color: white;
+    border-radius: 100px;
+    border: none;
+    width:240px;
+    padding: 5px;
+}
+.btn11{
+    background-color: transparent;
+    color: gray;
+    border-radius: 100px;
+    border: 1px solid gray;
+    width:240px;
+    padding: 5px; 
+}
+.btn12{
+    background-color: transparent;
+    color: white;
+    border-radius: 100px;
+    border: 1px solid  #815efa;
+    width:240px;
+    padding: 5px; 
+}
+.paraa{
+    color: white;
+    font-size: 11px;
+   
+    font-weight: bold;
+}
+.paraaa{
+    color: #b0403a;
+    font-size: 9px;
+    text-align: center;
+    padding-top: 2px;
+}
+.h5Locked{
+    color: white;
+    font-size: 12px;
+    margin-left: 20px;
+    background-color: #878787;
+    padding: 2px 7px 2px 7px;
+    border-radius: 100px;
+}
+.h5going{
+    color: white;
+    font-size: 12px;
+    margin-left: 20px;
+    background-color: #d8a800;
+    padding: 2px 7px 2px 7px;
+    border-radius: 100px; 
+}
+.h5complete{
+    color: white;
+    font-size: 12px;
+    margin-left: 20px;
+    background-color: #815efa;
+    padding: 2px 7px 2px 7px;
+    border-radius: 100px; 
+}
+@media only screen and (max-width: 800px){
+    .col2{
+        margin-top: 15px;
+      
+    }
+    .col4{
+        margin-top: 15px;
+     
+       
+    }
+ 
+}
+@media only screen and (max-width: 400px){
+
+    .col1{
+        margin-left: -30px;
+    }
+    .col2{
+        margin-left: -30px;
+    }
+    .col3{
+        margin-left: -30px;
+    }
+    .col4{
+        margin-left: -30px;
+    }
+}

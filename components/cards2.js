@@ -1,15 +1,14 @@
-import cardstyles from '../styles/Card.module.css';
-import Link from "next/link";
-const Card1 = () => {
+import card2styles from '../styles/Card2.module.css';
+const Card2 = () => {
     return (
         <>
             <div className='container-fluid' >
                 <div className='row'>
                     <div className='col-sm-6 col col-lg-6'>
-                        <div className={cardstyles.col1}>
+                        <div className={card2styles.col1}>
                         <div className="card" style={{ width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
-                            <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
-                            <h5 className={cardstyles.head5}>Bronze Tier</h5>
+                            <img className={card2styles.img33} src="banner1.png" alt="Card image cap" />
+                            <h5 className={card2styles.head5}>Bronze Tier</h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
                                     <div className='col-lg-4 col-sm 4 col-4'>
@@ -29,7 +28,7 @@ const Card1 = () => {
                                     <p style={{ color: "#878787", fontSize: "12px" }}>Pool size</p>
                                     <div className="progress" style={{backgroundColor:"#878787",borderRadius:"20px", height:"10px",marginBottom:"10px"}}>
                                         <div
-                                            className={cardstyles.progress}
+                                            className={card2styles.progress}
                                             role="progressbar"
                                             aria-valuenow={70}
                                             aria-valuemin={0}
@@ -41,34 +40,33 @@ const Card1 = () => {
                                     </div>
        
                                     <p style={{color:"white",fontSize:"12px"}}>42,293,740 $GEMS <span style={{color:"#878787",fontSize:"12px"}}>of 1,666,666,667 $GEMS</span></p>
-                                    <div>
+                                    <div style={{marginBottom:"25px"}}>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Stake Date</p>
                                         <h5 style={{color:"white"}}>-</h5>
                                     </div>
+                                    
                                     <div className='row'>
                                         <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Balance</p>
-                                        <h5 style={{color:"white"}}>-</h5>
+                                        <h5 style={{color:"white",fontSize:"16px"}}>0.00 $GEMS</h5>
                                         </div>
                                         <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Rewards</p>
-                                        <h5 style={{color:"#815efa"}}>-</h5>
+                                        <h5 style={{color:"#815efa",fontSize:"16px"}}>0.00 $GEMS</h5>
                                         </div>
                                     </div>
                                     <br></br>
-                                    <Link href="/stakeConnected">
-                                    <button className={cardstyles.btn4}>Connect Wallet to Stake</button></Link>
-                                    
+                                    <button className={card2styles.btn10}>Stake</button>
                                 </div>
                             </div>
                         </div>
                         </div>
                     </div>
                     <div className='col-sm-6 col col-lg-6'>
-                        <div className={cardstyles.col2}>
+                        <div className={card2styles.col2}>
                     <div className="card" style={{ width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
-                            <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
-                            <h5 className={cardstyles.head5}>Silver Tier</h5>
+                            <img className={card2styles.img33} src="banner1.png" alt="Card image cap" />
+                            <h5 className={card2styles.head5}>Silver Tier<span className={card2styles.h5Locked}>Locked-up</span></h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
                                     <div className='col-lg-4 col-sm-4 col-4'>
@@ -88,7 +86,7 @@ const Card1 = () => {
                                     <p style={{ color: "#878787", fontSize: "12px" }}>Pool size</p>
                                     <div className="progress" style={{backgroundColor:"#878787",borderRadius:"20px", height:"10px",marginBottom:"10px"}}>
                                         <div
-                                            className={cardstyles.progress}
+                                            className={card2styles.progress}
                                             role="progressbar"
                                             aria-valuenow={70}
                                             aria-valuemin={0}
@@ -102,20 +100,33 @@ const Card1 = () => {
                                     <p style={{color:"white",fontSize:"12px"}}>42,293,740 $GEMS <span style={{color:"#878787",fontSize:"12px"}}>of 1,666,666,667 $GEMS</span></p>
                                     <div>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Stake Date</p>
-                                        <h5 style={{color:"white"}}>-</h5>
+                                        <div>
+                                            <div className='row'>
+                                                <div className='col-4 col-sm-4 col-lg-4'>
+                                               <p className={card2styles.paraa}>May 24 12:00am UTC</p>
+                                                </div>
+                                                <div className='col-2 col-sm-2 col-lg-2'>
+                                                   <p className={card2styles.paraa}>-</p> 
+                                                    </div>
+                                                    <div className='col-4 col-sm-4 col-lg-4' style={{textAlign:"left"}}>
+                                                  <p className={card2styles.paraa}>
+                                                  August 24 12:00am UTC</p> 
+                                                    </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className='row'>
                                         <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Balance</p>
-                                        <h5 style={{color:"white"}}>-</h5>
+                                        <h5 style={{color:"white",fontSize:"16px"}}>3,000 $GEMS</h5>
                                         </div>
                                         <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Rewards</p>
-                                        <h5 style={{color:"#815efa"}}>-</h5>
+                                        <h5 style={{color:"#815efa",fontSize:"16px"}}>450 $GEMS</h5>
                                         </div>
                                     </div>
                                     <br></br>
-                                    <button className={cardstyles.btn4}>Connect Wallet to Stake</button>
+                                    <button className={card2styles.btn11}>Locked-Up</button>
                                 </div>
                             </div>
                         </div>
@@ -125,10 +136,10 @@ const Card1 = () => {
                 </div>
                 <div className='row' style={{marginTop:"20px"}}>
                     <div className='col-sm-6 col col-lg-6'>
-                    <div className={cardstyles.col3}>
+                    <div className={card2styles.col3}>
                         <div className="card" style={{ width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
-                            <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
-                            <h5 className={cardstyles.head5}>Gold Tier</h5>
+                            <img className={card2styles.img33} src="banner1.png" alt="Card image cap" />
+                            <h5 className={card2styles.head5}>Gold Tier<span className={card2styles.h5going}>On Going</span></h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
                                     <div className='col-lg-4 col-sm-4 col-4'>
@@ -148,7 +159,7 @@ const Card1 = () => {
                                     <p style={{ color: "#878787", fontSize: "12px" }}>Pool size</p>
                                     <div className="progress" style={{backgroundColor:"#878787",borderRadius:"20px", height:"10px",marginBottom:"10px"}}>
                                         <div
-                                            className={cardstyles.progress}
+                                            className={card2styles.progress}
                                             role="progressbar"
                                             aria-valuenow={70}
                                             aria-valuemin={0}
@@ -162,30 +173,44 @@ const Card1 = () => {
                                     <p style={{color:"white",fontSize:"12px"}}>42,293,740 $GEMS <span style={{color:"#878787",fontSize:"12px"}}>of 1,666,666,667 $GEMS</span></p>
                                     <div>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Stake Date</p>
-                                        <h5 style={{color:"white"}}>-</h5>
+                                        <div>
+                                            <div className='row'>
+                                                <div className='col-4 col-sm-4 col-lg-4'>
+                                               <p className={card2styles.paraa}>May 24 12:00am UTC</p>
+                                                </div>
+                                                <div className='col-2 col-sm-2 col-lg-2'>
+                                                   <p className={card2styles.paraa}>-</p> 
+                                                    </div>
+                                                    <div className='col-4 col-sm-4 col-lg-4' style={{textAlign:"left"}}>
+                                                  <p className={card2styles.paraa}>
+                                                  August 24 12:00am UTC</p> 
+                                                    </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className='row'>
                                         <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Balance</p>
-                                        <h5 style={{color:"white"}}>-</h5>
+                                        <h5 style={{color:"white",fontSize:"16px"}}>3,000 $GEMS</h5>
                                         </div>
                                         <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Rewards</p>
-                                        <h5 style={{color:"#815efa"}}>-</h5>
+                                        <h5 style={{color:"#815efa",fontSize:"16px"}}>540 $GEMS</h5>
                                         </div>
                                     </div>
                                     <br></br>
-                                    <button className={cardstyles.btn4}>Connect Wallet to Stake</button>
+                                    <button className={card2styles.btn12}>Unstake</button>
+                                    <p className={card2styles.paraaa}>Penalty charge for early unstake </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     </div>
                     <div className='col-sm-6 col col-lg-6'>
-                        <div className={cardstyles.col4}>
-                    <div className="card" style={{boxShadow:"0px 0px 9px 3px #6A8EFFCC;", width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
-                            <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
-                            <h5 className={cardstyles.head5}>Platinum Tier</h5>
+                        <div className={card2styles.col4}>
+                    <div className="card" style={{boxShadow:"0px 0px 9px 3px #6A8EFFCC;", width: "19rem", paddingBottom: "30px", backgroundColor: "#212228" }}>
+                            <img className={card2styles.img33} src="banner1.png" alt="Card image cap" />
+                            <h5 className={card2styles.head5}>Platinum Tier<span className={card2styles.h5complete}>Completed</span></h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
                                     <div className='col-lg-4  col-sm-4 col-4'>
@@ -205,7 +230,7 @@ const Card1 = () => {
                                     <p style={{ color: "#878787", fontSize: "12px" }}>Pool size</p>
                                     <div className="progress" style={{backgroundColor:"#878787",borderRadius:"20px", height:"10px",marginBottom:"10px"}}>
                                         <div
-                                            className={cardstyles.progress}
+                                            className={card2styles.progress}
                                             role="progressbar"
                                             aria-valuenow={70}
                                             aria-valuemin={0}
@@ -219,20 +244,33 @@ const Card1 = () => {
                                     <p style={{color:"white",fontSize:"12px"}}>42,293,740 $GEMS <span style={{color:"#878787",fontSize:"12px"}}>of 1,666,666,667 $GEMS</span></p>
                                     <div>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Stake Date</p>
-                                        <h5 style={{color:"white"}}>-</h5>
+                                        <div>
+                                            <div className='row'>
+                                                <div className='col-4 col-sm-4 col-lg-4'>
+                                               <p className={card2styles.paraa}>May 24 12:00am UTC</p>
+                                                </div>
+                                                <div className='col-2 col-sm-2 col-lg-2'>
+                                                   <p className={card2styles.paraa}>-</p> 
+                                                    </div>
+                                                    <div className='col-4 col-sm-4 col-lg-4' style={{textAlign:"left"}}>
+                                                  <p className={card2styles.paraa}>
+                                                  August 24 12:00am UTC</p> 
+                                                    </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className='row'>
                                         <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Balance</p>
-                                        <h5 style={{color:"white"}}>-</h5>
+                                        <h5 style={{color:"white",fontSize:"16px"}}>3,000 $GEMS</h5>
                                         </div>
                                         <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Rewards</p>
-                                        <h5 style={{color:"#815efa"}}>-</h5>
+                                        <h5 style={{color:"#815efa",fontSize:"16px"}}>630 $GEMS</h5>
                                         </div>
                                     </div>
                                     <br></br>
-                                    <button className={cardstyles.btn4}>Connect Wallet to Stake</button>
+                                    <button className={card2styles.btn10}>Claim</button>
                                 </div>
                             </div>
                         </div>
@@ -244,4 +282,4 @@ const Card1 = () => {
         </>
     )
 }
-export default Card1;
+export default Card2;

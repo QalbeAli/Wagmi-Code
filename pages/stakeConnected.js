@@ -1,0 +1,443 @@
+import Head from 'next/head'
+import Image from 'next/image'
+import stakestyles from '../styles/StakeConnected.module.css'
+import Card2 from '../components/cards2';
+import FAQ from '../components/faq';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faSearch,
+  faAmbulance,
+  faAnchor,
+  faBars,
+  faToggleOff
+  
+} from "@fortawesome/free-solid-svg-icons";
+export default function Staking() {
+const showContent=()=>{
+
+ let show=document.getElementById("show");
+
+ if (show.style.display === "block") {
+  show.style.display = "none";
+} else {
+  show.style.display = "block";
+  
+}
+ 
+
+}
+const showContent2=()=>{
+
+  let shows=document.getElementById("shows");
+ 
+  if (shows.style.display === "block") {
+   shows.style.display = "none";
+ } else {
+   shows.style.display = "block";
+   
+ }
+  
+ 
+ }
+  return (
+
+    <>
+      <Head>
+        <title>Create Next App</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossOrigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossOrigin="anonymous"></script>
+
+
+      </Head>
+      <div className={stakestyles.con}>
+        <div className="row">
+          <div className='col-lg-2 col-sm-6 col-6'>
+
+            <img src="logo.png"></img>
+
+          </div>
+          <div className='col-lg-3 col-sm-6 col-6'>
+            <button className={stakestyles.btn1}>
+              Apply for Subscription
+            </button>
+          </div>
+          <div className='col-lg-2 col-sm-12 col-12'>
+
+            <div className={stakestyles.div2}>
+              <input type="text" className={stakestyles.input11} placeholder=" Search" />
+            </div>
+
+
+
+          </div>
+     
+          <div className='col-lg-5 col-sm-12 col-12' style={{ textAlign: "center" }} >
+             
+            <div className={stakestyles.div3}>
+              <span className={stakestyles.network}>
+                <img src="v1.png"></img>
+                &nbsp;&nbsp;BSC</span>
+              <span className={stakestyles.address}>
+                <span className={stakestyles.level1}>Level 1</span>
+                &nbsp; 0x24485..3483
+                <img src="ellipse1.png" className={stakestyles.img1}></img>
+              </span>
+            
+            </div>
+           
+          </div>
+          <div className={stakestyles.baricon} >
+          <i className="fa-solid fa-bars" onClick={showContent} style={{color:"white",marginLeft:"10px",cursor:"pointer",marginTop:"10px"}}></i>
+          <i className="fa-solid fa-bars" onClick={showContent2} style={{color:"white",marginRight:"10px",cursor:"pointer",marginTop:"10px",float:"right"}}></i>
+          </div>
+        </div>
+      </div>
+      <div className="container-fluid" >
+  <div className="row ">
+    <div className="col-12 col-md-12 col-xl-2 px-sm-2 px-0 " style={{backgroundImage:"linear-gradient(#331939, #191729)"}}>
+     <div className={stakestyles.column33} id="show">
+      <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+        <ul
+          className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <li className="nav-item">
+            <a href="#" className="nav-link align-middle px-0">
+              <span className="ms-1 d-sm-inline" style={{color:"#6a8eff",fontWeight:"bold"}}>Home</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#submenu1"
+             
+              className="nav-link px-0 align-middle"
+            >
+            
+              <span className="ms-1 d-sm-inline"  style={{color:"#878787",fontWeight:"bold"}}>Marketplace</span>{" "}
+            </a>
+           
+          </li>
+          <li>
+            <a href="#" className="nav-link px-0 align-middle">
+              
+              <span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Defi Union</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#submenu2"
+              data-bs-toggle="collapse"
+              className="nav-link px-0 align-middle "
+            >
+           
+              <span className="ms-1 d-sm-inline" style={{color:"white",fontWeight:"bold"}}>Play 2 Earn</span>
+            </a>
+            
+          </li>
+          <li>
+            <a
+              href="#submenu3"
+              data-bs-toggle="collapse"
+              className="nav-link px-0 align-middle"
+            >
+        
+              <span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Streamer Hub</span>{" "}
+            </a>
+           </li>
+           <li>
+            <a
+              href="#submenu3"
+              data-bs-toggle="collapse"
+              className="nav-link px-0 align-middle"
+            >
+        
+              <span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>GEMS Academy </span>{" "}
+            </a>
+           </li>
+           <li>
+            <a
+              href="#submenu3"
+              data-bs-toggle="collapse"
+              className="nav-link px-0 align-middle"
+            >
+        
+              <span className="ms-1 d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Talent Agency</span>{" "}
+            </a>
+           </li>
+           <li>
+            <a
+              href="#submenu3"
+              data-bs-toggle="collapse"
+              className="nav-link px-0 align-middle"
+            >
+        
+              <span className="ms-1 d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Guild DAO</span>{" "}
+            </a>
+           </li>
+           <li>
+            <a
+              href="#submenu3"
+              data-bs-toggle="collapse"
+              className="nav-link px-0 align-middle"
+            >
+        
+              <span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Play with gems</span>{" "}
+            </a>
+           </li>
+           </ul>
+        <hr />
+      <div className={stakestyles.addMar}>
+       <a href="#"><img src="v2.png" className={stakestyles.imgss}></img></a>
+       <a href="#"><img src="v3.png" className={stakestyles.imgs}></img></a>
+       <a href="#"><img src="v4.png" className={stakestyles.imgs}></img></a>
+       <br></br>
+       <br></br>
+       <a style={{color:"#878787", textDecoration:"none"}} href="#">Contact</a><br></br>
+       <a style={{color:"#878787",textDecoration:"none"}}  href="#">Privacy policy</a><br></br>
+       <a style={{color:"#878787",textDecoration:"none"}}  href="#">Terms and Conditions</a>
+      </div>
+      </div>
+    </div>
+    </div>
+   
+    <div className="col-xl-7 col-md-12 col-12" style={{backgroundImage:"linear-gradient(#31396E,#121216)"}}>
+    
+    <div className={stakestyles.centerCol}>
+      <h1 className={stakestyles.heading}>$GEMS Staking</h1>
+      <p className={stakestyles.heading1}>Stake your $GEMS in GEMS ecosystem</p>
+      <br></br>
+      <br></br>
+      <h5 className={stakestyles.heading1}>Dashboard</h5>
+      <div className='container' style={{marginTop:"20px"}}>
+        <div className='row' style={{backgroundColor:"#1d1d37",padding:"20px",borderRadius:"10px"}}>
+          <div className='col-sm-4 col-4 col-lg-4' style={{textAlign:"center"}}>
+        <p className={stakestyles.para}>Total Value Locked:</p>
+        <h6 className={stakestyles.head1}>20,834,315 $GEMS</h6>
+          </div>
+          <div className='col-sm-4 col-4 col-lg-4' style={{textAlign:"center"}}>
+        <p className={stakestyles.para}>Available Balance:</p>
+        <h6 className={stakestyles.head1}>34,310 $GEMS</h6>
+          </div>
+          <div className='col-sm-4 col-4 col-lg-4' style={{textAlign:"center"}}>
+        <p className={stakestyles.para}>Total Earnings:</p>
+        <h6 className={stakestyles.head1} style={{color:"#6a8eff"}}>4,315 $GEMS</h6>
+          </div>
+        </div>
+      </div>
+      <div className={stakestyles.detail}>
+
+            <div className='container'>
+              <br></br>
+              <h4 className={stakestyles.pool}>Staking Pools</h4>
+              <br></br>
+                <div className={stakestyles.myBox}>
+              <a href="#"><h4 className={stakestyles.details} onClick={()=>alert("shdsakjdh")}>All Pools</h4></a>
+                </div>
+           
+            <a  href="#">
+            <h4 className={stakestyles.detail2} >Staking History</h4>
+            </a>
+            <hr className={stakestyles.hr1}></hr>
+<Card2/>
+<FAQ></FAQ>
+            </div>
+            
+        </div>
+    </div>
+    
+    </div>
+    <div className="col-12 col-md-12 col-xl-3 order-md-last order-lg-last order-first " style={{backgroundImage:"linear-gradient(#331939, #191729)"}}>
+     <div className={stakestyles.column4} id="shows">
+      <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+      <div className="accordion" id="accordionExample" style={{width:"fit-content"}} >
+  <div className="accordion-item" style={{backgroundColor:"#25242d"}}>
+    <h2 className="accordion-header" id="headingOne">
+      <button
+        className="accordion-button"
+        style={{backgroundColor:"#25242d", color:"white"}}
+        type="button"
+        disabled
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+        aria-expanded="false"
+        aria-controls="collapseOne"
+
+      >
+  My Wallet
+      </button>
+    </h2>
+    <div
+      id="collapseOne"
+      className="accordion-collapse collapse show"
+      aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample"
+    >
+      <div className="accordion-body" style={{color:"white"}}>
+      <span className={stakestyles.username}>Username</span>
+      <span className={stakestyles.username1}> 0x24485..3483</span>
+      <div className={stakestyles.balance}>
+<h5 style={{color:"#5a78d4"}}>Total Balance</h5>
+<h6>1,000,000,000USDT</h6>
+      </div>
+      <div style={{marginTop:"20px"}}>
+      <span className={stakestyles.bnb}>BNB</span>
+      <span className={stakestyles.bnbnum}>3.5</span>
+      <br></br>
+      <span className={stakestyles.bnb1}>Binance</span>
+      <span className={stakestyles.bnbnum1}>8000USDT</span>
+      </div>
+      <div style={{marginTop:"20px",backgroundColor:"black", padding:"10px 3px 10px 3px",borderRadius:"10px"}}>
+      <span className={stakestyles.bnb}>GEMS</span>
+      <span className={stakestyles.bnbnum}>3.5</span>
+      <br></br>
+      <span className={stakestyles.bnb1}>GEMS</span>
+      <span className={stakestyles.bnbnum1}>8000USDT</span>
+      </div>
+      <div style={{textAlign:"center",marginTop:"20px"}}>
+      <button className={stakestyles.btn2}>Add Funds</button>
+      </div>
+     
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div className="accordion-item"  style={{backgroundColor:"#25242d"}}>
+    <h2 className="accordion-header" id="headingTwo">
+      <button
+        className="accordion-button"
+        style={{backgroundColor:"#25242d", color:"white"}}
+        type="button"
+        disabled
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseTwo"
+        aria-expanded="false"
+        aria-controls="collapseTwo"
+      >
+       Owned
+      </button>
+    </h2>
+    <div
+      id="collapseTwo"
+      className="accordion-collapse "
+      aria-labelledby="headingTwo"
+      data-bs-parent="#accordionExample"
+    >
+      <div className="accordion-body">
+      <div className='row'>
+        <div className='col-sm-3'>
+          <img src="img1.png"></img>
+        </div>
+        <div className='col-sm-6'>
+          <h6>NFT Name</h6>
+          <h6>#2451</h6>
+        </div>
+      </div>
+      <div className='row' style={{marginTop:"10px" ,backgroundColor:"black",paddingTop:"10px",borderRadius:"10px"}}>
+        <div className='col-sm-3'>
+          <img src="img2.png"></img>
+        </div>
+        <div className='col-sm-6'>
+          <h6>NFT Name</h6>
+          <h6>#2451</h6>
+        </div>
+      </div>
+      <div className='row' style={{marginTop:"15px"}}>
+        <div className='col-sm-3'>
+          <img src="img3.png"></img>
+        </div>
+        <div className='col-sm-6'>
+          <h6>NFT Name</h6>
+          <h6>#2451</h6>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div className="accordion-item"  style={{backgroundColor:"#25242d"}}>
+    <h2 className="accordion-header" id="headingThree">
+      <button
+        className="accordion-button "
+        style={{backgroundColor:"#25242d", color:"white"}}
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseThree"
+        disabled
+        aria-controls="collapseThree"
+      >
+       Renting
+      </button>
+    </h2>
+    <div
+      id="collapseThree"
+      className="accordion-collapse "
+      aria-labelledby="headingThree"
+      data-bs-parent="#accordionExample"
+    >
+      <div className="accordion-body">
+      <div className='row'>
+        <div className='col-sm-3'>
+          <img src="img1.png"></img>
+        </div>
+        <div className='col-sm-5'>
+          <h6>NFT Name</h6>
+          <h6>#2451</h6>
+        </div>
+        <div className='col-sm-4'>
+         <p style={{fontSize:"12px"}}>Remain Time:8:36h</p> 
+        </div>
+      </div>
+      <div className='row' style={{marginTop:"10px" ,backgroundColor:"black",paddingTop:"10px",borderRadius:"10px"}}>
+        <div className='col-sm-3'>
+          <img src="img2.png"></img>
+        </div>
+        <div className='col-sm-5'>
+          <h6>NFT Name</h6>
+          <h6>#2451</h6>
+        </div>
+        <div className='col-sm-4'>
+         <p style={{fontSize:"12px"}}>Remain Time:8:36h</p> 
+        </div>
+      </div>
+      <div className='row' style={{marginTop:"15px"}}>
+        <div className='col-sm-3'>
+          <img src="img3.png"></img>
+        </div>
+        <div className='col-sm-5'>
+          <h6>NFT Name</h6>
+          <h6>#2451</h6>
+        </div>
+        <div className='col-sm-4'>
+         <p style={{fontSize:"12px"}}>Remain Time:8:36h</p> 
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div className='container'>
+<div className='row' style={{marginTop:"100px", paddingBottom:"20px"}}>
+  <div className='col-lg-6 col-6' style={{textAlign:"right"}}>
+<p style={{color:"#878787",fontWeight:"bold"}}>
+Wallet<br></br> powered by
+</p>
+  </div>
+  <div className='col-lg-6 col-6'>
+    <img src="logos.png"></img>
+    </div>
+</div>
+</div>
+        
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+    </>
+
+
+  )
+}
