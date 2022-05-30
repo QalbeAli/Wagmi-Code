@@ -70,7 +70,7 @@ btncolor.style.border="1px solid #777777";
          </div>
         </div>
     </div>
-    <div className='container' style={{marginLeft:"33px"}}>
+    <div className='container' >
    <div className={myModal.stakePeriod}>
        <span className={myModal.stakePeriod1}>Stake Period:</span>
        <span className={myModal.stakePeriod2}>3 Months</span>
@@ -81,15 +81,14 @@ btncolor.style.border="1px solid #777777";
        <span className={myModal.stakePeriod1}>APY:</span>
        <span className={myModal.stakePeriod2}>12%</span>
        <br></br>
-      <hr style={{backgroundColor: "#3C3F57",height:"2px" ,marginRight:"18px",marginTop:"10px",marginBottom:"10px"
-}}></hr>
+     <img src="line.png" className={myModal.line}></img>
   <span className={myModal.stakePeriod3}>Reward:</span>
        <span className={myModal.stakePeriod4}>0.00 $GEMS</span>
        <br></br>
    </div>
  
  </div>
- <div className='container' style={{marginLeft:"31px",marginTop:"40px"}}>
+ <div className='container' style={{marginTop:"40px"}}>
      <button className={myModal.confirmBtn} id="btnColor">Confirm Staking</button>
    
  </div>

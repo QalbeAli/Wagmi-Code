@@ -94,6 +94,7 @@ line-height: 18px;
 .stakePeriod{
 width: 88%;
 margin-top: -10px;
+margin-left: 33px;
 
 }
 .stakePeriod1{
@@ -154,6 +155,7 @@ border-radius: 60px;
 width: 86%;
 color: #777777;
 padding: 11px 0px 11px 0px;
+margin-left: 31px;
 }
 .stakepara{
    text-align: center;
@@ -167,4 +169,44 @@ margin-top: 10px;
 /* Paragraph_Color_2 */
 
 color: #CCCCCC;
+}
+.line{
+    width:96%;
+}
+@media only screen and (min-width: 350px) and (max-width:500px){
+    .inputField{
+        width: 77%;
+    }
+    .deposit{
+        margin-left: 39px;
+        margin-right: 25px;
+
+    }
+    .details{
+        margin-left: 15px;
+    }
+    .stakePeriod{
+        margin-left: -10px;
+    }
+    .stakePeriod2{
+        float: right;
+        margin-right:-45px;
+    }
+    .line{
+       width: 123%;
+    }
+    .stakePeriod4{
+        margin-right:-45px;
+    }
+    .confirmBtn{
+        width:110%;
+        margin-left: -12px;
+    }
+    .imagess{
+        position: absolute;
+      margin-left: -237px;
+      margin-top: 14px;
+      }
+   
+
 }
