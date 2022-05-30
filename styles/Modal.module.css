@@ -204,9 +204,29 @@ color: #CCCCCC;
     }
     .imagess{
         position: absolute;
-      margin-left: -237px;
+      margin-left: -249px;
       margin-top: 14px;
       }
-   
+    }
+      @media only screen and (width: 375px){
+        .imagess{
+            position: absolute;
+          margin-left: -260px;
+          margin-top: 14px;
+          }
 
+}
+@media only screen and (width: 414px){
+    .imagess{
+        position: absolute;
+      margin-left: -290px;
+      margin-top: 14px;
+      }
+}
+@media only screen and (width: 390px){
+    .imagess{
+        position: absolute;
+      margin-left: -272px;
+      margin-top: 14px;
+      }
 }
