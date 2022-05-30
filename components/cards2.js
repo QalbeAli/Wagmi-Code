@@ -1,4 +1,5 @@
 import card2styles from '../styles/Card2.module.css';
+import Modal from './modal';
 const Card2 = () => {
     return (
         <>
@@ -56,7 +57,9 @@ const Card2 = () => {
                                         </div>
                                     </div>
                                     <br></br>
-                                    <button className={card2styles.btn10}>Stake</button>
+                                    <button className={card2styles.btn10}   data-bs-toggle="modal"
+    data-bs-target="#exampleModalCenter">Stake</button>
+<Modal></Modal>
                                 </div>
                             </div>
                         </div>
