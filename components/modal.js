@@ -57,7 +57,7 @@ btncolor.style.border="1px solid #777777";
        <div className={myModal.inputIcons}>
        <div className={myModal.inputMax}>
 <input className={myModal.inputField} type="text" placeholder='0' id="noInput" onInput={btnColor}  />
-<img src="Capture.png" className={myModal.imagess}></img> 
+<img src="Capture.PNG" className={myModal.imagess}></img> 
    <input type="button" value="MAX"className={myModal.maxbtn}/>      
                 </div>
                 <p className={myModal.deposit}>Deposit must be between: 20,000 and 2,000,000 $GEMS</p>
