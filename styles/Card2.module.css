@@ -72,6 +72,14 @@ background-color: #815efa;
     padding: 2px 7px 2px 7px;
     border-radius: 100px; 
 }
+.btn90{
+    background-color: #815efa;
+    color: white;
+    border-radius: 100px;
+    border: none;
+    width:240px;
+    padding: 5px;
+}
 @media only screen and (max-width: 800px){
     .col2{
         margin-top: 15px;

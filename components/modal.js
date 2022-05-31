@@ -1,5 +1,6 @@
+import { faMobileScreenButton } from '@fortawesome/free-solid-svg-icons';
 import myModal from '../styles/Modal.module.css';
-const Modal=()=>{
+const Modal=({setBtn,btnstake,toggle,setToggle})=>{
     const btnColor=()=>{
     let btncolor=document.getElementById("btnColor");
     let noInput=document.getElementById("noInput").value;
@@ -7,7 +8,13 @@ const Modal=()=>{
         btncolor.style.background="linear-gradient(270deg, #885BFF 0.19%, #5977D6 100%)";
         btncolor.style.color="white";
         btncolor.style.border="none";
-      
+        btncolor.onclick=()=>{
+       
+            setBtn("Unstake")
+            setToggle("#exampleModalCenter2")
+            document.getElementById("noInput").value="";
+            
+        }
     }
 else
 btncolor.style.background="transparent";
@@ -89,7 +96,7 @@ btncolor.style.border="1px solid #777777";
  
  </div>
  <div className='container' style={{marginTop:"40px"}}>
-     <button className={myModal.confirmBtn} id="btnColor">Confirm Staking</button>
+     <button className={myModal.confirmBtn} id="btnColor" data-bs-dismiss="modal">Confirm Staking</button>
    
  </div>
  <p className={myModal.stakepara}>Each account can only stake once in each tier</p>

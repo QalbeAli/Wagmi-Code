@@ -1,6 +1,10 @@
 import card2styles from '../styles/Card2.module.css';
 import Modal from './modal';
+import Modal2 from './modal2';
+import {useState} from 'react';
 const Card2 = () => {
+let[btnstake,setBtn]=useState("Stake")
+let[toggle,setToggle]=useState("#exampleModalCenter")
     return (
         <>
             <div className='container-fluid' >
@@ -57,9 +61,15 @@ const Card2 = () => {
                                         </div>
                                     </div>
                                     <br></br>
+                                    
                                     <button className={card2styles.btn10}   data-bs-toggle="modal"
-    data-bs-target="#exampleModalCenter">Stake</button>
-<Modal></Modal>
+    data-bs-target={toggle}>{btnstake}
+    </button>
+    {btnstake=="Stake"}?
+    <Modal btnstake={btnstake} setBtn={setBtn} toggle={toggle} setToggle={setToggle}></Modal>
+    :<Modal2 btnstake={btnstake} setBtn={setBtn} toggle={toggle} setToggle={setToggle}> </Modal2>
+   
+    
                                 </div>
                             </div>
                         </div>
@@ -202,7 +212,9 @@ const Card2 = () => {
                                         </div>
                                     </div>
                                     <br></br>
-                                    <button className={card2styles.btn12}>Unstake</button>
+                                    <button className={card2styles.btn12} data-bs-toggle="modal"
+    data-bs-target="#exampleModalCenter2">Unstake</button>
+    <Modal2></Modal2>
                                     <p className={card2styles.paraaa}>Penalty charge for early unstake </p>
                                 </div>
                             </div>

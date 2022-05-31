@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Card1 from '../components/cards';
 import FAQ from '../components/faq';
+import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -103,99 +104,99 @@ const showContent2=()=>{
           id="menu"
         >
           <li className="nav-item">
-            <a href="#" className="nav-link align-middle px-0">
+            <Link href="#" className="nav-link align-middle px-0">
               <span className="ms-1 d-sm-inline" style={{color:"#6a8eff",fontWeight:"bold"}}>Home</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="#submenu1"
              
               className="nav-link px-0 align-middle"
             >
             
               <span className="ms-1 d-sm-inline"  style={{color:"#878787",fontWeight:"bold"}}>Marketplace</span>{" "}
-            </a>
+            </Link>
            
           </li>
           <li>
-            <a href="#" className="nav-link px-0 align-middle">
+            <Link href="#" className="nav-link px-0 align-middle">
               
               <span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Defi Union</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="#submenu2"
               data-bs-toggle="collapse"
               className="nav-link px-0 align-middle "
             >
            
               <span className="ms-1 d-sm-inline" style={{color:"white",fontWeight:"bold"}}>Play 2 Earn</span>
-            </a>
+            </Link>
             
           </li>
           <li>
-            <a
+            <Link
               href="#submenu3"
               data-bs-toggle="collapse"
               className="nav-link px-0 align-middle"
             >
         
               <span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Streamer Hub</span>{" "}
-            </a>
+            </Link>
            </li>
            <li>
-            <a
+            <Link
               href="#submenu3"
               data-bs-toggle="collapse"
               className="nav-link px-0 align-middle"
             >
         
               <span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>GEMS Academy </span>{" "}
-            </a>
+            </Link>
            </li>
            <li>
-            <a
+            <Link
               href="#submenu3"
               data-bs-toggle="collapse"
               className="nav-link px-0 align-middle"
             >
         
               <span className="ms-1 d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Talent Agency</span>{" "}
-            </a>
+            </Link>
            </li>
            <li>
-            <a
+            <Link
               href="#submenu3"
               data-bs-toggle="collapse"
               className="nav-link px-0 align-middle"
             >
         
               <span className="ms-1 d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Guild DAO</span>{" "}
-            </a>
+            </Link>
            </li>
            <li>
-            <a
+            <Link
               href="#submenu3"
               data-bs-toggle="collapse"
               className="nav-link px-0 align-middle"
             >
         
               <span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Play with gems</span>{" "}
-            </a>
+            </Link>
            </li>
            </ul>
         <hr />
       <div className={styles.addMar}>
-       <a href="#"><img src="v2.png" className={styles.imgss}></img></a>
-       <a href="#"><img src="v3.png" className={styles.imgs}></img></a>
-       <a href="#"><img src="v4.png" className={styles.imgs}></img></a>
+       <Link href="#"><img src="v2.png" className={styles.imgss}></img></Link>
+       <Link href="#"><img src="v3.png" className={styles.imgs}></img></Link>
+       <Link href="#"><img src="v4.png" className={styles.imgs}></img></Link>
        <br></br>
        <br></br>
-       <a style={{color:"#878787", textDecoration:"none"}} href="#">Contact</a><br></br>
-       <a style={{color:"#878787",textDecoration:"none"}}  href="#">Privacy policy</a><br></br>
-       <a style={{color:"#878787",textDecoration:"none"}}  href="#">Terms and Conditions</a>
+       <Link style={{color:"#878787", textDecoration:"none"}} href="#">Contact</Link><br></br>
+       < Link style={{color:"#878787",textDecoration:"none"}}  href="#">Privacy policy</Link><br></br>
+       <Link style={{color:"#878787",textDecoration:"none"}}  href="#">Terms and Conditions</Link>
       </div>
       </div>
     </div>
@@ -232,12 +233,12 @@ const showContent2=()=>{
               <h4 className={styles.pool}>Staking Pools</h4>
               <br></br>
                 <div className={styles.myBox}>
-              <a href="#"><h4 className={styles.details} onClick={()=>alert("shdsakjdh")}>All Pools</h4></a>
+              <Link href="#"><h4 className={styles.details} onClick={()=>alert("shdsakjdh")}>All Pools</h4></Link>
                 </div>
            
-            <a  href="#">
+            <Link  href="#">
             <h4 className={styles.detail2} >Staking History</h4>
-            </a>
+            </Link>
             <hr className={styles.hr1}></hr>
 <Card1/>
 <FAQ></FAQ>
