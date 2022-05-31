@@ -141,8 +141,7 @@ let[toggle,setToggle]=useState("#exampleModalCenter")
                                         <h5 style={{color:"#815efa",fontSize:"18px"}}>450 $GEMS</h5>
                                         </div>
                                     </div>
-                                    <br></br>
-                                    <br></br>
+                                  <br></br>
                                     <button className={card2styles.btn11}>Locked-Up</button>
                                 </div>
                             </div>
