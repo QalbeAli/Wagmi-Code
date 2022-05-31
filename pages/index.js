@@ -330,7 +330,7 @@ export default function Staking() {
                               <img src="img1.png"></img>
                             </div>
                             <div className='col-sm-5 col-lg-5 col-5'>
-                              <h6  style={{fontSize:"14px"}}>NFT Name</h6>
+                              <h6  style={{fontSize:"12px"}}>NFT Name</h6>
                               <h6  style={{fontSize:"12px"}}>#2451</h6>
                             </div>
                             <div className='col-sm-4 col-lg-4 col-4'>
@@ -342,7 +342,7 @@ export default function Staking() {
                               <img src="img2.png"></img>
                             </div>
                             <div className='col-sm-5 col-lg-5 col-5'>
-                              <h6  style={{fontSize:"14px"}}>NFT Name</h6>
+                              <h6  style={{fontSize:"12px"}}>NFT Name</h6>
                               <h6  style={{fontSize:"12px"}}>#2451</h6>
                             </div>
                             <div className='col-sm-4 col-lg-4 col-4'>
@@ -354,7 +354,7 @@ export default function Staking() {
                               <img src="img3.png"></img>
                             </div>
                             <div className='col-sm-5 col-lg-5 col-5'>
-                              <h6 style={{fontSize:"14px"}}>NFT Name</h6>
+                              <h6 style={{fontSize:"12px"}}>NFT Name</h6>
                               <h6 style={{fontSize:"12px"}}>#2451</h6>
                             </div>
                             <div className='col-sm-4 col-lg-4 col-4'>
