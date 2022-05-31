@@ -232,6 +232,12 @@ margin-top: 10px;
     .inputField2{
         width: 77%;
     }
+    .amount3{
+        margin-left: -5px;
+    }
+    .stakePeriod6{
+        margin-right: -47px;
+    }
     .deposit{
         margin-left: 41px;
         margin-right: 25px;
@@ -256,6 +262,10 @@ margin-top: 10px;
     .confirmBtn{
         width:110%;
         margin-left: -12px;
+    }
+    .confirmBtn2{
+        width: 110%;
+        margin-left: -10px;
     }
     .imagess{
         position: absolute;
