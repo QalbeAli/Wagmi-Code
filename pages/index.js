@@ -81,7 +81,7 @@ export default function Staking() {
                 &nbsp;&nbsp;BSC</span>
               <span className={styles.address}>
                 <span className={styles.level1}>Level 1</span>
-                &nbsp; 0x24485..3483
+                &nbsp; <span style={{fontSize:"14px"}}>0x24485..3483</span>
                 <img src="ellipse1.png" className={styles.img1}></img>
               </span>
 
@@ -96,7 +96,7 @@ export default function Staking() {
       </div>
       <div className="container-fluid" >
         <div className="row ">
-          <div className="col-12 col-md-12 col-xl-2 px-sm-2 px-0 " style={{ backgroundImage: "linear-gradient(#331939, #191729)" }}>
+          <div className={styles.navColumn} style={{ backgroundImage: "linear-gradient(#331939, #191729)"}}>
             <div className={styles.column33} id="show">
               <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                 <ul
@@ -104,34 +104,34 @@ export default function Staking() {
                   id="menu"
                 >
                   <li className="nav-item">
-                    <Link href="/" ><a className="nav-link align-middle px-0"><span className="ms-1 d-sm-inline" style={{ color: "#6a8eff", fontWeight: "bold" }}>Home</span></a></Link>
+                    <Link href="/" ><a className="nav-link align-middle px-0"><span className="ms-1 d-sm-inline" style={{ color: "#6a8eff", fontWeight: "bold" ,fontSize:"14px"}}>Home</span></a></Link>
                   </li>
                   <li>
-            <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1 d-sm-inline"  style={{color:"#878787",fontWeight:"bold"}}>Marketplace</span></a></Link>
+            <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1 d-sm-inline"  style={{color:"#878787",fontWeight:"bold",fontSize:"14px"}}>Marketplace</span></a></Link>
            
           </li>
           <li>
-            <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Defi Union</span></a></Link>
+            <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold",fontSize:"14px"}}>Defi Union</span></a></Link>
           </li>
           <li>
-            <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1 d-sm-inline" style={{color:"white",fontWeight:"bold"}}>Play 2 Earn</span></a></Link>
+            <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1 d-sm-inline" style={{color:"white",fontWeight:"bold",fontSize:"14px"}}>Play 2 Earn</span></a></Link>
             
           </li>
           <li>
             <Link
-              href="#"><a className="nav-link px-0 align-middle"><span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Streamer Hub</span></a></Link>
+              href="#"><a className="nav-link px-0 align-middle"><span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold",fontSize:"14px"}}>Streamer Hub</span></a></Link>
            </li>
            <li>
-            <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>GEMS Academy </span></a></Link>
+            <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold",fontSize:"14px"}}>GEMS Academy </span></a></Link>
            </li>
            <li>
-            <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1 d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Talent Agency</span></a></Link>
+            <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1 d-sm-inline" style={{color:"#878787",fontWeight:"bold",fontSize:"14px"}}>Talent Agency</span></a></Link>
            </li>
            <li>
-            <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1 d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Guild DAO</span></a></Link>
+            <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1 d-sm-inline" style={{color:"#878787",fontWeight:"bold",fontSize:"14px"}}>Guild DAO</span></a></Link>
            </li>
            <li>
-            <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold"}}>Play with gems</span></a></Link>
+            <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1  d-sm-inline" style={{color:"#878787",fontWeight:"bold",fontSize:"14px"}}>Play with gems</span></a></Link>
            </li>
                 </ul>
                 <hr />
@@ -141,33 +141,35 @@ export default function Staking() {
        <Link href="#"><a><img src="v4.png" className={styles.imgs}></img></a></Link>
        <br></br>
        <br></br>
-       <Link href="#"><a style={{color:"#878787", textDecoration:"none"}} >Contact</a></Link><br></br>
-       <Link href="#"><a style={{color:"#878787",textDecoration:"none"}}  >Privacy policy</a></Link><br></br>
-       <Link href="#"><a style={{color:"#878787",textDecoration:"none"}}  >Terms and Conditions</a></Link>
+       <Link href="#"><a style={{color:"#878787", textDecoration:"none", fontSize:"12px",fontWeight:"500px"}} >Contact</a></Link><br></br>
+       <Link href="#"><a style={{color:"#878787",textDecoration:"none",fontSize:"12px",fontWeight:"500px" }}>Privacy policy</a></Link><br></br>
+       <Link href="#"><a style={{color:"#878787",textDecoration:"none",fontSize:"12px",fontWeight:"500px"}}  >Terms & Conditions</a></Link>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="col-xl-7 col-md-12 col-12" style={{ backgroundImage: "linear-gradient(#31396E,#121216)" }}>
+          <div className={styles.cardColumn} style={{ backgroundImage: "linear-gradient(#31396E,#121216)" }}>
 
             <div className={styles.centerCol}>
               <h1 className={styles.heading}>$GEMS Staking</h1>
               <p className={styles.heading1}>Stake your $GEMS in GEMS ecosystem</p>
               <br></br>
               <br></br>
-              <h5 className={styles.heading1}>Dashboard</h5>
+              <h5 className={styles.heads}>Dashboard</h5>
               <div className='container' style={{ marginTop: "20px" }}>
-                <div className='row' style={{ backgroundColor: "#1d1d37", padding: "20px", borderRadius: "10px" }}>
-                  <div className='col-sm-4 col-4 col-lg-4' style={{ textAlign: "center" }}>
+                <div className='row' style={{ backgroundColor: "#1d1d37", padding: "20px", borderRadius: "10px",border: "1px solid #3C3F57" }}>
+                <div className='col-sm-1 col-1 col-lg-1'></div> 
+                  <div className='col-sm-4 col-4 col-lg-4' >
                     <p className={styles.para}>Total Value Locked:</p>
                     <h6 className={styles.head1}>20,834,315 $GEMS</h6>
                   </div>
-                  <div className='col-sm-4 col-4 col-lg-4' style={{ textAlign: "center" }}>
+                 
+                  <div className='col-sm-3 col-3 col-lg-3' style={{textAlign:"left"}} >
                     <p className={styles.para}>Available Balance:</p>
                     <h6 className={styles.head1}>-</h6>
                   </div>
-                  <div className='col-sm-4 col-4 col-lg-4' style={{ textAlign: "center" }}>
+                  <div className='col-sm-3 col-3 col-lg-3' >
                     <p className={styles.para}>Total Earnings:</p>
                     <h6 className={styles.head1}>-</h6>
                   </div>
@@ -180,11 +182,12 @@ export default function Staking() {
                   <h4 className={styles.pool}>Staking Pools</h4>
                   <br></br>
                   <div className={styles.myBox}>
-                    <Link href="#"><a><h4 className={styles.details} onClick={()=>alert("shdsakjdh")}>All Pools</h4></a></Link>
+                    <Link href="#"><a><h4 className={styles.details}>All Pools</h4></a></Link>
                 </div>
            
             <Link  href="#"><a><h4 className={styles.detail2} >Staking History</h4></a></Link>
                     <hr className={styles.hr1}></hr>
+                    <img src="lines.png" className={styles.lines}></img>
                     <Card1 />
                     <FAQ></FAQ>
                   </div>
@@ -193,15 +196,15 @@ export default function Staking() {
               </div>
 
             </div>
-            <div className="col-12 col-md-12 col-xl-3 order-md-last order-lg-last order-first " style={{ backgroundImage: "linear-gradient(#331939, #191729)" }}>
+            <div className={styles.walletColumns}style={{ backgroundImage: "linear-gradient(#331939, #191729)" }}>
               <div className={styles.column4} id="shows">
-                <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <div className=" text-white">
                   <div className="accordion" id="accordionExample" style={{ width: "fit-content" }} >
                     <div className="accordion-item" style={{ backgroundColor: "#25242d" }}>
                       <h2 className="accordion-header" id="headingOne">
                         <button
                           className="accordion-button"
-                          style={{ backgroundColor: "#25242d", color: "white" }}
+                          style={{ backgroundColor: "#25242d", color: "white" ,fontSize:"14px"}}
                           type="button"
                           disabled
                           data-bs-toggle="collapse"
@@ -223,8 +226,8 @@ export default function Staking() {
                           <span className={styles.username}>Username</span>
                           <span className={styles.username1}> 0x24485..3483</span>
                           <div className={styles.balance}>
-                            <h5 style={{ color: "#5a78d4" }}>Total Balance</h5>
-                            <h6>1,000,000,000USDT</h6>
+                            <h5 style={{ color: "#5a78d4",fontSize:"14px" }}>Total Balance</h5>
+                            <h6 style={{fontSize:"16px"}}>1,000,000,000USDT</h6>
                           </div>
                           <div style={{ marginTop: "20px" }}>
                             <span className={styles.bnb}>BNB</span>
@@ -233,7 +236,7 @@ export default function Staking() {
                             <span className={styles.bnb1}>Binance</span>
                             <span className={styles.bnbnum1}>8000USDT</span>
                           </div>
-                          <div style={{ marginTop: "20px", backgroundColor: "black", padding: "10px 3px 10px 3px", borderRadius: "10px" }}>
+                          <div style={{ marginTop: "20px", backgroundColor: "black", padding: "5px 10px 5px 10px", borderRadius: "10px",marginRight:"-10px",marginLeft:"-10px" }}>
                             <span className={styles.bnb}>GEMS</span>
                             <span className={styles.bnbnum}>3.5</span>
                             <br></br>
@@ -275,8 +278,8 @@ export default function Staking() {
                               <img src="img1.png"></img>
                             </div>
                             <div className='col-sm-6'>
-                              <h6>NFT Name</h6>
-                              <h6>#2451</h6>
+                              <h6 style={{fontSize:"14px"}}>NFT Name</h6>
+                              <h6  style={{fontSize:"12px"}}>#2451</h6>
                             </div>
                           </div>
                           <div className='row' style={{ marginTop: "10px", backgroundColor: "black", paddingTop: "10px", borderRadius: "10px" }}>
@@ -284,8 +287,8 @@ export default function Staking() {
                               <img src="img2.png"></img>
                             </div>
                             <div className='col-sm-6'>
-                              <h6>NFT Name</h6>
-                              <h6>#2451</h6>
+                              <h6 style={{fontSize:"14px"}}>NFT Name</h6>
+                              <h6 style={{fontSize:"12px"}}>#2451</h6>
                             </div>
                           </div>
                           <div className='row' style={{ marginTop: "15px" }}>
@@ -293,8 +296,8 @@ export default function Staking() {
                               <img src="img3.png"></img>
                             </div>
                             <div className='col-sm-6'>
-                              <h6>NFT Name</h6>
-                              <h6>#2451</h6>
+                              <h6 style={{fontSize:"14px"}}>NFT Name</h6>
+                              <h6 style={{fontSize:"12px"}}>#2451</h6>
                             </div>
                           </div>
                         </div>
@@ -327,8 +330,8 @@ export default function Staking() {
                               <img src="img1.png"></img>
                             </div>
                             <div className='col-sm-5'>
-                              <h6>NFT Name</h6>
-                              <h6>#2451</h6>
+                              <h6  style={{fontSize:"14px"}}>NFT Name</h6>
+                              <h6  style={{fontSize:"12px"}}>#2451</h6>
                             </div>
                             <div className='col-sm-4'>
                               <p style={{ fontSize: "12px" }}>Remain Time:8:36h</p>
@@ -339,8 +342,8 @@ export default function Staking() {
                               <img src="img2.png"></img>
                             </div>
                             <div className='col-sm-5'>
-                              <h6>NFT Name</h6>
-                              <h6>#2451</h6>
+                              <h6  style={{fontSize:"14px"}}>NFT Name</h6>
+                              <h6  style={{fontSize:"12px"}}>#2451</h6>
                             </div>
                             <div className='col-sm-4'>
                               <p style={{ fontSize: "12px" }}>Remain Time:8:36h</p>
@@ -351,8 +354,8 @@ export default function Staking() {
                               <img src="img3.png"></img>
                             </div>
                             <div className='col-sm-5'>
-                              <h6>NFT Name</h6>
-                              <h6>#2451</h6>
+                              <h6 style={{fontSize:"14px"}}>NFT Name</h6>
+                              <h6 style={{fontSize:"12px"}}>#2451</h6>
                             </div>
                             <div className='col-sm-4'>
                               <p style={{ fontSize: "12px" }}>Remain Time:8:36h</p>
@@ -363,10 +366,10 @@ export default function Staking() {
                     </div>
                   </div>
                   <div className='container'>
-                    <div className='row' style={{ marginTop: "100px", paddingBottom: "20px" }}>
+                    <div className='row' style={{ marginTop: "700px", paddingBottom: "20px" }}>
                       <div className='col-lg-6 col-6' style={{ textAlign: "right" }}>
-                        <p style={{ color: "#878787", fontWeight: "bold" }}>
-                          Wallet<br></br> powered by
+                        <p style={{ color: "#878787" ,fontSize:"12px"}}>
+                          Wallet powered by
                         </p>
                       </div>
                       <div className='col-lg-6 col-6'>

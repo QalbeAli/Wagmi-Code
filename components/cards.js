@@ -7,7 +7,7 @@ const Card1 = () => {
                 <div className='row'>
                     <div className='col-sm-6 col col-lg-6'>
                         <div className={cardstyles.col1}>
-                        <div className="card" style={{ width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
+                        <div className={cardstyles.stakingcards}>
                             <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
                             <h5 className={cardstyles.head5}>Bronze Tier</h5>
                             <div className="card-body">
@@ -17,7 +17,7 @@ const Card1 = () => {
                                         <h6 style={{ color: "white" }}>3 Months</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "10px" }}> Lock-Up Period</p>
+                                        <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
                                         <h6 style={{ color: "white" }}>2 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
@@ -66,7 +66,7 @@ const Card1 = () => {
                     </div>
                     <div className='col-sm-6 col col-lg-6'>
                         <div className={cardstyles.col2}>
-                    <div className="card" style={{ width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
+                    <div className={cardstyles.stakingcards}>
                             <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
                             <h5 className={cardstyles.head5}>Silver Tier</h5>
                             <div className="card-body">
@@ -76,7 +76,7 @@ const Card1 = () => {
                                         <h6 style={{ color: "white" }}>6 Months</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "10px" }}> Lock-Up Period</p>
+                                        <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
                                         <h6 style={{ color: "white" }}>4 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
@@ -126,7 +126,7 @@ const Card1 = () => {
                 <div className='row' style={{marginTop:"20px"}}>
                     <div className='col-sm-6 col col-lg-6'>
                     <div className={cardstyles.col3}>
-                        <div className="card" style={{ width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
+                        <div className={cardstyles.stakingcards}>
                             <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
                             <h5 className={cardstyles.head5}>Gold Tier</h5>
                             <div className="card-body">
@@ -136,7 +136,7 @@ const Card1 = () => {
                                         <h6 style={{ color: "white" }}>9 Months</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "10px" }}> Lock-Up Period</p>
+                                        <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
                                         <h6 style={{ color: "white" }}>6 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
@@ -183,7 +183,7 @@ const Card1 = () => {
                     </div>
                     <div className='col-sm-6 col col-lg-6'>
                         <div className={cardstyles.col4}>
-                    <div className="card" style={{boxShadow:"0px 0px 9px 3px #6A8EFFCC;", width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
+                    <div className={cardstyles.stakingcards}>
                             <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
                             <h5 className={cardstyles.head5}>Platinum Tier</h5>
                             <div className="card-body">
@@ -193,7 +193,7 @@ const Card1 = () => {
                                         <h6 style={{ color: "white" }}>12 Month</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "10px" }}> Lock-Up Period</p>
+                                        <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
                                         <h6 style={{ color: "white" }}>8 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>

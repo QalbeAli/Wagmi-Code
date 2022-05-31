@@ -1,13 +1,17 @@
 .btn1{
   background-color: transparent;
   color: white;
-  border: 1px solid #9747ff;
-  border-radius: 50px;
+  border: 1px solid #885BFF;
+  font-size: 14px;
+  border-radius: 60px;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 3px;
+}
+.navColumn{
+  width:13%;
 }
 .form-control{
   background-color: #202544;
@@ -15,6 +19,7 @@
 }
 .network{
   background-color: #202544;
+  font-size: 14px;
   border: none;
   color: white;
   border-radius: 30px;
@@ -25,6 +30,7 @@
 }
 .pool{
   color: white;
+  font-size: 24px;
 }
 .address{
   background-color: #202544;
@@ -42,8 +48,9 @@
   background-color: #3c3f57;
   border: none;
   color: white;
-  border-radius: 30px;
-  padding:2px 15px 3px 7px;
+  border-radius: 40px;
+  padding:1px 13px 3px 11px;
+  font-size: 14px;
 }
 .img1{
   margin-left: 20px;
@@ -52,7 +59,7 @@
   background-color: #6a8eff;
   padding: 8px;
   border-radius: 100px;
-  margin-left: 20px;
+  margin-left: 10px;
 
 }
 .imgss{
@@ -61,34 +68,36 @@
   border-radius: 100px;
 }
 .username{
-  font-size: 20px;
+  font-size: 16px;
 }
 .username1{
   font-size: 12px;
-  margin-left: 50px;
+  float: right;
+  margin-top: 5px;
 }
 .balance{
   background-color: black;
   border-radius: 10px;
   text-align: center;
   margin-top: 20px;
-  padding: 7px 5px 7px 5px;
+  padding: 5px 20px 5px 20px;
+ 
 }
 .bnb{
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
 }
 .bnbnum{
-  font-size: 14px;
+  font-size: 12px;
   float: right;
   font-weight: bold;
 }
 .bnb1{
-  font-size: 15px;
+  font-size: 14px;
  
 }
 .bnbnum1{
-  font-size: 14px;
+  font-size: 12px;
   float: right;
   
 }
@@ -103,39 +112,57 @@ box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
  border: 2px solid #6a8eff;
  color: white;
  font-weight: bold;
+ font-size: 14px;
 
 }
 .heading{
   color: white;
   margin-top:20px ;
   margin-left: 20px;
+  font-size: 36px;
 }
 .heading1{
   color: white;
   margin-top:20px ;
   margin-left: 20px;
+  font-size: 16px;
+}
+.heads{
+  color: white;
+  margin-top:20px ;
+  margin-left: 20px;
+  font-size: 24px;
 }
 .para{
-color: #878787;
+color: #777777;
+font-size: 14px;
 }
 .head1{
   color: white;
+  font-size: 18px;
 }
 .details{
  
-    font-size: 12px;
+    font-size: 14px;
   color: white;
     display: inline-block;
+    padding-top: -20px;
     
    
 
 }
 .myBox{
-    border-bottom: 2px solid transparent;
+    /* border-bottom: 4px solid transparent;
     border-image: linear-gradient(0.25turn,#815ef8, #815ef8);
-    border-image-slice: 1;
+    border-image-slice: 1; */
+    width: 80px;
   display: inline-block;
   padding-bottom: 20px;
+  margin-top: -20px;
+}
+.lines{
+  margin-top: -63px;
+  margin-left: -16px;
 }
 .detail{
     padding-top: 20px;
@@ -144,13 +171,15 @@ color: #878787;
 }
 .detail2{
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
     color: white;
     margin-left: 40px;
+    padding: -20px;
 }
 .hr1{
-    background-color: lightgray;
-    margin-top: 0px;
+    background-color: #818494;
+    margin-top: -20px;
+    height: 1px;
 }
 .con{
   background-color: #08081d;
@@ -230,7 +259,7 @@ color: #878787;
   .level1{
     padding-right: 5px;
   }
- 
+  
   
 }
 @media only screen and (min-width: 300px) and (max-width:1200px){
@@ -250,4 +279,44 @@ color: #878787;
   padding-bottom: 20px;
   margin-left: 40px;
 }
+}
+@media only screen and (min-width:1600px) and (max-width:2500px){
+  .navColumn{
+    width: 9%;
+  }
+  .cardColumn{
+    width: 75% !important;
+  }
+  .walletColumns{
+    width: 16% !important;
+  }
+  .username1{
+    float: right;
+    margin-top: 5px;
+  }
+  .balance{
+    padding: 7px 5px 7px 5px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width:1200px)
+{
+  .navColumn{
+    width: 100%;
+  }
+ .cardColumn{
+   width: 100%;
+ }
+ .walletColumns{
+  width: 100%;
+}
+
+}
+@media only screen  and (min-width:1200px){
+  .cardColumn{
+    width: 70%;
+  }
+  .walletColumns{
+    width:17% ;
+  }
+
 }

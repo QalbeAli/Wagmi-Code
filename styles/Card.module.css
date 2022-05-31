@@ -1,22 +1,32 @@
 .img33{
-    background-color: #2821a1;
+  
+width:100%;
+    background-color: #2820a2;
 }
 .head5{
     color: white;
-    position: absolute;
-    top:40px;
-    left:30px;
+  position: absolute;
+  top:45px;
+  left:30px
 
+}
+.stakingcards{
+    background-color: #212228 ;
+    width: "10rem";
+     padding: "0px";
+     position:relative;
 }
 .progress{
 background-color: #815efa;
 }
 .btn4{
-    background-color: #815efa;
+    background: linear-gradient(270deg, #885BFF 0.19%, #5977D6 100%);
+
     color: white;
     border-radius: 100px;
     border: none;
-    padding: 5px 40px 5px 40px;
+    padding: 5px 80px 5px 80px;
+    text-align: center;
 }
 @media only screen and (max-width: 800px){
     .col2{
@@ -44,4 +54,22 @@ background-color: #815efa;
     .col4{
         margin-left: -30px;
     }
+}
+@media only screen and (min-width:1600px) and (max-width:2500px){
+    .head5{
+
+        position: absolute;
+        top: 80px;
+    }
+    .btn4{
+        padding: 5px 180px 5px 180px;
+    }
+    .stakingcards{
+padding-bottom: 40px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width:1200px){
+    .btn4{
+        padding: 5px 70px 5px 60px;
+    } 
 }
