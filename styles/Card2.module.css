@@ -2,11 +2,16 @@
     mix-blend-mode: luminosity;
     opacity: 0.78;
     width: 100%;
+    border-top-left-radius: 10px;
+border-top-right-radius: 10px;
     
     }
     .blend{
         background-color: #2621a0;
+        border-top-left-radius: 10px;
+border-top-right-radius: 10px;
     }
+
 .head5{
     color: white;
     position: absolute;
@@ -19,6 +24,7 @@
     width: "10rem";
      padding: "0px";
      position:relative;
+     border-radius: 10px;
 }
 .progress{
 background-color: #815efa;
@@ -57,7 +63,7 @@ background-color: #815efa;
     font-weight: bold;
 }
 .paraaa{
-    color: #b0403a;
+    color: #E04A40;
     font-size: 9px;
     text-align: center;
     padding-top: 2px;

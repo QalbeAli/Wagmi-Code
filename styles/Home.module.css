@@ -62,6 +62,7 @@
   margin-left: 10px;
 
 }
+
 .imgss{
   background-color: #6a8eff;
   padding: 8px;
@@ -109,7 +110,7 @@ box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
  background-color: transparent;
  padding: 5px 50px 5px 50px;
  border-radius: 100px;
- border: 2px solid #6a8eff;
+ border: 2px solid #6A8BFD;
  color: white;
  font-weight: bold;
  font-size: 14px;
@@ -201,9 +202,10 @@ font-size: 14px;
     display: none;
   }
   .addMar{
-    margin-top: 300px;
     padding-bottom: 20px;
   }
+
+  
 @media only screen and (max-width: 800px){
   .logoimg{
   text-align: center;
@@ -309,14 +311,17 @@ font-size: 14px;
  .walletColumns{
   width: 100%;
 }
+.accordian{
+  margin-left: 85px;
+}
 
 }
 @media only screen  and (min-width:1200px){
   .cardColumn{
-    width: 70%;
+    width: 68%;
   }
   .walletColumns{
-    width:17% ;
+    width:19% ;
   }
 
 }

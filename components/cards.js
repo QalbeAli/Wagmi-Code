@@ -16,15 +16,15 @@ const Card1 = () => {
                                 <div className='row' style={{ marginLeft: "2px" }}>
                                     <div className='col-lg-4 col-sm 4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
-                                        <h6 style={{ color: "white" }}>3 Months</h6>
+                                        <h6 style={{ color: "white",fontSize:"17px" }}>3 Months</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
-                                        <h6 style={{ color: "white" }}>2 Weeks</h6>
+                                        <h6 style={{ color: "white",fontSize:"17px"  }}>2 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
-                                        <h6 style={{ color: "white" }}>12%</h6>
+                                        <h6 style={{ color: "white",fontSize:"17px"  }}>12%</h6>
                                     </div>
                                 </div>
                                 <div style={{ marginTop: "20px", marginLeft: "14px"}}>
@@ -42,7 +42,7 @@ const Card1 = () => {
                                         </div>
                                     </div>
        
-                                    <p style={{color:"white",fontSize:"12px"}}>42,293,740 $GEMS <span style={{color:"#878787",fontSize:"12px"}}>of 1,666,666,667 $GEMS</span></p>
+                                    <p style={{color:"white",fontSize:"13px"}}>42,293,740 $GEMS <span style={{color:"#878787",fontSize:"12px"}}>of 1,666,666,667 $GEMS</span></p>
                                     <div>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Stake Date</p>
                                         <h5 style={{color:"white"}}>-</h5>
@@ -77,15 +77,15 @@ const Card1 = () => {
                                 <div className='row' style={{ marginLeft: "2px" }}>
                                     <div className='col-lg-4 col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
-                                        <h6 style={{ color: "white" }}>6 Months</h6>
+                                        <h6 style={{ color: "white" , fontSize: "17px"}}>6 Months</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
-                                        <h6 style={{ color: "white" }}>4 Weeks</h6>
+                                        <h6 style={{ color: "white", fontSize: "17px" }}>4 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
-                                        <h6 style={{ color: "white" }}>15%</h6>
+                                        <h6 style={{ color: "white" , fontSize: "17px"}}>15%</h6>
                                     </div>
                                 </div>
                                 <div style={{ marginTop: "20px", marginLeft: "14px"}}>
@@ -103,7 +103,7 @@ const Card1 = () => {
                                         </div>
                                     </div>
        
-                                    <p style={{color:"white",fontSize:"12px"}}>42,293,740 $GEMS <span style={{color:"#878787",fontSize:"12px"}}>of 1,666,666,667 $GEMS</span></p>
+                                    <p style={{color:"white",fontSize:"13px"}}>42,293,740 $GEMS <span style={{color:"#878787",fontSize:"12px"}}>of 1,666,666,667 $GEMS</span></p>
                                     <div>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Stake Date</p>
                                         <h5 style={{color:"white"}}>-</h5>
@@ -139,15 +139,15 @@ const Card1 = () => {
                                 <div className='row' style={{ marginLeft: "2px" }}>
                                     <div className='col-lg-4 col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
-                                        <h6 style={{ color: "white" }}>9 Months</h6>
+                                        <h6 style={{ color: "white" , fontSize: "17px"}}>9 Months</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
-                                        <h6 style={{ color: "white" }}>6 Weeks</h6>
+                                        <h6 style={{ color: "white" , fontSize: "17px"}}>6 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
-                                        <h6 style={{ color: "white" }}>18%</h6>
+                                        <h6 style={{ color: "white", fontSize: "17px" }}>18%</h6>
                                     </div>
                                 </div>
                                 <div style={{ marginTop: "20px", marginLeft: "14px"}}>
@@ -165,7 +165,7 @@ const Card1 = () => {
                                         </div>
                                     </div>
        
-                                    <p style={{color:"white",fontSize:"12px"}}>42,293,740 $GEMS <span style={{color:"#878787",fontSize:"12px"}}>of 1,666,666,667 $GEMS</span></p>
+                                    <p style={{color:"white",fontSize:"13px"}}>42,293,740 $GEMS <span style={{color:"#878787",fontSize:"12px"}}>of 1,666,666,667 $GEMS</span></p>
                                     <div>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Stake Date</p>
                                         <h5 style={{color:"white"}}>-</h5>
@@ -189,7 +189,8 @@ const Card1 = () => {
                     </div>
                     <div className='col-sm-6 col col-lg-6'>
                         <div className={cardstyles.col4}>
-                    <div className={cardstyles.stakingcards}>
+                    <div className={cardstyles.stakingcards} style={{boxShadow: "0px 0px 9px 3px #6A8EFFCC"
+}}>
                     <div className={cardstyles.blend}>
                             <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
                             </div>
@@ -198,15 +199,15 @@ const Card1 = () => {
                                 <div className='row' style={{ marginLeft: "2px" }}>
                                     <div className='col-lg-4  col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
-                                        <h6 style={{ color: "white" }}>12 Month</h6>
+                                        <h6 style={{ color: "white" , fontSize: "17px"}}>12 Month</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
-                                        <h6 style={{ color: "white" }}>8 Weeks</h6>
+                                        <h6 style={{ color: "white", fontSize: "17px" }}>8 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
-                                        <h6 style={{ color: "white" }}>21%</h6>
+                                        <h6 style={{ color: "white", fontSize: "17px" }}>21%</h6>
                                     </div>
                                 </div>
                                 <div style={{ marginTop: "20px", marginLeft: "14px"}}>
@@ -224,7 +225,7 @@ const Card1 = () => {
                                         </div>
                                     </div>
        
-                                    <p style={{color:"white",fontSize:"12px"}}>42,293,740 $GEMS <span style={{color:"#878787",fontSize:"12px"}}>of 1,666,666,667 $GEMS</span></p>
+                                    <p style={{color:"white",fontSize:"13px"}}>42,293,740 $GEMS <span style={{color:"#878787",fontSize:"12px"}}>of 1,666,666,667 $GEMS</span></p>
                                     <div>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Stake Date</p>
                                         <h5 style={{color:"white"}}>-</h5>

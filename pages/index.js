@@ -53,7 +53,7 @@ export default function Staking() {
       </Head>
       <div className={styles.con}>
         <div className="row">
-          <div className='col-lg-2 col-sm-6 col-6'>
+          <div className='col-lg-2 col-sm-6 col-6' >
 
             <img src="logo.png"></img>
 
@@ -77,7 +77,7 @@ export default function Staking() {
 
             <div className={styles.div3}>
               <span className={styles.network}>
-                <img src="v1.png"></img>
+                <img src="bar.png"></img>
                 &nbsp;&nbsp;BSC</span>
               <span className={styles.address}>
                 <span className={styles.level1}>Level 1</span>
@@ -95,10 +95,11 @@ export default function Staking() {
         </div>
       </div>
       <div className="container-fluid" >
-        <div className="row ">
-          <div className={styles.navColumn} style={{ backgroundImage: "linear-gradient(#331939, #191729)"}}>
+        <div className="row " >
+          
+          <div className={styles.navColumn} style={{ backgroundImage: "linear-gradient(#331939, #191729)",}}>
             <div className={styles.column33} id="show">
-              <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+              <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-70 ">
                 <ul
                   className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
                   id="menu"
@@ -148,6 +149,7 @@ export default function Staking() {
               </div>
             </div>
           </div>
+        
 
           <div className={styles.cardColumn} style={{ backgroundImage: "linear-gradient(#31396E,#121216)" }}>
 
@@ -189,6 +191,8 @@ export default function Staking() {
                     <hr className={styles.hr1}></hr>
                     <img src="lines.png" className={styles.lines}></img>
                     <Card1 />
+                    <br></br>
+                    <br></br>
                     <FAQ></FAQ>
                   </div>
 
@@ -199,7 +203,7 @@ export default function Staking() {
             <div className={styles.walletColumns}style={{ backgroundImage: "linear-gradient(#331939, #191729)" }}>
               <div className={styles.column4} id="shows">
                 <div className=" text-white">
-                  <div className="accordion" id="accordionExample" style={{ width: "fit-content",marginTop:"10px" }} >
+                  <div id="accordionExample" style={{ width: "fit-content",marginTop:"10px" }} className={styles.accordian} >
                     <div className="accordion-item" style={{ backgroundColor: "#25242d" }}>
                       <h2 className="accordion-header" id="headingOne">
                         <button
@@ -329,36 +333,36 @@ export default function Staking() {
                             <div className='col-sm-3 col-lg-3 col-3'>
                               <img src="img1.png"></img>
                             </div>
-                            <div className='col-sm-5 col-lg-5 col-5'>
-                              <h6  style={{fontSize:"12px"}}>NFT Name</h6>
+                            <div className='col-sm-6 col-lg-6 col-6'>
+                              <h6  style={{fontSize:"14px"}}>NFT Name</h6>
                               <h6  style={{fontSize:"12px"}}>#2451</h6>
                             </div>
-                            <div className='col-sm-4 col-lg-4 col-4'>
-                              <p style={{ fontSize: "12px" }}>Remain Time:8:36h</p>
+                            <div className='col-sm-3 col-lg-3 col-3'>
+                              <p style={{ fontSize: "12px",marginLeft:"-25px" }}>Remain Time:8:36h</p>
                             </div>
                           </div>
                           <div className='row' style={{ marginTop: "10px", backgroundColor: "black", paddingTop: "10px", borderRadius: "10px" }}>
                             <div className='col-sm-3 col-lg-3 col-3'>
                               <img src="img2.png"></img>
                             </div>
-                            <div className='col-sm-5 col-lg-5 col-5'>
-                              <h6  style={{fontSize:"12px"}}>NFT Name</h6>
+                            <div className='col-sm-6 col-lg-6 col-6'>
+                              <h6  style={{fontSize:"14px"}}>NFT Name</h6>
                               <h6  style={{fontSize:"12px"}}>#2451</h6>
                             </div>
-                            <div className='col-sm-4 col-lg-4 col-4'>
-                              <p style={{ fontSize: "12px" }}>Remain Time:8:36h</p>
+                            <div className='col-sm-3 col-lg-3 col-3'>
+                              <p style={{ fontSize: "12px",marginLeft:"-25px" }}>Remain Time:8:36h</p>
                             </div>
                           </div>
                           <div className='row' style={{ marginTop: "15px" }}>
                             <div className='col-sm-3 col-lg-3 col-3'>
                               <img src="img3.png"></img>
                             </div>
-                            <div className='col-sm-5 col-lg-5 col-5'>
-                              <h6 style={{fontSize:"12px"}}>NFT Name</h6>
+                            <div className='col-sm-6 col-lg-6 col-6'>
+                              <h6 style={{fontSize:"14px"}}>NFT Name</h6>
                               <h6 style={{fontSize:"12px"}}>#2451</h6>
                             </div>
-                            <div className='col-sm-4 col-lg-4 col-4'>
-                              <p style={{ fontSize: "12px" }}>Remain Time:8:36h</p>
+                            <div className='col-sm-3 col-lg-3 col-3'>
+                              <p style={{ fontSize: "12px" ,marginLeft:"-25px"}}>Remain Time:8:36h</p>
                             </div>
                           </div>
                         </div>
@@ -366,13 +370,13 @@ export default function Staking() {
                     </div>
                   </div>
                   <div className='container'>
-                    <div className='row' style={{ marginTop: "700px", paddingBottom: "20px" }}>
-                      <div className='col-lg-6 col-6' style={{ textAlign: "right" }}>
+                    <div className='row' style={{ marginTop: "100px", paddingBottom: "20px" }}>
+                      <div className='col-lg-7 col-7' style={{ textAlign: "right" }}>
                         <p style={{ color: "#878787" ,fontSize:"12px"}}>
                           Wallet powered by
                         </p>
                       </div>
-                      <div className='col-lg-6 col-6'>
+                      <div className='col-lg-5 col-5'>
                         <img src="logos.png"></img>
                       </div>
                     </div>

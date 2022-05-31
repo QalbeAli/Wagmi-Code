@@ -6,18 +6,19 @@ const FAQ=()=>{
        <h2 className={faqstyles.f}>FAQ</h2>
        <br></br>
    <div className="accordion accordion-flush" id="accordionFlushExample" >
-  <div className="accordion-item" style={{backgroundColor:"#1d1d37"}}>
+  <div className="accordion-item" style={{backgroundColor:"#1d1d37",paddingTop:"10px",paddingBottom:"10px",borderRadius:"10px"}}>
     <h2 className="accordion-header" id="flush-headingOne" style={{backgroundColor:"#1d1d37"}}>  
       <button
-        className="accordion-button collapsed"
+        className={faqstyles.accordBtn}
         type="button"
-        style={{backgroundColor:"#1d1d37",color:"white"}}
+        style={{backgroundColor:"#1d1d37",color:"white",fontSize:"16px"}}
         data-bs-toggle="collapse"
         data-bs-target="#flush-collapseOne"
         aria-expanded="false"
         aria-controls="flush-collapseOne"
       >
        How to stake $GEMS?
+   
       </button>
     </h2>
     <div
@@ -35,12 +36,12 @@ numquam
     </div>
   </div>
   <br></br>
-  <div className="accordion-item" style={{backgroundColor:"#1d1d37"}}>
+  <div className="accordion-item" style={{backgroundColor:"#1d1d37" ,paddingTop:"10px",paddingBottom:"10px",borderRadius:"10px"}}>
     <h2 className="accordion-header" id="flush-headingTwo">
       <button
-        className="accordion-button collapsed"
+    className={faqstyles.accordBtn}
         type="button"
-        style={{backgroundColor:"#1d1d37",color:"white"}}
+        style={{backgroundColor:"#1d1d37",color:"white",fontSize:"16px"}}
         data-bs-toggle="collapse"
         data-bs-target="#flush-collapseTwo"
         aria-expanded="false"
@@ -63,16 +64,17 @@ numquam
     </div>
   </div>
   <br></br>
-  <div className="accordion-item" style={{backgroundColor:"#1d1d37"}}>
+  <div className="accordion-item" style={{backgroundColor:"#1d1d37",paddingTop:"10px",paddingBottom:"10px",borderRadius:"10px"}}>
     <h2 className="accordion-header" id="flush-headingThree">
       <button
-        className="accordion-button collapsed"
+className={faqstyles.accordBtn}
         type="button"
         data-bs-toggle="collapse"
-        style={{backgroundColor:"#1d1d37",color:"white"}}
+        style={{backgroundColor:"#1d1d37",color:"white",fontSize:"16px"}}
         data-bs-target="#flush-collapseThree"
         aria-expanded="false"
         aria-controls="flush-collapseThree"
+       
       >
  How to stake $GEMS?
       </button>

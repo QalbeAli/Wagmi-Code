@@ -205,7 +205,7 @@ font-size: 14px;
     display: none;
   }
   .addMar{
-    margin-top: 300px;
+   
     padding-bottom: 20px;
   }
 @media only screen and (max-width: 800px){
@@ -317,10 +317,10 @@ font-size: 14px;
 }
 @media only screen  and (min-width:1200px){
   .cardColumn{
-    width: 70%;
+    width: 68%;
   }
   .walletColumns{
-    width:17% ;
+    width:19% ;
   }
 
 }
