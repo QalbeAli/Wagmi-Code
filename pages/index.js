@@ -159,17 +159,17 @@ export default function Staking() {
               <h5 className={styles.heads}>Dashboard</h5>
               <div className='container' style={{ marginTop: "20px" }}>
                 <div className='row' style={{ backgroundColor: "#1d1d37", padding: "20px", borderRadius: "10px",border: "1px solid #3C3F57" }}>
-                <div className='col-sm-1 col-1 col-lg-1'></div> 
+               
                   <div className='col-sm-4 col-4 col-lg-4' >
                     <p className={styles.para}>Total Value Locked:</p>
                     <h6 className={styles.head1}>20,834,315 $GEMS</h6>
                   </div>
                  
-                  <div className='col-sm-3 col-3 col-lg-3' style={{textAlign:"left"}} >
+                  <div className='col-sm-4 col-4 col-lg-4'  >
                     <p className={styles.para}>Available Balance:</p>
                     <h6 className={styles.head1}>-</h6>
                   </div>
-                  <div className='col-sm-3 col-3 col-lg-3' >
+                  <div className='col-sm-4 col-4 col-lg-4' >
                     <p className={styles.para}>Total Earnings:</p>
                     <h6 className={styles.head1}>-</h6>
                   </div>
@@ -199,7 +199,7 @@ export default function Staking() {
             <div className={styles.walletColumns}style={{ backgroundImage: "linear-gradient(#331939, #191729)" }}>
               <div className={styles.column4} id="shows">
                 <div className=" text-white">
-                  <div className="accordion" id="accordionExample" style={{ width: "fit-content" }} >
+                  <div className="accordion" id="accordionExample" style={{ width: "fit-content",marginTop:"10px" }} >
                     <div className="accordion-item" style={{ backgroundColor: "#25242d" }}>
                       <h2 className="accordion-header" id="headingOne">
                         <button
@@ -222,7 +222,7 @@ export default function Staking() {
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample"
                       >
-                        <div className="accordion-body" style={{ color: "white" }}>
+                        <div className="accordion-body" style={{ color: "white"}}>
                           <span className={styles.username}>Username</span>
                           <span className={styles.username1}> 0x24485..3483</span>
                           <div className={styles.balance}>

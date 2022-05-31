@@ -8,7 +8,9 @@ const Card1 = () => {
                     <div className='col-sm-6 col col-lg-6'>
                         <div className={cardstyles.col1}>
                         <div className={cardstyles.stakingcards}>
+                            <div className={cardstyles.blend}>
                             <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
+                            </div>
                             <h5 className={cardstyles.head5}>Bronze Tier</h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
@@ -67,7 +69,9 @@ const Card1 = () => {
                     <div className='col-sm-6 col col-lg-6'>
                         <div className={cardstyles.col2}>
                     <div className={cardstyles.stakingcards}>
+                    <div className={cardstyles.blend}>
                             <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
+                            </div>
                             <h5 className={cardstyles.head5}>Silver Tier</h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
@@ -127,7 +131,9 @@ const Card1 = () => {
                     <div className='col-sm-6 col col-lg-6'>
                     <div className={cardstyles.col3}>
                         <div className={cardstyles.stakingcards}>
+                        <div className={cardstyles.blend}>
                             <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
+                            </div>
                             <h5 className={cardstyles.head5}>Gold Tier</h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
@@ -184,7 +190,9 @@ const Card1 = () => {
                     <div className='col-sm-6 col col-lg-6'>
                         <div className={cardstyles.col4}>
                     <div className={cardstyles.stakingcards}>
+                    <div className={cardstyles.blend}>
                             <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
+                            </div>
                             <h5 className={cardstyles.head5}>Platinum Tier</h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>

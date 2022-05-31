@@ -1,7 +1,11 @@
 .img33{
-  
-width:100%;
-    background-color: #2820a2;
+mix-blend-mode: luminosity;
+opacity: 0.78;
+width: 100%;
+
+}
+.blend{
+    background-color: #2621a0;
 }
 .head5{
     color: white;

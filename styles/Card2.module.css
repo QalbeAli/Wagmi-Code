@@ -1,40 +1,54 @@
 .img33{
-    background-color: #2821a1;
-}
+    mix-blend-mode: luminosity;
+    opacity: 0.78;
+    width: 100%;
+    
+    }
+    .blend{
+        background-color: #2621a0;
+    }
 .head5{
     color: white;
     position: absolute;
-    top:40px;
+    top:45px;
     left:30px;
 
+}
+.stakingcards{
+    background-color: #212228 ;
+    width: "10rem";
+     padding: "0px";
+     position:relative;
 }
 .progress{
 background-color: #815efa;
 }
 
 .btn10{
-    background-color: #815efa;
+    background: linear-gradient(270deg, #885BFF 0.19%, #5977D6 100%);
+
     color: white;
     border-radius: 100px;
     border: none;
-    width:240px;
-    padding: 5px;
+    width: 100%;
+    padding: 5px 80px 5px 80px;
+    text-align: center;
 }
 .btn11{
     background-color: transparent;
     color: gray;
     border-radius: 100px;
     border: 1px solid gray;
-    width:240px;
-    padding: 5px; 
+    width: 100%;
+    padding: 5px 80px 5px 80px;
 }
 .btn12{
     background-color: transparent;
     color: white;
     border-radius: 100px;
     border: 1px solid  #815efa;
-    width:240px;
-    padding: 5px; 
+    width: 100%;
+    padding: 5px 80px 5px 80px;
 }
 .paraa{
     color: white;
@@ -77,8 +91,9 @@ background-color: #815efa;
     color: white;
     border-radius: 100px;
     border: none;
-    width:240px;
-    padding: 5px;
+    width: 100%;
+    padding: 5px 80px 5px 80px;
+   
 }
 @media only screen and (max-width: 800px){
     .col2{
@@ -107,3 +122,22 @@ background-color: #815efa;
         margin-left: -30px;
     }
 }
+@media only screen and (min-width:1600px) and (max-width:2500px){
+    .head5{
+
+        position: absolute;
+        top: 80px;
+    }
+    .btn10{
+        padding: 5px 180px 5px 180px;
+    }
+    .stakingcards{
+padding-bottom: 40px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width:1200px){
+    .btn10{
+        padding: 5px 70px 5px 60px;
+    } 
+}
+

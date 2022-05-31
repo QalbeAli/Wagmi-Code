@@ -10,9 +10,10 @@ let[toggle,setToggle]=useState("#exampleModalCenter")
             <div className='container-fluid' >
                 <div className='row'>
                     <div className='col-sm-6 col col-lg-6'>
-                        <div className={card2styles.col1}>
-                        <div className="card" style={{ width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
+                        <div className={card2styles.stakingcards}>
+                       <div className={card2styles.blend}>
                             <img className={card2styles.img33} src="banner1.png" alt="Card image cap" />
+                            </div>
                             <h5 className={card2styles.head5}>Bronze Tier</h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
@@ -21,7 +22,7 @@ let[toggle,setToggle]=useState("#exampleModalCenter")
                                         <h6 style={{ color: "white" }}>3 Months</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "10px" }}> Lock-Up Period</p>
+                                        <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
                                         <h6 style={{ color: "white" }}>2 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
@@ -53,11 +54,11 @@ let[toggle,setToggle]=useState("#exampleModalCenter")
                                     <div className='row'>
                                         <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Balance</p>
-                                        <h5 style={{color:"white",fontSize:"16px"}}>0.00 $GEMS</h5>
+                                        <h5 style={{color:"white",fontSize:"18px"}}>0.00 $GEMS</h5>
                                         </div>
                                         <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Rewards</p>
-                                        <h5 style={{color:"#815efa",fontSize:"16px"}}>0.00 $GEMS</h5>
+                                        <h5 style={{color:"#815efa",fontSize:"18px"}}>0.00 $GEMS</h5>
                                         </div>
                                     </div>
                                     <br></br>
@@ -72,22 +73,24 @@ let[toggle,setToggle]=useState("#exampleModalCenter")
     
                                 </div>
                             </div>
-                        </div>
+                        
                         </div>
                     </div>
                     <div className='col-sm-6 col col-lg-6'>
                         <div className={card2styles.col2}>
-                    <div className="card" style={{ width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
+                    <div className={card2styles.stakingcards}>
+                        <div className={card2styles.blend}>
                             <img className={card2styles.img33} src="banner1.png" alt="Card image cap" />
+                        </div>
                             <h5 className={card2styles.head5}>Silver Tier<span className={card2styles.h5Locked}>Locked-up</span></h5>
-                            <div className="card-body">
+                            <div className="card-body" style={{paddingBottom:"37px"}}>
                                 <div className='row' style={{ marginLeft: "2px" }}>
                                     <div className='col-lg-4 col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
                                         <h6 style={{ color: "white" }}>6 Months</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "10px" }}> Lock-Up Period</p>
+                                        <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
                                         <h6 style={{ color: "white" }}>4 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
@@ -131,13 +134,14 @@ let[toggle,setToggle]=useState("#exampleModalCenter")
                                     <div className='row'>
                                         <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Balance</p>
-                                        <h5 style={{color:"white",fontSize:"16px"}}>3,000 $GEMS</h5>
+                                        <h5 style={{color:"white",fontSize:"18px"}}>3,000 $GEMS</h5>
                                         </div>
                                         <div className='col-sm-6 col-6'>
                                         <p style={{color:"#878787",fontSize:"12px"}}>Rewards</p>
-                                        <h5 style={{color:"#815efa",fontSize:"16px"}}>450 $GEMS</h5>
+                                        <h5 style={{color:"#815efa",fontSize:"18px"}}>450 $GEMS</h5>
                                         </div>
                                     </div>
+                                    <br></br>
                                     <br></br>
                                     <button className={card2styles.btn11}>Locked-Up</button>
                                 </div>
@@ -150,8 +154,10 @@ let[toggle,setToggle]=useState("#exampleModalCenter")
                 <div className='row' style={{marginTop:"20px"}}>
                     <div className='col-sm-6 col col-lg-6'>
                     <div className={card2styles.col3}>
-                        <div className="card" style={{ width: "19rem", padding: "0px", backgroundColor: "#212228" }}>
+                        <div className={card2styles.stakingcards}>
+                            <div className={card2styles.blend}>
                             <img className={card2styles.img33} src="banner1.png" alt="Card image cap" />
+                            </div>
                             <h5 className={card2styles.head5}>Gold Tier<span className={card2styles.h5going}>On Going</span></h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
@@ -160,7 +166,7 @@ let[toggle,setToggle]=useState("#exampleModalCenter")
                                         <h6 style={{ color: "white" }}>9 Months</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "10px" }}> Lock-Up Period</p>
+                                        <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
                                         <h6 style={{ color: "white" }}>6 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
@@ -223,17 +229,19 @@ let[toggle,setToggle]=useState("#exampleModalCenter")
                     </div>
                     <div className='col-sm-6 col col-lg-6'>
                         <div className={card2styles.col4}>
-                    <div className="card" style={{boxShadow:"0px 0px 9px 3px #6A8EFFCC;", width: "19rem", paddingBottom: "30px", backgroundColor: "#212228" }}>
+                    <div className={card2styles.stakingcards} style={{boxShadow:"0px 0px 9px 3px #6A8EFFCC;"}}>
+                        <div className={card2styles.blend}>
                             <img className={card2styles.img33} src="banner1.png" alt="Card image cap" />
+                            </div>
                             <h5 className={card2styles.head5}>Platinum Tier<span className={card2styles.h5complete}>Completed</span></h5>
-                            <div className="card-body">
+                            <div className="card-body" style={{paddingBottom:"48px"}}>
                                 <div className='row' style={{ marginLeft: "2px" }}>
                                     <div className='col-lg-4  col-sm-4 col-4'>
                                         <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
                                         <h6 style={{ color: "white" }}>12 Month</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "10px" }}> Lock-Up Period</p>
+                                        <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
                                         <h6 style={{ color: "white" }}>8 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
