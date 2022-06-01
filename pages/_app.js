@@ -5,8 +5,7 @@ import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 import {
   getDefaultWallets,
-  RainbowKitProvider,
-  Chain
+  RainbowKitProvider
 } from '@rainbow-me/rainbowkit';
 import {
   chain,
@@ -17,40 +16,50 @@ import {
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 import { darkTheme } from '@rainbow-me/rainbowkit';
 
-const binanceSmartChain = {
+/////////////////////////// BSC Chain Configuration /////////////////////////
+const SmartChain = {
   id: 56,
-  name: 'Smart Chain',
-  network: 'Smart Chain',
-  iconUrl: 'https://cdn.cdnlogo.com/logos/b/91/bnb.svg',
-  iconBackground: '#fff',
+  name: 'Binance Smart Chain',
   nativeCurrency: {
     decimals: 18,
-    name: 'Smart Chain',
+    name: ' Binance Smart Chain',
     symbol: 'BNB',
   },
   rpcUrls: {
     default: 'https://bsc-dataseed.binance.org/',
   },
   blockExplorers: {
-    default: { name: 'BscScan', url: 'https://bscscan.com' },
-    etherscan: { name: 'BscScan', url: 'https://bscscan.com' },
+    etherscan: { name: 'Bscscan', url: 'https://bscscan.com' },
+    default: { name: 'Bscscan', url: 'https://bscscan.com' },
   },
   testnet: false,
-};
+}
+///////////////////// BSC TestNet configuration //////////////////////////////////
+const SmartChainTestNet = {
+  id: 97,
+  name: 'Smart Chain Testnet',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'Smart Chain',
+    symbol: 'BNB',
+  },
+  rpcUrls: {
+    default: 'https://data-seed-prebsc-1-s1.binance.org:8545/',
+  },
+  blockExplorers: {
+    etherscan: { name: 'Bscscan', url: 'https://testnet.bscscan.com' },
+    default: { name: 'Bscscan', url: 'https://testnet.bscscan.com' },
+  },
+  testnet: true,
+}
 
 const { chains, provider } = configureChains(
-  [binanceSmartChain],
-  [
-    alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }),
-    publicProvider(),
-    jsonRpcProvider({
-      rpc: (chain) => {
-        if (chain.id !== binanceSmartChain.id) return null
-        return { http: chain.rpcUrls.default }
-      },
-    }),
-  ]
-);
+  [SmartChain, SmartChainTestNet],
+  [jsonRpcProvider({
+    rpc: (chain) => ({ rpcUrl: chain.rpcUrls.default })
+  }),
+  publicProvider()],
+)
 
 const { connectors } = getDefaultWallets({
   appName: 'My RainbowKit App',
