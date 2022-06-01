@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import stakestyles from '../styles/StakeConnected.module.css'
-import Card2 from '../components/cards2';
-import FAQ from '../components/faq';
+import historystyles from '../styles/History.module.css'
+import Table from '../components/table'
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -14,7 +13,7 @@ import {
   faToggleOff
 
 } from "@fortawesome/free-solid-svg-icons";
-export default function Staking() {
+export default function StakingHistory() {
   const showContent = () => {
 
     let show = document.getElementById("show");
@@ -51,7 +50,7 @@ export default function Staking() {
 
 
       </Head>
-      <div className={stakestyles.con}>
+      <div className={historystyles.con}>
         <div className="row">
           <div className='col-lg-2 col-sm-6 col-6'>
 
@@ -59,14 +58,14 @@ export default function Staking() {
 
           </div>
           <div className='col-lg-3 col-sm-6 col-6'>
-            <button className={stakestyles.btn1}>
+            <button className={historystyles.btn1}>
               Apply for Subscription
             </button>
           </div>
           <div className='col-lg-2 col-sm-12 col-12'>
 
-            <div className={stakestyles.div2}>
-              <input type="text" className={stakestyles.input11} placeholder=" Search" />
+            <div className={historystyles.div2}>
+              <input type="text" className={historystyles.input11} placeholder=" Search" />
             </div>
 
 
@@ -75,20 +74,20 @@ export default function Staking() {
 
           <div className='col-lg-5 col-sm-12 col-12' style={{ textAlign: "center" }} >
 
-            <div className={stakestyles.div3}>
-              <span className={stakestyles.network}>
+            <div className={historystyles.div3}>
+              <span className={historystyles.network}>
                 <img src="bar.png"></img>
                 &nbsp;&nbsp;BSC</span>
-              <span className={stakestyles.address}>
-                <span className={stakestyles.level1}>Level 1</span>
+              <span className={historystyles.address}>
+                <span className={historystyles.level1}>Level 1</span>
                 &nbsp; <span style={{fontSize:"14px"}}>0x24485..3483</span>
-                <img src="ellipse1.png" className={stakestyles.img1}></img>
+                <img src="ellipse1.png" className={historystyles.img1}></img>
               </span>
 
             </div>
 
           </div>
-          <div className={stakestyles.baricon} >
+          <div className={historystyles.baricon} >
             <i className="fa-solid fa-bars" onClick={showContent} style={{ color: "white", marginLeft: "10px", cursor: "pointer", marginTop: "10px" }}></i>
             <i className="fa-solid fa-bars" onClick={showContent2} style={{ color: "white", marginRight: "10px", cursor: "pointer", marginTop: "10px", float: "right" }}></i>
           </div>
@@ -96,8 +95,8 @@ export default function Staking() {
       </div>
       <div className="container-fluid" >
         <div className="row ">
-          <div className={stakestyles.navColumn} style={{ backgroundImage: "linear-gradient(#331939, #191729)"}}>
-            <div className={stakestyles.column33} id="show">
+          <div className={historystyles.navColumn} style={{ backgroundImage: "linear-gradient(#331939, #191729)"}}>
+            <div className={historystyles.column33} id="show">
               <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-70">
                 <ul
                   className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
@@ -135,10 +134,10 @@ export default function Staking() {
            </li>
                 </ul>
                 <hr />
-                <div className={stakestyles.addMar}>
-                  <Link href="#"><a><img src="v2.png" className={stakestyles.imgss}></img></a></Link>
-       <Link href="#"><a><img src="v3.png" className={stakestyles.imgs}></img></a></Link>
-       <Link href="#"><a><img src="v4.png" className={stakestyles.imgs}></img></a></Link>
+                <div className={historystyles.addMar}>
+                  <Link href="#"><a><img src="v2.png" className={historystyles.imgss}></img></a></Link>
+       <Link href="#"><a><img src="v3.png" className={historystyles.imgs}></img></a></Link>
+       <Link href="#"><a><img src="v4.png" className={historystyles.imgs}></img></a></Link>
        <br></br>
        <br></br>
        <Link href="#"><a style={{color:"#878787", textDecoration:"none", fontSize:"12px",fontWeight:"500px"}} >Contact</a></Link><br></br>
@@ -149,55 +148,55 @@ export default function Staking() {
             </div>
           </div>
 
-          <div className={stakestyles.cardColumn} style={{ backgroundImage: "linear-gradient(#31396E,#121216)" }}>
+          <div className={historystyles.cardColumn} style={{ backgroundImage: "linear-gradient(#31396E,#121216)" }}>
 
-            <div className={stakestyles.centerCol}>
-              <h1 className={stakestyles.heading}>$GEMS Staking</h1>
-              <p className={stakestyles.heading1}>Stake your $GEMS in GEMS ecosystem</p>
+            <div className={historystyles.centerCol}>
+              <h1 className={historystyles.heading}>$GEMS Staking</h1>
+              <p className={historystyles.heading1}>Stake your $GEMS in GEMS ecosystem</p>
               <br></br>
               <br></br>
-              <h5 className={stakestyles.heads}>Dashboard</h5>
+              <h5 className={historystyles.heads}>Dashboard</h5>
               <div className='container' style={{ marginTop: "20px" }}>
                 <div className='row' style={{ backgroundColor: "#1d1d37", padding: "20px", borderRadius: "10px",border: "1px solid #3C3F57" }}>
                
                   <div className='col-sm-4 col-4 col-lg-4' >
-                    <p className={stakestyles.para}>Total Value Locked:</p>
-                    <h6 className={stakestyles.head1}>20,834,315 $GEMS</h6>
+                    <p className={historystyles.para}>Total Value Locked:</p>
+                    <h6 className={historystyles.head1}>20,834,315 $GEMS</h6>
                   </div>
                  
                   <div className='col-sm-4 col-4 col-lg-4'  >
-                    <p className={stakestyles.para}>Available Balance:</p>
-                    <h6 className={stakestyles.head1}>34,310 $GEMS</h6>
+                    <p className={historystyles.para}>Available Balance:</p>
+                    <h6 className={historystyles.head1}>34,310 $GEMS</h6>
                   </div>
                   <div className='col-sm-4 col-4 col-lg-4' >
-                    <p className={stakestyles.para}>Total Earnings:</p>
-                    <h6 className={stakestyles.head7}>4,315 $GEMS</h6>
+                    <p className={historystyles.para}>Total Earnings:</p>
+                    <h6 className={historystyles.head7}>4,315 $GEMS</h6>
                   </div>
                 </div>
               </div>
-              <div className={stakestyles.detail}>
+              <div className={historystyles.detail}>
 
                 <div className='container'>
                   <br></br>
-                  <h4 className={stakestyles.pool}>Staking Pools</h4>
+                  <h4 className={historystyles.pool}>Staking Pools</h4>
                   <br></br>
-                  <div className={stakestyles.myBox}>
-                    <Link href="/stakeConnected"><a><h4 className={stakestyles.details}>All Pools</h4></a></Link>
+                  <div className={historystyles.myBox}>
+                    <Link href="/stakeConnected"><a><h4 className={historystyles.details}>All Pools</h4></a></Link>
                 </div>
            
-            <Link  href="/stakeHistory"><a><h4 className={stakestyles.detail2} >Staking History</h4></a></Link>
-                    <hr className={stakestyles.hr1}></hr>
-                    <img src="lines.png" className={stakestyles.lines}></img>
-                    <Card2 />
-                    <FAQ></FAQ>
+            <Link  href="/stakeHistory"><a><h4 className={historystyles.detail2} >Staking History</h4></a></Link>
+                    <hr className={historystyles.hr1}></hr>
+                    <img src="lines.png" className={historystyles.lines1}></img>
+                  <Table></Table>  
+                
                   </div>
 
                 </div>
               </div>
 
             </div>
-            <div className={stakestyles.walletColumns}style={{ backgroundImage: "linear-gradient(#331939, #191729)" }}>
-              <div className={stakestyles.column4} id="shows">
+            <div className={historystyles.walletColumns}style={{ backgroundImage: "linear-gradient(#331939, #191729)" }}>
+              <div className={historystyles.column4} id="shows">
                 <div className=" text-white">
                   <div className="accordion" id="accordionExample" style={{ width: "fit-content",marginTop:"10px" }} >
                     <div className="accordion-item" style={{ backgroundColor: "#25242d" }}>
@@ -223,28 +222,28 @@ export default function Staking() {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body" style={{ color: "white"}}>
-                          <span className={stakestyles.username}>Username</span>
-                          <span className={stakestyles.username1}> 0x24485..3483</span>
-                          <div className={stakestyles.balance}>
+                          <span className={historystyles.username}>Username</span>
+                          <span className={historystyles.username1}> 0x24485..3483</span>
+                          <div className={historystyles.balance}>
                             <h5 style={{ color: "#5a78d4",fontSize:"14px" }}>Total Balance</h5>
                             <h6 style={{fontSize:"16px"}}>1,000,000,000USDT</h6>
                           </div>
                           <div style={{ marginTop: "20px" }}>
-                            <span className={stakestyles.bnb}>BNB</span>
-                            <span className={stakestyles.bnbnum}>3.5</span>
+                            <span className={historystyles.bnb}>BNB</span>
+                            <span className={historystyles.bnbnum}>3.5</span>
                             <br></br>
-                            <span className={stakestyles.bnb1}>Binance</span>
-                            <span className={stakestyles.bnbnum1}>8000USDT</span>
+                            <span className={historystyles.bnb1}>Binance</span>
+                            <span className={historystyles.bnbnum1}>8000USDT</span>
                           </div>
                           <div style={{ marginTop: "20px", backgroundColor: "black", padding: "5px 10px 5px 10px", borderRadius: "10px",marginRight:"-10px",marginLeft:"-10px" }}>
-                            <span className={stakestyles.bnb}>GEMS</span>
-                            <span className={stakestyles.bnbnum}>3.5</span>
+                            <span className={historystyles.bnb}>GEMS</span>
+                            <span className={historystyles.bnbnum}>3.5</span>
                             <br></br>
-                            <span className={stakestyles.bnb1}>GEMS</span>
-                            <span className={stakestyles.bnbnum1}>8000USDT</span>
+                            <span className={historystyles.bnb1}>GEMS</span>
+                            <span className={historystyles.bnbnum1}>8000USDT</span>
                           </div>
                           <div style={{ textAlign: "center", marginTop: "20px" }}>
-                            <button className={stakestyles.btn2}>Add Funds</button>
+                            <button className={historystyles.btn2}>Add Funds</button>
                           </div>
 
                         </div>

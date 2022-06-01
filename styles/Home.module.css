@@ -204,6 +204,8 @@ font-size: 14px;
   .addMar{
     padding-bottom: 20px;
   }
+ 
+
 
   
 @media only screen and (max-width: 800px){
@@ -284,9 +286,12 @@ font-size: 14px;
 @media only screen and (min-width:1600px) and (max-width:2500px){
   .navColumn{
     width: 9%;
+    
+
   }
   .cardColumn{
     width: 75% !important;
+
   }
   .walletColumns{
     width: 16% !important;
@@ -323,4 +328,22 @@ font-size: 14px;
     width:19% ;
   }
 
+}
+@media only screen and (min-width:1000px) and (max-width:2500px){
+
+  .navColumn{
+      
+    position: fixed;
+    z-index: -1;
+      height: 100%; 
+     padding-top: 70px;
+     top: 0px;    
+
+     
+     
+  }
+  .cardColumn{
+    margin-left: 167px;
+  }
+ 
 }
