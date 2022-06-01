@@ -184,10 +184,10 @@ export default function Staking() {
                   <h4 className={styles.pool}>Staking Pools</h4>
                   <br></br>
                   <div className={styles.myBox}>
-                    <Link href="#"><a><h4 className={styles.details}>All Pools</h4></a></Link>
+                    <Link href="/stakeConnected"><a><h4 className={styles.details}>All Pools</h4></a></Link>
                 </div>
            
-            <Link  href="#"><a><h4 className={styles.detail2} >Staking History</h4></a></Link>
+            <Link  href="/stakeHistory"><a><h4 className={styles.detail2} >Staking History</h4></a></Link>
                     <hr className={styles.hr1}></hr>
                     <img src="lines.png" className={styles.lines}></img>
                     <Card1 />
