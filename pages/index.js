@@ -95,9 +95,9 @@ export default function Staking() {
         </div>
       </div>
       <div className="container-fluid" >
-        <div className="row " >
+        <div className="row">
           
-          <div className={styles.navColumn} style={{ backgroundImage: "linear-gradient(#331939, #191729)",}}>
+          <div className={styles.navColumn}  style={{ backgroundImage: "linear-gradient(#331939, #191729)"}}>
             <div className={styles.column33} id="show">
               <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-70 ">
                 <ul

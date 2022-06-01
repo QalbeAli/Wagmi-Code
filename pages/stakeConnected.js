@@ -98,7 +98,7 @@ export default function Staking() {
         <div className="row ">
           <div className={stakestyles.navColumn} style={{ backgroundImage: "linear-gradient(#331939, #191729)"}}>
             <div className={stakestyles.column33} id="show">
-              <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+              <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-70">
                 <ul
                   className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
                   id="menu"
