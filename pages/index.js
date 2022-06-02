@@ -100,22 +100,9 @@ const addBorder2=()=>{
           </div>
 
           <div className='col-lg-5 col-sm-12 col-12' style={{ textAlign: "center" }} >
-
-
-            {/* <span className={styles.network}>
-                <img src="bar.png"></img>
-                &nbsp;&nbsp;BSC</span>
-              <span className={styles.address}>
-                <span className={styles.level1}>Level 1</span>
-                &nbsp; <span style={{ fontSize: "14px" }}>0x24485..3483</span>
-                <img src="ellipse1.png" className={styles.img1}></img>
-              </span> */}
-            {/* <ConnectButton  accountStatus={{
-                smallScreen: 'address',
-                largeScreen: 'address',
-              }} /> */}
+<div className={styles.network1}>
             <Connect></Connect>
-
+</div>
 
           </div>
           <div className={styles.baricon} >

@@ -44,7 +44,6 @@ const Card2 = () => {
 
                                         </div>
                                     </div>
-<<<<<<< HEAD
        
                                     <p style={{color:"white",fontSize:"12px"}}>42,293,740 $GEMS <span style={{color:"#878787",fontSize:"12px"}}>of 1,666,666,667 $GEMS</span></p>
                                     <div style={{marginBottom:"25px"}}>
@@ -64,15 +63,6 @@ const Card2 = () => {
                                     </div>
                                     <br></br>
                                     
-=======
-
-                                    <p style={{ color: "white", fontSize: "12px" }}>42,293,740 $GEMS <span style={{ color: "#878787", fontSize: "12px" }}>of 1,666,666,667 $GEMS</span></p>
-                                    <div style={{ marginBottom: "25px" }}>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}>Stake Date</p>
-                                        <h5 style={{ color: "white" }}>-</h5>
-                                    </div>
-
->>>>>>> 6305ef3c52498a7968c536566e85a7bb0b5fbb97
                                     <div className='row'>
                                         <div className='col-sm-6 col-6'>
                                             <p style={{ color: "#878787", fontSize: "12px" }}>Balance</p>
@@ -212,7 +202,6 @@ const Card2 = () => {
 
                                         <p style={{ color: "white", fontSize: "12px" }}>42,293,740 $GEMS <span style={{ color: "#878787", fontSize: "12px" }}>of 1,666,666,667 $GEMS</span></p>
                                         <div>
-<<<<<<< HEAD
                                             <div className='row'>
                                                 <div className='col-4 col-sm-4 col-lg-4'>
                                                <p className={card2styles.paraa}>May 24 12:00am UTC</p>
@@ -223,20 +212,6 @@ const Card2 = () => {
                                                     <div className='col-4 col-sm-4 col-lg-4' style={{textAlign:"left"}}>
                                                   <p className={card2styles.paraa}>
                                                   August 24 12:00am UTC</p> 
-=======
-                                            <p style={{ color: "#878787", fontSize: "12px" }}>Stake Date</p>
-                                            <div>
-                                                <div className='row'>
-                                                    <div className='col-5 col-sm-5 col-lg-5'>
-                                                        <p className={card2styles.paraa}>May 24 12:00am UTC</p>
-                                                    </div>
-                                                    <div className='col-2 col-sm-2 col-lg-2'>
-                                                        <p className={card2styles.paraa}>-</p>
-                                                    </div>
-                                                    <div className='col-5 col-sm-5 col-lg-5' style={{ textAlign: "left" }}>
-                                                        <p className={card2styles.paraa}>
-                                                            August 24 12:00am UTC</p>
->>>>>>> 6305ef3c52498a7968c536566e85a7bb0b5fbb97
                                                     </div>
                                                 </div>
                                             </div>
@@ -263,7 +238,6 @@ const Card2 = () => {
                     </div>
                     <div className='col-sm-6 col col-lg-6'>
                         <div className={card2styles.col4}>
-<<<<<<< HEAD
                     <div className={card2styles.stakingcards}>
                         <div className={card2styles.blend}>
                             <img className={card2styles.img33} src="banner1.png" alt="Card image cap" />
@@ -283,11 +257,6 @@ const Card2 = () => {
                                         <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
                                         <h6 style={{ color: "white" }}>21%</h6>
                                     </div>
-=======
-                            <div className={card2styles.stakingcards} style={{ boxShadow: "0px 0px 9px 3px #6A8EFFCC" }}>
-                                <div className={card2styles.blend}>
-                                    <img className={card2styles.img33} src="banner1.png" alt="Card image cap" />
->>>>>>> 6305ef3c52498a7968c536566e85a7bb0b5fbb97
                                 </div>
                                 <h5 className={card2styles.head5}>Platinum Tier<span className={card2styles.h5complete}>Completed</span></h5>
                                 <div className="card-body" style={{ paddingBottom: "48px" }}>

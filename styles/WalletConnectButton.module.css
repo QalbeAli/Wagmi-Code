@@ -1,8 +1,8 @@
 .connectButton{
-    padding: 10px 14px;
+    padding: 5px 30px;
     cursor: pointer;
     border-radius: 8px;
-    background-color: #7b3fe4;
+    background: linear-gradient(270deg, #885BFF 0.19%, #5977D6 100%);
     font-weight: 700;
     color: white;
 }
@@ -47,4 +47,17 @@
     width: 25px;
     height: 23px;
     margin-top: 6px;
+  }
+  @media only screen and (min-width:990px) and (max-width:1178px){
+   .network{
+    
+    font-size: 12px;
+    margin-left: -20px;
+    padding: 0px 10px 0px 0px
+   }
+   .address{
+     margin-left: 0px;
+     padding-right: 0px;
+     padding-top:0px ;
+   }
   }

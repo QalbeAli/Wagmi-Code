@@ -62,15 +62,8 @@
   background-color: #202544;
   border: none;
 }
-.network{
-  background-color: #202544;
-  font-size: 14px;
-  border: none;
-  color: white;
-  border-radius: 30px;
-  padding-top: 6px;
-  padding-bottom: 10px;
-  padding-right: 40px;
+.network1{
+margin-left: 120px;
 
 }
 .pool{
@@ -299,6 +292,10 @@ font-size: 14px;
   padding: 3px 10px 3px 10px;
 
 }
+.network1{
+margin-left:50px;
+  margin-top: 10px;
+}
 
 
 }
@@ -311,15 +308,17 @@ font-size: 14px;
   .div2{
     margin-top: 20px;
   }
+  .network1{
+    margin-left:10px;
+      margin-top: 10px;
+    }
  
 }
 @media only screen and (max-width: 400px){
   .input11{
     width: 330px;
   }
-.network{
-    padding-right: 30px;
-  }
+
   .div3{
     text-align: left;
     margin-left: 3px;
@@ -395,6 +394,9 @@ font-size: 14px;
     display: block;
    
   }
+  .network1{
+    margin-left: 80px;
+  }
  
 
 
@@ -425,6 +427,10 @@ margin-left: -11px;
   display: block;
  
 }
+.input11{
+
+  width:220px;
+}
 
 }
 @media only screen and (min-width:600px) and (max-width:990px){
@@ -450,6 +456,9 @@ margin-left: -11px;
  
   .baricon{
     display: block;
+  }
+  .network1{
+    margin-left: 100px;
   }
   }
   @media only screen and (min-width:300px) and (max-width:600px){
