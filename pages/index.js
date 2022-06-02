@@ -16,20 +16,20 @@ import {
   faToggleOff
 
 } from "@fortawesome/free-solid-svg-icons";
-export default function Staking({setIsConnected,isConnected}) {
-  
-const addBorder1=()=>{
-  let pootTab=document.getElementById("nav-home-tab");
-  let  historyTab=document.getElementById("nav-profile-tab");
-  pootTab.style.borderBottom="3px solid #885BFF";
-  historyTab.style.borderBottom="none"
-}
-const addBorder2=()=>{
-  let pootTab=document.getElementById("nav-home-tab");
-  let  historyTab=document.getElementById("nav-profile-tab");
-  pootTab.style.borderBottom="none";
-  historyTab.style.borderBottom="3px solid #885BFF";
-}
+export default function Staking({ setIsConnected, isConnected }) {
+
+  const addBorder1 = () => {
+    let pootTab = document.getElementById("nav-home-tab");
+    let historyTab = document.getElementById("nav-profile-tab");
+    pootTab.style.borderBottom = "3px solid #885BFF";
+    historyTab.style.borderBottom = "none"
+  }
+  const addBorder2 = () => {
+    let pootTab = document.getElementById("nav-home-tab");
+    let historyTab = document.getElementById("nav-profile-tab");
+    pootTab.style.borderBottom = "none";
+    historyTab.style.borderBottom = "3px solid #885BFF";
+  }
   const showContent = () => {
 
     let show = document.getElementById("show");
@@ -40,18 +40,18 @@ const addBorder2=()=>{
       show.style.display = "block";
     }
   }
-  
-  const resetMenu=()=>{
-    if(window.innerWidth>="990"){
-      show.style.display="flex"
+
+  const resetMenu = () => {
+    if (window.innerWidth >= "990") {
+      show.style.display = "flex"
     }
-    else if(window.innerWidth<"990"){
-      show.style.display="none"
+    else if (window.innerWidth < "990") {
+      show.style.display = "none"
     }
 
   }
-  if(typeof window!=="undefined"){
-  window.addEventListener("resize",resetMenu)
+  if (typeof window !== "undefined") {
+    window.addEventListener("resize", resetMenu)
   }
   const showContent2 = () => {
 
@@ -63,18 +63,18 @@ const addBorder2=()=>{
     }
 
   }
-  
-  const resetMenu1=()=>{
-    if(window.innerWidth>="990"){
-      shows.style.display="flex"
+
+  const resetMenu1 = () => {
+    if (window.innerWidth >= "990") {
+      shows.style.display = "flex"
     }
-    else if(window.innerWidth<"990"){
-      shows.style.display="none"
+    else if (window.innerWidth < "990") {
+      shows.style.display = "none"
     }
 
   }
-  if(typeof window!=="undefined"){
-  window.addEventListener("resize",resetMenu1)
+  if (typeof window !== "undefined") {
+    window.addEventListener("resize", resetMenu1)
   }
   return (
 
@@ -102,27 +102,14 @@ const addBorder2=()=>{
           </div>
 
           <div className='col-lg-5 col-sm-12 col-12' style={{ textAlign: "center" }} >
-
-
-            {/* <span className={styles.network}>
-                <img src="bar.png"></img>
-                &nbsp;&nbsp;BSC</span>
-              <span className={styles.address}>
-                <span className={styles.level1}>Level 1</span>
-                &nbsp; <span style={{ fontSize: "14px" }}>0x24485..3483</span>
-                <img src="ellipse1.png" className={styles.img1}></img>
-              </span> */}
-            {/* <ConnectButton  accountStatus={{
-                smallScreen: 'address',
-                largeScreen: 'address',
-              }} /> */}
-            <Connect setIsConnected={setIsConnected} btnText={"btnNavBar"}></Connect>
-
+            <div className={styles.network1}>
+              <Connect setIsConnected={setIsConnected} btnText={"btnNavBar"}></Connect>
+            </div>
 
           </div>
           <div className={styles.baricon} >
             <i className="fa-solid fa-bars" onClick={showContent} style={{ color: "white", marginLeft: "10px", cursor: "pointer", marginTop: "10px" }}></i>
-            <i className="fa-solid fa-bars" onClick={showContent2}style={{ color: "white", marginRight: "10px", cursor: "pointer", marginTop: "10px", float: "right" }}></i>
+            <i className="fa-solid fa-bars" onClick={showContent2} style={{ color: "white", marginRight: "10px", cursor: "pointer", marginTop: "10px", float: "right" }}></i>
           </div>
         </div>
       </div>
@@ -217,8 +204,8 @@ const addBorder2=()=>{
                   <br></br>
                   <nav>
                     <div className="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                      <a className={styles.tab1}  onClick={addBorder1} id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">  All Pools</a>
-                      <a className={styles.tab2}  onClick={addBorder2} id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Staking History</a>
+                      <a className={styles.tab1} onClick={addBorder1} id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">  All Pools</a>
+                      <a className={styles.tab2} onClick={addBorder2} id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Staking History</a>
 
                     </div>
                   </nav>
@@ -230,7 +217,7 @@ const addBorder2=()=>{
                       role="tabpanel"
                       aria-labelledby="nav-home-tab"
                     >
-                     {isConnected ? <Card2/> : <Card1 setIsConnected={setIsConnected}/>}
+                      {isConnected ? <Card2 /> : <Card1 setIsConnected={setIsConnected} />}
                     </div>
                     <div
                       className="tab-pane fade"
