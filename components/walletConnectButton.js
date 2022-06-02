@@ -71,7 +71,7 @@ export const Connect = () => {
                                     </button>
 
                                     <button onClick={openAccountModal} type="button">
-                                        {account.displayName}
+                                        {account.balanceSymbol}
                                         {account.displayBalance
                                             ? ` (${account.displayBalance})`
                                             : ''}
