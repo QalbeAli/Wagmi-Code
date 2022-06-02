@@ -189,8 +189,7 @@ const Card1 = () => {
                     </div>
                     <div className='col-sm-6 col col-lg-6'>
                         <div className={cardstyles.col4}>
-                    <div className={cardstyles.stakingcards} style={{boxShadow: "0px 0px 9px 3px #6A8EFFCC"
-}}>
+                    <div className={cardstyles.stakingcards}>
                     <div className={cardstyles.blend}>
                             <img className={cardstyles.img33} src="banner1.png" alt="Card image cap" />
                             </div>

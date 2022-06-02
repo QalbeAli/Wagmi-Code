@@ -25,6 +25,10 @@ border-top-right-radius: 10px;
      padding: "0px";
      position:relative;
      border-radius: 10px;
+   
+}
+.stakingcards:hover{
+    box-shadow: 0px 0px 9px 3px #6A8EFFCC;
 }
 .progress{
 background-color: #815efa;
@@ -58,7 +62,7 @@ background-color: #815efa;
 }
 .paraa{
     color: white;
-    font-size: 11px;
+    font-size: 17px;
    
     font-weight: bold;
 }
