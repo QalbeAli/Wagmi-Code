@@ -1,4 +1,4 @@
-.btn1{
+.btn1 {
   background-color: transparent;
   color: white;
   border: 1px solid #885BFF;
@@ -11,7 +11,7 @@
   margin-top: 3px;
 }
 
-.tab1{
+.tab1 {
   color: white;
   font-weight: bold;
   font-size: 14px;
@@ -19,58 +19,68 @@
   padding: 10px;
   border-bottom: 3px solid #885BFF;
 }
- 
 
-.tab2{
+
+.tab2 {
   color: white;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
   padding: 10px;
 
- 
+
 }
 
-.tab1:hover{
+.tab1:hover {
   color: white;
 }
-.tab2:hover{
+
+.tab2:hover {
   color: white;
 }
-#example{
+
+#example {
   display: flex;
 }
-.navLinks{
+
+.navLinks {
   font-weight: bold;
   font-size: 14px;
   color: #878787;
 }
-.navLinkPlay{
+
+.navLinkPlay {
   color: white;
   font-weight: bold;
   font-size: 14px;
 }
-.navLinkHome{
+
+.navLinkHome {
   color: #6a8eff;
   font-weight: bold;
   font-size: 14px;
 }
-.navColumn{
-  width:13%;
+
+.navColumn {
+  width: 13%;
 }
-.form-control{
+
+.form-control {
   background-color: #202544;
   border: none;
 }
-.network1{
-margin-left: 120px;
+
+.network1 {
+  margin-left: 120px;
 
 }
-.pool{
+
+.pool {
   color: white;
   font-size: 24px;
 }
-.address{
+
+.address {
   background-color: #202544;
   border: none;
   color: white;
@@ -82,18 +92,21 @@ margin-left: 120px;
   margin-left: 10px;
   width: 300px;
 }
-.level1{
+
+.level1 {
   background-color: #3c3f57;
   border: none;
   color: white;
   border-radius: 40px;
-  padding:1px 13px 3px 11px;
+  padding: 1px 13px 3px 11px;
   font-size: 14px;
 }
-.img1{
+
+.img1 {
   margin-left: 20px;
 }
-.imgs{
+
+.imgs {
   background-color: #6a8eff;
   padding: 8px;
   border-radius: 100px;
@@ -101,389 +114,461 @@ margin-left: 120px;
 
 }
 
-.imgss{
+.imgss {
   background-color: #6a8eff;
   padding: 8px;
   border-radius: 100px;
 }
-.username{
+
+.username {
   font-size: 16px;
 }
-.username1{
+
+.username1 {
   font-size: 12px;
   float: right;
   margin-top: 5px;
 }
-.balance{
+
+.balance {
   background-color: black;
   border-radius: 10px;
   text-align: center;
   margin-top: 20px;
   padding: 5px 20px 5px 20px;
- 
-}
-.bnb{
-  font-size: 14px;
-  font-weight: bold;
-}
-.bnbnum{
-  font-size: 12px;
-  float: right;
-  font-weight: bold;
-}
-.bnb1{
-  font-size: 14px;
- 
-}
-.bnbnum1{
-  font-size: 12px;
-  float: right;
-  
-}
-.accordian-button{
-outline: 0 !important;
-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
-}
-.btn2{
- background-color: transparent;
- padding: 5px 50px 5px 50px;
- border-radius: 100px;
- border: 2px solid #6A8BFD;
- color: white;
- font-weight: bold;
- font-size: 14px;
 
 }
-.heading{
+
+.bnb {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bnbnum {
+  font-size: 12px;
+  float: right;
+  font-weight: bold;
+}
+
+.bnb1 {
+  font-size: 14px;
+
+}
+
+.bnbnum1 {
+  font-size: 12px;
+  float: right;
+
+}
+
+.accordian-button {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.btn2 {
+  background-color: transparent;
+  padding: 5px 50px 5px 50px;
+  border-radius: 100px;
+  border: 2px solid #6A8BFD;
   color: white;
-  margin-top:20px ;
+  font-weight: bold;
+  font-size: 14px;
+
+}
+
+.heading {
+  color: white;
+  margin-top: 20px;
   margin-left: 20px;
   font-size: 36px;
 }
-.heading1{
+
+.heading1 {
   color: white;
-  margin-top:20px ;
+  margin-top: 20px;
   margin-left: 20px;
   font-size: 16px;
 }
-.heads{
+
+.heads {
   color: white;
-  margin-top:20px ;
+  margin-top: 20px;
   margin-left: 20px;
   font-size: 24px;
 }
-.para{
-color: #777777;
-font-size: 14px;
+
+.para {
+  color: #777777;
+  font-size: 14px;
 }
-.head1{
+
+.head1 {
   color: white;
   font-size: 18px;
 }
-.details{
- 
-    font-size: 14px;
+
+.details {
+
+  font-size: 14px;
   color: white;
-    display: inline-block;
-    padding-top: -20px;
-    
-   
+  display: inline-block;
+  padding-top: -20px;
+
+
 
 }
-.myBox{
-    /* border-bottom: 4px solid transparent;
+
+.myBox {
+  /* border-bottom: 4px solid transparent;
     border-image: linear-gradient(0.25turn,#815ef8, #815ef8);
     border-image-slice: 1; */
-    width: 80px;
+  width: 80px;
   display: inline-block;
   padding-bottom: 20px;
   margin-top: -20px;
 }
-.lines{
+
+.lines {
   margin-top: -63px;
   margin-left: -16px;
 }
-.detail{
-    padding-top: 20px;
 
-    padding-bottom: 20px;
+.detail {
+  padding-top: 20px;
+
+  padding-bottom: 20px;
 }
-.detail2{
-    display: inline-block;
-    font-size: 14px;
-    color: white;
-    margin-left: 40px;
-    padding: -20px;
+
+.detail2 {
+  display: inline-block;
+  font-size: 14px;
+  color: white;
+  margin-left: 40px;
+  padding: -20px;
 }
-.hr1{
-    background-color: #818494;
-    margin-top: -20px;
-    height: 1px;
+
+.hr1 {
+  background-color: #818494;
+  margin-top: -20px;
+  height: 1px;
 }
-.con{
+
+.con {
   background-color: #08081d;
   padding-top: 17px;
   padding-bottom: 10px;
 }
-.input11{
+
+.input11 {
   background-color: #1d1d37;
   border: none;
   color: white;
   border-radius: 20px;
   width: 270px;
-  padding:5px 30px 5px 28px
+  padding: 5px 30px 5px 28px
 }
-.div2{
-  text-align: center;
-  }
-  .baricon{
-    display: none;
-  }
-  .addMar{
-    padding-bottom: 20px;
-  }
- 
 
-  .column33{
-    display: block;
-   
-  }
-  .column4{
-  
-    display: block;
-   
-  }
-  
-@media only screen and (max-width: 800px){
-  .logoimg{
+.div2 {
   text-align: center;
+}
+
+.baricon {
+  display: none;
+}
+
+.addMar {
+  padding-bottom: 20px;
+}
+
+
+.column33 {
+  display: block;
+
+}
+
+.column4 {
+
+  display: block;
+
+}
+
+@media only screen and (max-width: 800px) {
+  .logoimg {
+    text-align: center;
   }
-  .con{
+
+  .con {
     padding-bottom: 20px;
-   
+
   }
-  .input11{
+
+  .input11 {
     width: 380px;
   }
-  .div2{
-  text-align: center;
-  margin-top: 10px;
+
+  .div2 {
+    text-align: center;
+    margin-top: 10px;
   }
-  .div3{
+
+  .div3 {
     margin-top: 15px;
-}
-.heading{
-  text-align: center;
-}
-.heading1{
-  text-align: center;
-}
-.para{
-  font-size: 12px;
-}
-.head1{
-  font-size: 14px;
-}
-.pool{
-  text-align: center;
-}
-.btn1{
-  font-size: 12px;
-  padding: 3px 10px 3px 10px;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .heading1 {
+    text-align: center;
+  }
+
+  .para {
+    font-size: 12px;
+  }
+
+  .head1 {
+    font-size: 14px;
+  }
+
+  .pool {
+    text-align: center;
+  }
+
+  .btn1 {
+    font-size: 12px;
+    padding: 3px 10px 3px 10px;
+
+  }
+
+  .network1 {
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
 
 }
-.network1{
-margin-left:50px;
-  margin-top: 10px;
-}
 
-
-}
-@media only screen and (min-width: 800px) and (max-width:991px){
-  .btn1{
+@media only screen and (min-width: 800px) and (max-width:991px) {
+  .btn1 {
     font-size: 14px;
     padding: 3px 30px 3px 30px;
-  
+
   }
-  .div2{
+
+  .div2 {
     margin-top: 20px;
   }
-  .network1{
-    margin-left:10px;
-      margin-top: 10px;
-    }
- 
+
+  .network1 {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
 }
-@media only screen and (max-width: 400px){
-  .input11{
+
+@media only screen and (max-width: 400px) {
+  .input11 {
     width: 330px;
   }
 
-  .div3{
+  .div3 {
     text-align: left;
     margin-left: 3px;
   }
-  .level1{
+
+  .level1 {
     padding-right: 5px;
   }
-  
-  
+
+
 }
 
 
 
 
 
-@media only screen and (min-width:1300px){
-  .navColumn{
-    min-width:9%;
+@media only screen and (min-width:1300px) {
+  .navColumn {
+    min-width: 9%;
     position: fixed;
     z-index: -1;
-      height: 100%; 
-     padding-top: 70px;
-     top: 0px;
+    height: 100%;
+    padding-top: 70px;
+    top: 0px;
   }
-  .cardColumn{
+
+  .cardColumn {
     max-width: 67% !important;
     margin-left: 160px;
   }
-  .walletColumns{
+
+  .walletColumns {
     max-width: 20%;
 
-  
-  
+
+
 
 
   }
-  .column33{
+
+  .column33 {
     display: block;
-   
+
   }
-  .column4{
-  
+
+  .column4 {
+
     display: block;
-   
+
   }
- 
+
 }
-@media only screen and (min-width:990px) and (max-width:1300px){
-  .navColumn{
-    min-width:16%;
+
+@media only screen and (min-width:990px) and (max-width:1300px) {
+  .navColumn {
+    min-width: 16%;
     position: fixed;
     z-index: -1;
-      height: 100%; 
-     padding-top: 70px;
-     top: 0px;
+    height: 100%;
+    padding-top: 70px;
+    top: 0px;
   }
-  .cardColumn{
+
+  .cardColumn {
     max-width: 61% !important;
     margin-left: 137px;
   }
-  .walletColumns{
+
+  .walletColumns {
     max-width: 24%;
-  
 
 
+
   }
-  .column33{
+
+  .column33 {
     display: block;
-   
+
   }
-  .column4{
-  
+
+  .column4 {
+
     display: block;
-   
+
   }
-  .network1{
+
+  .network1 {
     margin-left: 80px;
   }
- 
 
 
-}
-@media only screen and (min-width:990px) and (max-width:1178px){
-.navLinks{
-  font-size: 13px;
 
 }
-.navLinkHome{
-  font-size: 13px;
-}
-.navLinkPlay{
-  font-size: 13px;
-}
-.imgss{
-margin-left: -11px;
-}
-.imgs{
-  margin-left: 2px;
-}
-.column33{
-  display: block;
- 
-}
-.column4{
 
-  display: block;
- 
-}
-.input11{
+@media only screen and (min-width:990px) and (max-width:1178px) {
+  .navLinks {
+    font-size: 13px;
 
-  width:220px;
-}
-
-}
-@media only screen and (min-width:600px) and (max-width:990px){
-  .navColumn{
-    min-width:100% !important;
   }
-  .cardColumn{
+
+  .navLinkHome {
+    font-size: 13px;
+  }
+
+  .navLinkPlay {
+    font-size: 13px;
+  }
+
+  .imgss {
+    margin-left: -11px;
+  }
+
+  .imgs {
+    margin-left: 2px;
+  }
+
+  .column33 {
+    display: block;
+
+  }
+
+  .column4 {
+
+    display: block;
+
+  }
+
+  .input11 {
+
+    width: 220px;
+  }
+
+}
+
+@media only screen and (min-width:600px) and (max-width:990px) {
+  .navColumn {
+    min-width: 100% !important;
+  }
+
+  .cardColumn {
     max-width: 100% !important;
   }
-  .walletColumns{
+
+  .walletColumns {
     max-width: 100%;
   }
-  .column33{
+
+  .column33 {
     display: none;
-   
+
   }
-  .column4{
-  
+
+  .column4 {
+
     display: none;
-   
-  } 
-  
- 
-  .baricon{
+
+  }
+
+
+  .baricon {
     display: block;
   }
-  .network1{
+
+  .network1 {
     margin-left: 100px;
   }
-  }
-  @media only screen and (min-width:300px) and (max-width:600px){
-    .navColumn{
-      min-width:100% !important;
-    }
-    .cardColumn{
-      max-width: 100% !important;
-    }
-    .walletColumns{
-      max-width: 100%;
-    }
-    .column33{
-      display: none;
-     
-    }
-    .column4{
-    
-      display: none;
-     
-    } 
-    .baricon{
-      display: block;
-    }
-    
+}
 
+@media only screen and (min-width:300px) and (max-width:600px) {
+  .navColumn {
+    min-width: 100% !important;
+  }
+
+  .cardColumn {
+    max-width: 100% !important;
+  }
+
+  .walletColumns {
+    max-width: 100%;
+  }
+
+  .column33 {
+    display: none;
 
   }
+
+  .column4 {
+
+    display: none;
+
+  }
+
+  .baricon {
+    display: block;
+  }
+
+
+
+}
