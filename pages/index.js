@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Table from '../components/table';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Connect } from '../components/walletConnectButton';
+import Card2 from '../components/cards2';
 
 import {
   faSearch,
@@ -15,7 +16,8 @@ import {
   faToggleOff
 
 } from "@fortawesome/free-solid-svg-icons";
-export default function Staking() {
+export default function Staking({setIsConnected,isConnected}) {
+  
 const addBorder1=()=>{
   let pootTab=document.getElementById("nav-home-tab");
   let  historyTab=document.getElementById("nav-profile-tab");
@@ -114,7 +116,7 @@ const addBorder2=()=>{
                 smallScreen: 'address',
                 largeScreen: 'address',
               }} /> */}
-            <Connect></Connect>
+            <Connect setIsConnected={setIsConnected} btnText={"btnNavBar"}></Connect>
 
 
           </div>
@@ -228,7 +230,7 @@ const addBorder2=()=>{
                       role="tabpanel"
                       aria-labelledby="nav-home-tab"
                     >
-                      <Card1></Card1>
+                     {isConnected ? <Card2/> : <Card1 setIsConnected={setIsConnected}/>}
                     </div>
                     <div
                       className="tab-pane fade"

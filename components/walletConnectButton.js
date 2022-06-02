@@ -1,8 +1,10 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import styles from "../styles/WalletConnectButton.module.css"
-export const Connect = () => {
+import { useState, useEffect } from "react"
+export const Connect = ({ setIsConnected, btnText }) => {
+
     return (
-        <ConnectButton.Custom>
+        <ConnectButton.Custom >
             {({
                 account,
                 chain,
@@ -11,7 +13,9 @@ export const Connect = () => {
                 openConnectModal,
                 mounted,
             }) => {
-                console.log(account, "chain")
+                // console.log(account);
+                account ? setIsConnected(true) : setIsConnected(false)
+
                 return (
                     <div
                         {...(!mounted && {
@@ -25,11 +29,16 @@ export const Connect = () => {
                     >
                         {(() => {
                             if (!mounted || !account || !chain) {
-                                return (
-                                    <button className={styles.connectButton} onClick={openConnectModal} type="button">
-                                        Connect Wallet
-                                    </button>
-                                );
+                                if (btnText === "btnNavBar") {
+                                    return (
+                                        < button className={styles.connectButton} onClick={openConnectModal} type="button" >
+                                            Connect Wallet
+                                        </button>
+                                    );
+                                } else
+                                    return (
+                                        <button className={styles.btn4} onClick={openConnectModal} type="button">Connect Wallet to Stake</button>
+                                    );
                             }
 
                             if (chain.unsupported) {
@@ -39,7 +48,6 @@ export const Connect = () => {
                                     </button>
                                 );
                             }
-
                             return (
                                 <div className={styles.chainBtnDiv} style={{ display: 'flex', gap: 12 }}>
                                     <button
@@ -50,14 +58,14 @@ export const Connect = () => {
                                     >
                                         {chain.hasIcon && (
                                             <div
-                                            style={{
-                                              background: chain.iconBackground,
-                                              width: 35,
-                                              height: 35,
-                                              borderRadius: 999,
-                                              overflow: 'hidden',
-                                              marginRight: 4,
-                                            }}
+                                                style={{
+                                                    background: chain.iconBackground,
+                                                    width: 35,
+                                                    height: 35,
+                                                    borderRadius: 999,
+                                                    overflow: 'hidden',
+                                                    marginRight: 4,
+                                                }}
                                             >
                                                 {chain.iconUrl && (
                                                     <img
@@ -70,16 +78,15 @@ export const Connect = () => {
                                         )}
                                         &nbsp;&nbsp;{chain.name}
                                     </button>
-                                    
 
-                                        <button className={styles.address} onClick={openAccountModal} type="button">
-                                            {/* {`${account.address.slice(0, 7)}...${account.address.slice(-4)}`} */}
-                                            <span className={styles.level1}>Level 1</span>&nbsp;&nbsp;
-                                            {account.address
-                                                ? `${account.address.slice(0, 7)}...${account.address.slice(-4)}`
-                                                : ''}
-                                            <img src="ellipse1.png" className={styles.img1}></img>
-                                        </button>
+                                    <button className={styles.address} onClick={openAccountModal} type="button">
+                                        {/* {`${account.address.slice(0, 7)}...${account.address.slice(-4)}`} */}
+                                        <span className={styles.level1}>Level 1</span>&nbsp;&nbsp;
+                                        {account.address
+                                            ? `${account.address.slice(0, 7)}...${account.address.slice(-4)}`
+                                            : ''}
+                                        <img src="ellipse1.png" className={styles.img1}></img>
+                                    </button>
 
                                 </div>
                             );
@@ -87,6 +94,6 @@ export const Connect = () => {
                     </div>
                 );
             }}
-        </ConnectButton.Custom>
+        </ConnectButton.Custom >
     );
 };

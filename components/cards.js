@@ -1,6 +1,7 @@
 import cardstyles from '../styles/Card.module.css';
 import Link from "next/link";
-const Card1 = () => {
+import { Connect } from './walletConnectButton';
+const Card1 = ({setIsConnected}) => {
     return (
         <>
             <div className='container-fluid' >
@@ -58,9 +59,7 @@ const Card1 = () => {
                                         </div>
                                     </div>
                                     <br></br>
-                                    <Link href="/stakeConnected">
-                                    <button className={cardstyles.btn4}>Connect Wallet to Stake</button></Link>
-                                    
+                                    <Connect btn="btnCard" setIsConnected={setIsConnected}/>
                                 </div>
                             </div>
                         </div>

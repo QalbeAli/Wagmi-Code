@@ -66,8 +66,8 @@ const { chains, provider } = configureChains(
     alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }),
     publicProvider(),
     jsonRpcProvider({
-        rpc: (chain) => ({ rpcUrl: chain.rpcUrls.default })
-      }),
+      rpc: (chain) => ({ rpcUrl: chain.rpcUrls.default })
+    }),
   ]
 )
 
@@ -90,11 +90,12 @@ const wagmiClient = createClient({
 function MyApp({ Component, pageProps }) {
 
   const [contract, setContract] = useState(null)
+  const [isConnected, setIsConnected] = useState(false)
   
   useEffect(() => {
-    setContract(getContract());
-    }, [])
-
+    // setContract(getContract());
+    console.log(isConnected);
+  }, [isConnected])
 
   return (
     <WagmiConfig client={wagmiClient}>
@@ -104,7 +105,7 @@ function MyApp({ Component, pageProps }) {
         borderRadius: 'small',
         fontStack: 'system',
       })}>
-        <Component {...pageProps} />
+        <Component {...pageProps} setIsConnected={setIsConnected} isConnected={isConnected} />
       </RainbowKitProvider>
     </WagmiConfig>
   )
