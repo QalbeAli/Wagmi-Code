@@ -99,7 +99,7 @@ const addBorder2=()=>{
             </div>
           </div>
 
-          <div className='col-lg-5 col-sm-12 col-12' style={{ textAlign: "center" }} >
+          <div className='col-lg-5 col-sm-12 col-12 col-md-12' style={{ textAlign: "center" }} >
 <div className={styles.network1}>
             <Connect></Connect>
 </div>

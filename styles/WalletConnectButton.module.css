@@ -61,3 +61,9 @@
      padding-top:0px ;
    }
   }
+  @media only screen and (max-width: 800px)
+  {
+    .network{
+      margin-left: 20px;
+    }
+  }
