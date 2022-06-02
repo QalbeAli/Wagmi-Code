@@ -6,6 +6,14 @@ border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 
 }
+.period{
+    color: #878787;
+    font-size: 12px;
+}
+.months{
+    font-size: 17px;
+    color: white;
+}
 .blend{
     background-color: #2621a0;
     border-top-left-radius: 10px;
@@ -40,6 +48,7 @@ font-size: 14px;
     border: none;
     padding: 10px 80px 10px 80px;
     text-align: center;
+    width: 100%;
 }
 @media only screen and (max-width: 800px){
     .col2{
@@ -81,8 +90,49 @@ font-size: 14px;
 padding-bottom: 40px;
     }
 }
-@media only screen and (min-width: 300px) and (max-width:1200px){
+/* @media only screen and (min-width: 300px) and (max-width:1200px){
     .btn4{
         padding: 5px 70px 5px 60px;
     } 
+} */
+@media only screen and (min-width:990px) and (max-width:1178px){
+    .btn4{
+        width: 100%;
+        padding: 10px 5px 10px 5px;
+    }
+}
+@media only screen and (min-width:990px) and (max-width:1300px){
+.months{
+    font-size: 13px;
+}
+.period{
+    font-size: 10px;
+}
+
+}
+@media only screen and (min-width:1179px) and (max-width:1300px){
+.btn4{
+    padding: 5px 10px 5px 10px;
+}
+}
+@media only screen and (min-width:300px) and (max-width:600px){
+    .months{
+        font-size: 9px;
+    }
+    .period{
+        font-size: 8px;
+    }
+   .btn4{
+       padding: 2px 40px 2px 40px;
+   }
+}
+@media only screen and (min-width:500px) and (max-width:800px){
+    .btn4{
+        padding: 2px 70px 2px 70px;
+    }
+}
+@media only screen and (min-width:1600px) {
+    .btn4{
+        padding: 10px 40px 10px 40px;
+    }
 }

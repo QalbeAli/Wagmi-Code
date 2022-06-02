@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import Card1 from '../components/cards';
 import FAQ from '../components/faq';
 import Link from 'next/link'
+import Table from '../components/table';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Connect } from '../components/walletConnectButton';
 import {
@@ -14,6 +15,18 @@ import {
 
 } from "@fortawesome/free-solid-svg-icons";
 export default function Staking() {
+const addBorder1=()=>{
+  let pootTab=document.getElementById("nav-home-tab");
+  let  historyTab=document.getElementById("nav-profile-tab");
+  pootTab.style.borderBottom="3px solid #885BFF";
+  historyTab.style.borderBottom="none"
+}
+const addBorder2=()=>{
+  let pootTab=document.getElementById("nav-home-tab");
+  let  historyTab=document.getElementById("nav-profile-tab");
+  pootTab.style.borderBottom="none";
+  historyTab.style.borderBottom="3px solid #885BFF";
+}
   const showContent = () => {
 
     let show = document.getElementById("show");
@@ -24,6 +37,19 @@ export default function Staking() {
       show.style.display = "block";
     }
   }
+  
+  const resetMenu=()=>{
+    if(window.innerWidth>="990"){
+      show.style.display="flex"
+    }
+    else if(window.innerWidth<"990"){
+      show.style.display="none"
+    }
+
+  }
+  if(typeof window!=="undefined"){
+  window.addEventListener("resize",resetMenu)
+  }
   const showContent2 = () => {
 
     let shows = document.getElementById("shows");
@@ -33,6 +59,19 @@ export default function Staking() {
       shows.style.display = "block";
     }
 
+  }
+  
+  const resetMenu1=()=>{
+    if(window.innerWidth>="990"){
+      shows.style.display="flex"
+    }
+    else if(window.innerWidth<"990"){
+      shows.style.display="none"
+    }
+
+  }
+  if(typeof window!=="undefined"){
+  window.addEventListener("resize",resetMenu1)
   }
   return (
 
@@ -61,8 +100,8 @@ export default function Staking() {
 
           <div className='col-lg-5 col-sm-12 col-12' style={{ textAlign: "center" }} >
 
-            <div className={styles.div3}>
-              {/* <span className={styles.network}>
+
+            {/* <span className={styles.network}>
                 <img src="bar.png"></img>
                 &nbsp;&nbsp;BSC</span>
               <span className={styles.address}>
@@ -70,22 +109,22 @@ export default function Staking() {
                 &nbsp; <span style={{ fontSize: "14px" }}>0x24485..3483</span>
                 <img src="ellipse1.png" className={styles.img1}></img>
               </span> */}
-              {/* <ConnectButton  accountStatus={{
+            {/* <ConnectButton  accountStatus={{
                 smallScreen: 'address',
                 largeScreen: 'address',
               }} /> */}
-              <Connect></Connect>
-            </div>
+            <Connect></Connect>
+
 
           </div>
           <div className={styles.baricon} >
             <i className="fa-solid fa-bars" onClick={showContent} style={{ color: "white", marginLeft: "10px", cursor: "pointer", marginTop: "10px" }}></i>
-            <i className="fa-solid fa-bars" onClick={showContent2} style={{ color: "white", marginRight: "10px", cursor: "pointer", marginTop: "10px", float: "right" }}></i>
+            <i className="fa-solid fa-bars" onClick={showContent2}style={{ color: "white", marginRight: "10px", cursor: "pointer", marginTop: "10px", float: "right" }}></i>
           </div>
         </div>
       </div>
-      <div className="container-fluid" >
-        <div className="row " >
+      <div className="container-fluid"  >
+        <div className="row" >
 
           <div className={styles.navColumn} style={{ backgroundImage: "linear-gradient(#331939, #191729)", }}>
             <div className={styles.column33} id="show">
@@ -95,34 +134,34 @@ export default function Staking() {
                   id="menu"
                 >
                   <li className="nav-item">
-                    <Link href="/" ><a className="nav-link align-middle px-0"><span className="ms-1 d-sm-inline" style={{ color: "#6a8eff", fontWeight: "bold", fontSize: "14px" }}>Home</span></a></Link>
+                    <Link href="/" ><a className="nav-link align-middle px-0"><span className={styles.navLinkHome}  >Home</span></a></Link>
                   </li>
                   <li>
-                    <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1 d-sm-inline" style={{ color: "#878787", fontWeight: "bold", fontSize: "14px" }}>Marketplace</span></a></Link>
+                    <Link href="#"><a className="nav-link px-0 align-middle"><span className={styles.navLinks} >Marketplace</span></a></Link>
 
                   </li>
                   <li>
-                    <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1  d-sm-inline" style={{ color: "#878787", fontWeight: "bold", fontSize: "14px" }}>Defi Union</span></a></Link>
+                    <Link href="#"><a className="nav-link px-0 align-middle"><span className={styles.navLinks}  >Defi Union</span></a></Link>
                   </li>
                   <li>
-                    <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1 d-sm-inline" style={{ color: "white", fontWeight: "bold", fontSize: "14px" }}>Play 2 Earn</span></a></Link>
+                    <Link href="#"><a className="nav-link px-0 align-middle"><span className={styles.navLinkPlay}  >Play 2 Earn</span></a></Link>
 
                   </li>
                   <li>
                     <Link
-                      href="#"><a className="nav-link px-0 align-middle"><span className="ms-1  d-sm-inline" style={{ color: "#878787", fontWeight: "bold", fontSize: "14px" }}>Streamer Hub</span></a></Link>
+                      href="#"><a className="nav-link px-0 align-middle"><span className={styles.navLinks}   >Streamer Hub</span></a></Link>
                   </li>
                   <li>
-                    <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1  d-sm-inline" style={{ color: "#878787", fontWeight: "bold", fontSize: "14px" }}>GEMS Academy </span></a></Link>
+                    <Link href="#"><a className="nav-link px-0 align-middle"><span className={styles.navLinks}  >GEMS Academy </span></a></Link>
                   </li>
                   <li>
-                    <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1 d-sm-inline" style={{ color: "#878787", fontWeight: "bold", fontSize: "14px" }}>Talent Agency</span></a></Link>
+                    <Link href="#"><a className="nav-link px-0 align-middle"><span className={styles.navLinks}  >Talent Agency</span></a></Link>
                   </li>
                   <li>
-                    <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1 d-sm-inline" style={{ color: "#878787", fontWeight: "bold", fontSize: "14px" }}>Guild DAO</span></a></Link>
+                    <Link href="#"><a className="nav-link px-0 align-middle"><span className={styles.navLinks}  >Guild DAO</span></a></Link>
                   </li>
                   <li>
-                    <Link href="#"><a className="nav-link px-0 align-middle"><span className="ms-1  d-sm-inline" style={{ color: "#878787", fontWeight: "bold", fontSize: "14px" }}>Play with gems</span></a></Link>
+                    <Link href="#"><a className="nav-link px-0 align-middle"><span className={styles.navLinks}  >Play with gems</span></a></Link>
                   </li>
                 </ul>
                 <hr />
@@ -173,14 +212,33 @@ export default function Staking() {
                   <br></br>
                   <h4 className={styles.pool}>Staking Pools</h4>
                   <br></br>
-                  <div className={styles.myBox}>
-                    <Link href="#"><a><h4 className={styles.details}>All Pools</h4></a></Link>
+                  <nav>
+                    <div className="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                      <a className={styles.tab1}  onClick={addBorder1} id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">  All Pools</a>
+                      <a className={styles.tab2}  onClick={addBorder2} id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Staking History</a>
+
+                    </div>
+                  </nav>
+                  <br></br>
+                  <div className="tab-content" id="nav-tabContent">
+                    <div
+                      className="tab-pane fade show active"
+                      id="nav-home"
+                      role="tabpanel"
+                      aria-labelledby="nav-home-tab"
+                    >
+                      <Card1></Card1>
+                    </div>
+                    <div
+                      className="tab-pane fade"
+                      id="nav-profile"
+                      role="tabpanel"
+                      aria-labelledby="nav-profile-tab"
+                    >
+                      <Table></Table>
+                    </div>
                   </div>
 
-                  <Link href="#"><a><h4 className={styles.detail2} >Staking History</h4></a></Link>
-                  <hr className={styles.hr1}></hr>
-                  <img src="lines.png" className={styles.lines}></img>
-                  <Card1 />
                   <br></br>
                   <br></br>
                   <FAQ></FAQ>
@@ -190,7 +248,7 @@ export default function Staking() {
             </div>
 
           </div>
-          <div className={styles.walletColumns} style={{ backgroundImage: "linear-gradient(#331939, #191729)" }}>
+          <div className={styles.walletColumns} style={{ backgroundImage: "linear-gradient(#331939, #191729)" }} >
             <div className={styles.column4} id="shows">
               <div className=" text-white">
                 <div id="accordionExample" style={{ width: "fit-content", marginTop: "10px" }} className={styles.accordian} >

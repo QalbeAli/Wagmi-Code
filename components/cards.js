@@ -5,7 +5,7 @@ const Card1 = () => {
         <>
             <div className='container-fluid' >
                 <div className='row'>
-                    <div className='col-sm-6 col col-lg-6'>
+                    <div className='col-sm-12 col col-lg-6 col-md-12'>
                         <div className={cardstyles.col1}>
                         <div className={cardstyles.stakingcards}>
                             <div className={cardstyles.blend}>
@@ -14,17 +14,17 @@ const Card1 = () => {
                             <h5 className={cardstyles.head5}>Bronze Tier</h5>
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
-                                    <div className='col-lg-4 col-sm 4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
-                                        <h6 style={{ color: "white",fontSize:"17px" }}>3 Months</h6>
+                                    <div className='col-lg-4 col-sm 4 col-4 '>
+                                        <p className={cardstyles.period}>Stake Period</p>
+                                        <h6 className={cardstyles.months}>3 Months</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
-                                        <h6 style={{ color: "white",fontSize:"17px"  }}>2 Weeks</h6>
+                                        <p className={cardstyles.period}> Lock-Up Period</p>
+                                        <h6 className={cardstyles.months}>2 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
-                                        <h6 style={{ color: "white",fontSize:"17px"  }}>12%</h6>
+                                        <p className={cardstyles.period}>APY</p>
+                                        <h6 className={cardstyles.months}>12%</h6>
                                     </div>
                                 </div>
                                 <div style={{ marginTop: "20px", marginLeft: "14px"}}>
@@ -66,7 +66,7 @@ const Card1 = () => {
                         </div>
                         </div>
                     </div>
-                    <div className='col-sm-6 col col-lg-6'>
+                    <div className='col-sm-12 col col-lg-6 col-md-12'>
                         <div className={cardstyles.col2}>
                     <div className={cardstyles.stakingcards}>
                     <div className={cardstyles.blend}>
@@ -76,16 +76,16 @@ const Card1 = () => {
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
                                     <div className='col-lg-4 col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
-                                        <h6 style={{ color: "white" , fontSize: "17px"}}>6 Months</h6>
+                                        <p className={cardstyles.period}>Stake Period</p>
+                                        <h6 className={cardstyles.months}>6 Months</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
-                                        <h6 style={{ color: "white", fontSize: "17px" }}>4 Weeks</h6>
+                                        <p className={cardstyles.period}> Lock-Up Period</p>
+                                        <h6 className={cardstyles.months}>4 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4 col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
-                                        <h6 style={{ color: "white" , fontSize: "17px"}}>15%</h6>
+                                        <p  className={cardstyles.period}>APY</p>
+                                        <h6  className={cardstyles.months}>15%</h6>
                                     </div>
                                 </div>
                                 <div style={{ marginTop: "20px", marginLeft: "14px"}}>
@@ -128,7 +128,7 @@ const Card1 = () => {
                     </div>
                 </div>
                 <div className='row' style={{marginTop:"20px"}}>
-                    <div className='col-sm-6 col col-lg-6'>
+                    <div className='col-sm-12 col col-lg-6 col-md-12'>
                     <div className={cardstyles.col3}>
                         <div className={cardstyles.stakingcards}>
                         <div className={cardstyles.blend}>
@@ -138,16 +138,16 @@ const Card1 = () => {
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
                                     <div className='col-lg-4 col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
-                                        <h6 style={{ color: "white" , fontSize: "17px"}}>9 Months</h6>
+                                        <p  className={cardstyles.period}>Stake Period</p>
+                                        <h6  className={cardstyles.months}>9 Months</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
-                                        <h6 style={{ color: "white" , fontSize: "17px"}}>6 Weeks</h6>
+                                        <p  className={cardstyles.period}> Lock-Up Period</p>
+                                        <h6  className={cardstyles.months}>6 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
-                                        <h6 style={{ color: "white", fontSize: "17px" }}>18%</h6>
+                                        <p  className={cardstyles.period}>APY</p>
+                                        <h6  className={cardstyles.months}>18%</h6>
                                     </div>
                                 </div>
                                 <div style={{ marginTop: "20px", marginLeft: "14px"}}>
@@ -187,7 +187,7 @@ const Card1 = () => {
                         </div>
                     </div>
                     </div>
-                    <div className='col-sm-6 col col-lg-6'>
+                    <div className='col-sm-12 col col-lg-6 col-md-12'>
                         <div className={cardstyles.col4}>
                     <div className={cardstyles.stakingcards}>
                     <div className={cardstyles.blend}>
@@ -197,16 +197,16 @@ const Card1 = () => {
                             <div className="card-body">
                                 <div className='row' style={{ marginLeft: "2px" }}>
                                     <div className='col-lg-4  col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
-                                        <h6 style={{ color: "white" , fontSize: "17px"}}>12 Month</h6>
+                                        <p  className={cardstyles.period}>Stake Period</p>
+                                        <h6  className={cardstyles.months}>12 Month</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
-                                        <h6 style={{ color: "white", fontSize: "17px" }}>8 Weeks</h6>
+                                        <p  className={cardstyles.period}> Lock-Up Period</p>
+                                        <h6  className={cardstyles.months}>8 Weeks</h6>
                                     </div>
                                     <div className='col-lg-4  col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
-                                        <h6 style={{ color: "white", fontSize: "17px" }}>21%</h6>
+                                        <p  className={cardstyles.period}>APY</p>
+                                        <h6  className={cardstyles.months}>21%</h6>
                                     </div>
                                 </div>
                                 <div style={{ marginTop: "20px", marginLeft: "14px"}}>
