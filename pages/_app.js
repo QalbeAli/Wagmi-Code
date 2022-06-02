@@ -15,11 +15,16 @@ import {
 } from 'wagmi';
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 import { darkTheme } from '@rainbow-me/rainbowkit';
+import { useEffect, useState } from "react"
+import { getContract } from '../getContract';
 
 /////////////////////////// BSC Chain Configuration /////////////////////////
 const SmartChain = {
   id: 56,
-  name: 'Binance Smart Chain',
+  name: 'BSC',
+  network: 'Smart Chain',
+  iconUrl: 'https://cdn.cdnlogo.com/logos/b/91/bnb.svg',
+  iconBackground: '#fff',
   nativeCurrency: {
     decimals: 18,
     name: ' Binance Smart Chain',
@@ -37,7 +42,9 @@ const SmartChain = {
 ///////////////////// BSC TestNet configuration //////////////////////////////////
 const SmartChainTestNet = {
   id: 97,
-  name: 'Smart Chain Testnet',
+  name: 'SCT',
+  iconUrl: 'https://cdn.cdnlogo.com/logos/b/91/bnb.svg',
+  iconBackground: '#fff',
   nativeCurrency: {
     decimals: 18,
     name: 'Smart Chain',
@@ -55,11 +62,19 @@ const SmartChainTestNet = {
 
 const { chains, provider } = configureChains(
   [SmartChain, SmartChainTestNet],
-  [jsonRpcProvider({
-    rpc: (chain) => ({ rpcUrl: chain.rpcUrls.default })
-  }),
-  publicProvider()],
+  [
+    alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }),
+    publicProvider(),
+    jsonRpcProvider({
+        rpc: (chain) => ({ rpcUrl: chain.rpcUrls.default })
+      }),
+  ]
 )
+
+// [jsonRpcProvider({
+//   rpc: (chain) => ({ rpcUrl: chain.rpcUrls.default })
+// }),
+// publicProvider()],
 
 const { connectors } = getDefaultWallets({
   appName: 'My RainbowKit App',
@@ -73,6 +88,13 @@ const wagmiClient = createClient({
 })
 
 function MyApp({ Component, pageProps }) {
+
+  const [contract, setContract] = useState(null)
+  
+  useEffect(() => {
+    setContract(getContract());
+    }, [])
+
 
   return (
     <WagmiConfig client={wagmiClient}>

@@ -5,6 +5,7 @@ import FAQ from '../components/faq';
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Connect } from '../components/walletConnectButton';
+
 import {
   faSearch,
   faAmbulance,

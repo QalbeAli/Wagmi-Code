@@ -1,5 +1,5 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
-
+import styles from "../styles/WalletConnectButton.module.css"
 export const Connect = () => {
     return (
         <ConnectButton.Custom>
@@ -11,7 +11,7 @@ export const Connect = () => {
                 openConnectModal,
                 mounted,
             }) => {
-                //   console.log(account,"chain")
+                console.log(account, "chain")
                 return (
                     <div
                         {...(!mounted && {
@@ -26,7 +26,7 @@ export const Connect = () => {
                         {(() => {
                             if (!mounted || !account || !chain) {
                                 return (
-                                    <button onClick={openConnectModal} type="button">
+                                    <button className={styles.connectButton} onClick={openConnectModal} type="button">
                                         Connect Wallet
                                     </button>
                                 );
@@ -41,41 +41,46 @@ export const Connect = () => {
                             }
 
                             return (
-                                <div style={{ display: 'flex', gap: 12 }}>
+                                <div className={styles.chainBtnDiv} style={{ display: 'flex', gap: 12 }}>
                                     <button
                                         onClick={openChainModal}
                                         style={{ display: 'flex', alignItems: 'center' }}
                                         type="button"
+                                        className={styles.network}
                                     >
                                         {chain.hasIcon && (
                                             <div
-                                            // style={{
-                                            //   background: chain.iconBackground,
-                                            //   width: 12,
-                                            //   height: 12,
-                                            //   borderRadius: 999,
-                                            //   overflow: 'hidden',
-                                            //   marginRight: 4,
-                                            // }}
+                                            style={{
+                                              background: chain.iconBackground,
+                                              width: 35,
+                                              height: 35,
+                                              borderRadius: 999,
+                                              overflow: 'hidden',
+                                              marginRight: 4,
+                                            }}
                                             >
                                                 {chain.iconUrl && (
                                                     <img
                                                         alt={chain.name ?? 'Chain icon'}
                                                         src="binance-coin-bnb.svg"
-                                                        style={{ width: 12, height: 12 }}
+                                                        className={styles.chainIcon}
                                                     />
                                                 )}
                                             </div>
                                         )}
-                                        {chain.name}
+                                        &nbsp;&nbsp;{chain.name}
                                     </button>
+                                    
 
-                                    <button onClick={openAccountModal} type="button">
-                                        {account.balanceSymbol}
-                                        {account.displayBalance
-                                            ? ` (${account.displayBalance})`
-                                            : ''}
-                                    </button>
+                                        <button className={styles.address} onClick={openAccountModal} type="button">
+                                            {/* {`${account.address.slice(0, 7)}...${account.address.slice(-4)}`} */}
+                                            <span className={styles.level1}>Level 1</span>&nbsp;&nbsp;
+                                            {account.address
+                                                ? `${account.address.slice(0, 7)}...${account.address.slice(-4)}`
+                                                : ''}
+                                            <img src="ellipse1.png" className={styles.img1}></img>
+                                        </button>
+
                                 </div>
                             );
                         })()}
