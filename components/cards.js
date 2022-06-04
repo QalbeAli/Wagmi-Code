@@ -1,7 +1,6 @@
 import cardstyles from '../styles/Card.module.css';
-import Link from "next/link";
 import { Connect } from './walletConnectButton';
-const Card1 = ({setIsConnected}) => {
+const Card1 = () => {
     return (
         <>
             <div className='container-fluid' >
@@ -59,7 +58,7 @@ const Card1 = ({setIsConnected}) => {
                                         </div>
                                     </div>
                                     <br></br>
-                                    <Connect btn="btnCard" setIsConnected={setIsConnected}/>
+                                    <Connect btn="btnCard" />
                                 </div>
                             </div>
                         </div>
@@ -118,7 +117,7 @@ const Card1 = ({setIsConnected}) => {
                                         </div>
                                     </div>
                                     <br></br>
-                                    <button className={cardstyles.btn4}>Connect Wallet to Stake</button>
+                                    <Connect btn="btnCard" />
                                 </div>
                             </div>
                         </div>
@@ -180,7 +179,7 @@ const Card1 = ({setIsConnected}) => {
                                         </div>
                                     </div>
                                     <br></br>
-                                    <button className={cardstyles.btn4}>Connect Wallet to Stake</button>
+                                    <Connect btn="btnCard" />
                                 </div>
                             </div>
                         </div>
@@ -239,7 +238,7 @@ const Card1 = ({setIsConnected}) => {
                                         </div>
                                     </div>
                                     <br></br>
-                                    <button className={cardstyles.btn4}>Connect Wallet to Stake</button>
+                                    <Connect btn="btnCard" />
                                 </div>
                             </div>
                         </div>

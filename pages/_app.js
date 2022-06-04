@@ -15,8 +15,7 @@ import {
 } from 'wagmi';
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 import { darkTheme } from '@rainbow-me/rainbowkit';
-import { useEffect, useState } from "react"
-import { getContract } from '../getContract';
+
 
 /////////////////////////// BSC Chain Configuration /////////////////////////
 const SmartChain = {
@@ -63,10 +62,11 @@ const SmartChainTestNet = {
 const { chains, provider } = configureChains(
   [SmartChain, SmartChainTestNet],
   [
-    alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }),
-    publicProvider(),
+    // alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }),
+    publicProvider({priority:0}),
     jsonRpcProvider({
-      rpc: (chain) => ({ rpcUrl: chain.rpcUrls.default })
+      priority:1,
+      rpc: (chain) => ({ rpcUrl: chain.rpcUrls.default, })
     }),
   ]
 )
@@ -89,13 +89,7 @@ const wagmiClient = createClient({
 
 function MyApp({ Component, pageProps }) {
 
-  const [contract, setContract] = useState(null)
-  const [isConnected, setIsConnected] = useState(false)
-  
-  useEffect(() => {
-    // setContract(getContract());
-    console.log(isConnected);
-  }, [isConnected])
+  // const [contract, setContract] = useState(null)
 
   return (
     <WagmiConfig client={wagmiClient}>
@@ -105,7 +99,7 @@ function MyApp({ Component, pageProps }) {
         borderRadius: 'small',
         fontStack: 'system',
       })}>
-        <Component {...pageProps} setIsConnected={setIsConnected} isConnected={isConnected} />
+        <Component {...pageProps}  />
       </RainbowKitProvider>
     </WagmiConfig>
   )

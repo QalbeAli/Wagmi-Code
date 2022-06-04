@@ -1,0 +1,748 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "Claim",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_tierId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "deposit",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "renounceOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "_stakingToken",
+				"type": "address"
+			},
+			{
+				"internalType": "contract IERC20",
+				"name": "_rewardToken",
+				"type": "address"
+			}
+		],
+		"name": "setPool",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "id",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "apy",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "minStake",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "maxStake",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "totalStake",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lockingPeriod",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "rewardPeriod",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "paneltyRatio",
+				"type": "uint256"
+			}
+		],
+		"name": "setTier",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "id",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "totalStake",
+				"type": "uint256"
+			}
+		],
+		"name": "setTierTotalStake",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "string",
+				"name": "id",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "apy",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "minStake",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "maxStake",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "totalStake",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "lockingPeriod",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "rewardPeriod",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "paneltyRatio",
+				"type": "uint256"
+			}
+		],
+		"name": "TierCreate",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "string",
+				"name": "id",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "apy",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "minStake",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "maxStake",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "totalStake",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "lockingPeriod",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "rewardPeriod",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "paneltyRatio",
+				"type": "uint256"
+			}
+		],
+		"name": "TierUpdate",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "tierId",
+				"type": "uint256"
+			}
+		],
+		"name": "UserStake",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "tierId",
+				"type": "uint256"
+			}
+		],
+		"name": "UserUnstake",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "tierId",
+				"type": "uint256"
+			}
+		],
+		"name": "withdraw",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address payable",
+				"name": "withdrawalAddress",
+				"type": "address"
+			}
+		],
+		"name": "withdrawPanelty",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tierId",
+				"type": "uint256"
+			}
+		],
+		"name": "calculatePenality",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "collectedPenality",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "currentTime",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "day",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tierId",
+				"type": "uint256"
+			}
+		],
+		"name": "getLockedAmount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "id",
+				"type": "string"
+			}
+		],
+		"name": "getTierById",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "apy",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "minStake",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maxStake",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "totalStake",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lockingPeriod",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rewardPeriod",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "paneltyRatio",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct IGemsStaking.Tier",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getTierIds",
+		"outputs": [
+			{
+				"internalType": "string[]",
+				"name": "",
+				"type": "string[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tierId",
+				"type": "uint256"
+			}
+		],
+		"name": "getUserUnlockTime",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tierId",
+				"type": "uint256"
+			}
+		],
+		"name": "isLocked",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tierId",
+				"type": "uint256"
+			}
+		],
+		"name": "pendingRewards",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "poolInfo",
+		"outputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "stakingToken",
+				"type": "address"
+			},
+			{
+				"internalType": "contract IERC20",
+				"name": "rewardToken",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "tierLockedAmount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "tiers",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "id",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "apy",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "minStake",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "maxStake",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "totalStake",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lockingPeriod",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "rewardPeriod",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "paneltyRatio",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "treasury",
+		"outputs": [
+			{
+				"internalType": "contract StakingTreasury",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "userInfo",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "depositTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lastRewardTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "pendingRewards",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

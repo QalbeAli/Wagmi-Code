@@ -1,7 +1,7 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import styles from "../styles/WalletConnectButton.module.css"
-import { useState, useEffect } from "react"
-export const Connect = ({ setIsConnected, btnText }) => {
+
+export const Connect = ({ btnText }) => {
 
     return (
         <ConnectButton.Custom >
@@ -14,8 +14,7 @@ export const Connect = ({ setIsConnected, btnText }) => {
                 mounted,
             }) => {
                 // console.log(account);
-                account ? setIsConnected(true) : setIsConnected(false)
-
+                
                 return (
                     <div
                         {...(!mounted && {

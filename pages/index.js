@@ -1,13 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Card1 from '../components/cards';
 import FAQ from '../components/faq';
 import Link from 'next/link'
 import Table from '../components/table';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Connect } from '../components/walletConnectButton';
-import Card2 from '../components/cards2';
-
+import Card1 from "../components/cards"
+import { useAccount } from 'wagmi';
 import {
   faSearch,
   faAmbulance,
@@ -16,6 +14,7 @@ import {
   faToggleOff
 
 } from "@fortawesome/free-solid-svg-icons";
+import CardContainer from '../components/cardContainer';
 export default function Staking({ setIsConnected, isConnected }) {
 
   const addBorder1 = () => {
@@ -76,6 +75,11 @@ export default function Staking({ setIsConnected, isConnected }) {
   if (typeof window !== "undefined") {
     window.addEventListener("resize", resetMenu1)
   }
+
+  const { data: account } = useAccount()
+  // const address = data ? data.address:null;
+  // console.log(data,"data is herer")
+// const data =null
   return (
 
     <>
@@ -87,7 +91,7 @@ export default function Staking({ setIsConnected, isConnected }) {
       <div className={styles.con}>
         <div className="row">
           <div className='col-lg-2 col-sm-6 col-6' >
-            <img src="logo.png"></img>
+            <img src="logo.png"/>
           </div>
           <div className='col-lg-3 col-sm-6 col-6'>
             <button className={styles.btn1}>
@@ -103,7 +107,7 @@ export default function Staking({ setIsConnected, isConnected }) {
 
           <div className='col-lg-5 col-sm-12 col-12' style={{ textAlign: "center" }} >
             <div className={styles.network1}>
-              <Connect setIsConnected={setIsConnected} btnText={"btnNavBar"}></Connect>
+              <Connect btnText={"btnNavBar"}></Connect>
             </div>
 
           </div>
@@ -217,7 +221,8 @@ export default function Staking({ setIsConnected, isConnected }) {
                       role="tabpanel"
                       aria-labelledby="nav-home-tab"
                     >
-                      {isConnected ? <Card2 /> : <Card1 setIsConnected={setIsConnected} />}
+                      {account ? <CardContainer /> : <Card1 />}
+
                     </div>
                     <div
                       className="tab-pane fade"

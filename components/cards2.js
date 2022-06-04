@@ -2,111 +2,125 @@ import card2styles from '../styles/Card2.module.css';
 import Modal from './modal';
 import Modal2 from './modal2';
 import { useState } from 'react';
-const Card2 = () => {
+import stackingContractABI from "../stackingContractABI.json"
+const stackingContractAddress = '0x07Eada377fc86D021236Db4C00635fB6d4458C77'
+import { useContractRead } from 'wagmi'
+import { useAccount } from 'wagmi'
+
+const Card2 = ({ tierId, cardText, isCardLocked }) => {
 
     let [btnstake, setBtn] = useState("Stake")
     let [toggle, setToggle] = useState("#exampleModalCenter")
-    let cards = [
+    // const [isLocked, setIsLocked] = useState(true)
+    const [cardID, setCardID] = useState("0")
+
+    // useEffect(() => {
+    //     async function checkIsLocked() {
+    //         const res = await isCardLocked();
+    //         setIsLocked(res);
+    //     }
+    //     checkIsLocked();
+    // }, [])
+
+    const { data } = useAccount();
+    const ISLOCKED = useContractRead(
         {
-            cardText:"Bronze Tier",stackPeriod:"3 Months",LockUpPeriod:"2 Weeks",APY:"12%",
-            date1:"",date2:"",balance:"0.00 $GEMS",reward:"0.00 $GEMS"
+            addressOrName: stackingContractAddress,
+            contractInterface: stackingContractABI,
         },
+        'isLocked',
         {
-            cardText:"Silver Tier",stackPeriod:"6 Months",LockUpPeriod:"4 Weeks",APY:"15%",
-            date1:"May 24 12:00am UTC",date2:"August  24 12:00am UTC",balance:"3000 $GEMS",reward:"450 $GEMS"
-        },
-        {
-            cardText:"Gold Tier",stackPeriod:"9 Months",LockUpPeriod:"6 Weeks",APY:"18%",
-            date1:"May 24 12:00am UTC",date2:"August  24 12:00am UTC",balance:"3000 $GEMS",reward:"540 $GEMS"
-        },
-        {
-            cardText:"Platinum Tier",stackPeriod:"12 Months",LockUpPeriod:"8 Weeks",APY:"21%",
-            date1:"May 24 12:00am UTC",date2:"August  24 12:00am UTC",balance:"3000 $GEMS",reward:"630 $GEMS"
-        }]
+            args: [data?.address, tierId]
+        }
+    )
+
+    // console.log(ISLOCKED.data,"read");
+
     return (
         <>
             {/* card1 */}
-            <div className='container-fluid' >
-                <div className='row'>
-                    <div className='col-sm-6 col col-lg-6'>
-                        <div className={card2styles.stakingcards}>
-                            <div className={card2styles.blend}>
-                                <img className={card2styles.img33} src="banner1.png" alt="Card image cap" />
-                            </div>
-                            <h5 className={card2styles.head5}>Bronze Tier</h5>
-                            <div className="card-body">
-                                <div className='row' style={{ marginLeft: "2px" }}>
-                                    <div className='col-lg-4 col-sm 4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
-                                        <h6 style={{ color: "white" }}>3 Months</h6>
-                                    </div>
-                                    <div className='col-lg-4 col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
-                                        <h6 style={{ color: "white" }}>2 Weeks</h6>
-                                    </div>
-                                    <div className='col-lg-4 col-sm-4 col-4'>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
-                                        <h6 style={{ color: "white" }}>12%</h6>
-                                    </div>
-                                </div>
-                                <div style={{ marginTop: "20px", marginLeft: "14px" }}>
-                                    <p style={{ color: "#878787", fontSize: "12px" }}>Pool size</p>
-                                    <div className="progress" style={{ backgroundColor: "#878787", borderRadius: "20px", height: "10px", marginBottom: "10px" }}>
-                                        <div
-                                            className={card2styles.progress}
-                                            role="progressbar"
-                                            aria-valuenow={70}
-                                            aria-valuemin={0}
-                                            aria-valuemax={100}
-                                            style={{ width: "60%" }}
-                                        >
-
-                                        </div>
-                                    </div>
-
-                                    <p style={{ color: "white", fontSize: "12px" }}>42,293,740 $GEMS <span style={{ color: "#878787", fontSize: "12px" }}>of 1,666,666,667 $GEMS</span></p>
-                                    <div style={{ marginBottom: "25px" }}>
-                                        <p style={{ color: "#878787", fontSize: "12px" }}>Stake Date</p>
-                                        <div className='row'>
-                                            <div className='col-4 col-sm-4 col-lg-4'>
-                                                <p style={{ fontSize: "17px", color: "white", fontWeight: "bold" }}>-</p>
-                                            </div>
-                                            <div className='col-2 col-sm-2 col-lg-2'>
-
-                                            </div>
-                                            <div className='col-4 col-sm-4 col-lg-4' style={{ textAlign: "left" }}>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <br></br>
-
-                                    <div className='row'>
-                                        <div className='col-sm-6 col-6'>
-                                            <p style={{ color: "#878787", fontSize: "12px" }}>Balance</p>
-                                            <h5 style={{ color: "white", fontSize: "18px" }}>0.00 $GEMS</h5>
-                                        </div>
-                                        <div className='col-sm-6 col-6'>
-                                            <p style={{ color: "#878787", fontSize: "12px" }}>Rewards</p>
-                                            <h5 style={{ color: "#815efa", fontSize: "18px" }}>0.00 $GEMS</h5>
-                                        </div>
-                                    </div>
-                                    <br></br>
-
-                                    <button className={card2styles.btn10} data-bs-toggle="modal"
-                                        data-bs-target={toggle}>{btnstake}
-                                    </button>
-                                    {btnstake == "Stake"}?
-                                    <Modal btnstake={btnstake} setBtn={setBtn} toggle={toggle} setToggle={setToggle}></Modal>
-                                    :<Modal2 btnstake={btnstake} setBtn={setBtn} toggle={toggle} setToggle={setToggle}> </Modal2>
-
-
-                                </div>
-                            </div>
-
+            {/* <div className='row'>
+                    <div className='col-sm-6 col col-lg-6'> */}
+            <div className={card2styles.stakingcards}>
+                <div className={card2styles.blend}>
+                    <img className={card2styles.img33} src="banner1.png" alt="Card image cap" />
+                </div>
+                <h5 className={card2styles.head5}>{cardText}</h5>
+                <div className="card-body">
+                    <div className='row' style={{ marginLeft: "2px" }}>
+                        <div className='col-lg-4 col-sm 4 col-4'>
+                            <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
+                            <h6 style={{ color: "white" }}>3 Months</h6>
+                        </div>
+                        <div className='col-lg-4 col-sm-4 col-4'>
+                            <p style={{ color: "#878787", fontSize: "12px" }}> Lock-Up Period</p>
+                            <h6 style={{ color: "white" }}>2 Weeks</h6>
+                        </div>
+                        <div className='col-lg-4 col-sm-4 col-4'>
+                            <p style={{ color: "#878787", fontSize: "12px" }}>APY</p>
+                            <h6 style={{ color: "white" }}>12%</h6>
                         </div>
                     </div>
+                    <div style={{ marginTop: "20px", marginLeft: "14px" }}>
+                        <p style={{ color: "#878787", fontSize: "12px" }}>Pool size</p>
+                        <div className="progress" style={{ backgroundColor: "#878787", borderRadius: "20px", height: "10px", marginBottom: "10px" }}>
+                            <div
+                                className={card2styles.progress}
+                                role="progressbar"
+                                aria-valuenow={70}
+                                aria-valuemin={0}
+                                aria-valuemax={100}
+                                style={{ width: "60%" }}
+                            >
+
+                            </div>
+                        </div>
+
+                        <p style={{ color: "white", fontSize: "12px" }}>42,293,740 $GEMS <span style={{ color: "#878787", fontSize: "12px" }}>of 1,666,666,667 $GEMS</span></p>
+                        <div style={{ marginBottom: "25px" }}>
+                            <p style={{ color: "#878787", fontSize: "12px" }}>Stake Date</p>
+                            <div className='row'>
+                                <div className='col-4 col-sm-4 col-lg-4'>
+                                    <p style={{ fontSize: "17px", color: "white", fontWeight: "bold" }}>-</p>
+                                </div>
+                                <div className='col-2 col-sm-2 col-lg-2'>
+
+                                </div>
+                                <div className='col-4 col-sm-4 col-lg-4' style={{ textAlign: "left" }}>
+
+                                </div>
+                            </div>
+                        </div>
+                        <br></br>
+
+                        <div className='row'>
+                            <div className='col-sm-6 col-6'>
+                                <p style={{ color: "#878787", fontSize: "12px" }}>Balance</p>
+                                <h5 style={{ color: "white", fontSize: "18px" }}>0.00 $GEMS</h5>
+                            </div>
+                            <div className='col-sm-6 col-6'>
+                                <p style={{ color: "#878787", fontSize: "12px" }}>Rewards</p>
+                                <h5 style={{ color: "#815efa", fontSize: "18px" }}>0.00 $GEMS</h5>
+                            </div>
+                        </div>
+                        <br></br>
+
+                        {ISLOCKED.data ? <button className={card2styles.btn11}>Locked-Up</button> :
+                            <>
+                                <button onClick={(e) => setCardID(e.target.id)} id={tierId} className={card2styles.btn10} data-bs-toggle="modal"
+                                    data-bs-target={toggle}>{btnstake}
+                                </button>
+                                {btnstake == "Stake"}?
+                                <Modal cardID={cardID} tierId={tierId} btnstake={btnstake} setBtn={setBtn} toggle={toggle} setToggle={setToggle}></Modal>
+                                :<Modal2 tierId={tierId} btnstake={btnstake} setBtn={setBtn} toggle={toggle} setToggle={setToggle}> </Modal2>
+                            </>
+
+                        }
+                    </div>
                 </div>
+
+                {/* </div>
+                    </div> */}
             </div>
             {/* card2 */}
             {/* <div className='col-sm-6 col col-lg-6'>
