@@ -1,14 +1,12 @@
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import '@rainbow-me/rainbowkit/styles.css';
-import { alchemyProvider } from 'wagmi/providers/alchemy';
-import { publicProvider } from 'wagmi/providers/public';
 import {
   getDefaultWallets,
   RainbowKitProvider
 } from '@rainbow-me/rainbowkit';
 import {
-  chain,
   configureChains,
   createClient,
   WagmiConfig,
@@ -41,7 +39,7 @@ const SmartChain = {
 ///////////////////// BSC TestNet configuration //////////////////////////////////
 const SmartChainTestNet = {
   id: 97,
-  name: 'SCT',
+  name: 'BSC Testnet',
   iconUrl: 'https://cdn.cdnlogo.com/logos/b/91/bnb.svg',
   iconBackground: '#fff',
   nativeCurrency: {
@@ -50,7 +48,7 @@ const SmartChainTestNet = {
     symbol: 'BNB',
   },
   rpcUrls: {
-    default: 'https://data-seed-prebsc-1-s1.binance.org:8545/',
+    default: 'https://data-seed-prebsc-1-s1.binance.org:8545',
   },
   blockExplorers: {
     etherscan: { name: 'Bscscan', url: 'https://testnet.bscscan.com' },
@@ -60,21 +58,16 @@ const SmartChainTestNet = {
 }
 
 const { chains, provider } = configureChains(
-  [SmartChain, SmartChainTestNet],
+  [SmartChainTestNet],
   [
-    // alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }),
-    publicProvider({priority:0}),
     jsonRpcProvider({
-      priority:1,
-      rpc: (chain) => ({ rpcUrl: chain.rpcUrls.default, })
+      rpc: (chain) => {
+        return { http: chain.rpcUrls.default }
+      },
     }),
-  ]
-)
 
-// [jsonRpcProvider({
-//   rpc: (chain) => ({ rpcUrl: chain.rpcUrls.default })
-// }),
-// publicProvider()],
+  ],
+)
 
 const { connectors } = getDefaultWallets({
   appName: 'My RainbowKit App',
@@ -89,7 +82,6 @@ const wagmiClient = createClient({
 
 function MyApp({ Component, pageProps }) {
 
-  // const [contract, setContract] = useState(null)
 
   return (
     <WagmiConfig client={wagmiClient}>
@@ -99,7 +91,7 @@ function MyApp({ Component, pageProps }) {
         borderRadius: 'small',
         fontStack: 'system',
       })}>
-        <Component {...pageProps}  />
+        <Component {...pageProps} />
       </RainbowKitProvider>
     </WagmiConfig>
   )

@@ -1,138 +1,149 @@
-.img33{
-mix-blend-mode: luminosity;
-opacity: 0.78;
-width: 100%;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
+.img33 {
+  mix-blend-mode: luminosity;
+  opacity: 0.78;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.blend {
+  background-color: #2621a0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
-}
-.period{
-    color: #878787;
-    font-size: 12px;
-}
-.months{
-    font-size: 17px;
-    color: white;
-}
-.blend{
-    background-color: #2621a0;
-    border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-}
-.head5{
-    color: white;
+.head5 {
+  color: white;
   position: absolute;
-  top:45px;
-  left:30px
-
+  top: 45px;
+  left: 30px;
 }
-.stakingcards{
-    background-color: #212228 ;
-    width: "10rem";
-     padding: "0px";
-     position:relative;
-     border-radius: 10px;
-    
+.stakingcards {
+  height: 100%;
+  padding-bottom: 20px;
 }
-.stakingcards:hover{
-    box-shadow: 0px 0px 9px 3px #6A8EFFCC;
+.stakingCardInner:hover {
+  box-shadow: 0px 0px 9px 3px #6a8effcc;
 }
-.progress{
-background-color: #815efa;
+.stakingCardInner {
+  background-color: #212228;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  height: 100%;
 }
-.btn4{
-    background: linear-gradient(270deg, #885BFF 0.19%, #5977D6 100%);
-font-size: 14px;
-    color: white;
-    border-radius: 100px;
-    border: none;
-    padding: 10px 80px 10px 80px;
-    text-align: center;
-    width: 100%;
-}
-@media only screen and (max-width: 800px){
-    .col2{
-        margin-top: 15px;
-      
-    }
-    .col4{
-        margin-top: 15px;
-     
-       
-    }
- 
-}
-@media only screen and (max-width: 400px){
-
-    .col1{
-        margin-left: -30px;
-    }
-    .col2{
-        margin-left: -30px;
-    }
-    .col3{
-        margin-left: -30px;
-    }
-    .col4{
-        margin-left: -30px;
-    }
-}
-@media only screen and (min-width:1600px) and (max-width:2500px){
-    .head5{
-
-        position: absolute;
-        top: 80px;
-    }
-    .btn4{
-        padding: 5px 180px 5px 180px;
-    }
-    .stakingcards{
-padding-bottom: 40px;
-    }
-}
-/* @media only screen and (min-width: 300px) and (max-width:1200px){
-    .btn4{
-        padding: 5px 70px 5px 60px;
-    } 
-} */
-@media only screen and (min-width:990px) and (max-width:1178px){
-    .btn4{
-        width: 100%;
-        padding: 10px 5px 10px 5px;
-    }
-}
-@media only screen and (min-width:990px) and (max-width:1300px){
-.months{
-    font-size: 13px;
-}
-.period{
-    font-size: 10px;
+.progress {
+  background-color: #815efa;
 }
 
+.btn10 {
+  background: linear-gradient(270deg, #885bff 0.19%, #5977d6 100%);
+
+  color: white;
+  border-radius: 100px;
+  border: none;
+  width: 100%;
+  padding: 5px 80px 5px 80px;
+  text-align: center;
 }
-@media only screen and (min-width:1179px) and (max-width:1300px){
-.btn4{
-    padding: 5px 10px 5px 10px;
+.btn11 {
+  background-color: transparent;
+  color: gray;
+  border-radius: 100px;
+  border: 1px solid gray;
+  width: 100%;
+  padding: 5px 80px 5px 80px;
 }
+.btn12 {
+  background-color: transparent;
+  color: white;
+  border-radius: 100px;
+  border: 1px solid #815efa;
+  width: 100%;
+  padding: 5px 80px 5px 80px;
 }
-@media only screen and (min-width:300px) and (max-width:600px){
-    .months{
-        font-size: 9px;
-    }
-    .period{
-        font-size: 8px;
-    }
-   .btn4{
-       padding: 2px 40px 2px 40px;
-   }
+.paraa {
+  color: white;
+  font-size: 17px;
+
+  font-weight: bold;
 }
-@media only screen and (min-width:500px) and (max-width:800px){
-    .btn4{
-        padding: 2px 70px 2px 70px;
-    }
+.paraaa {
+  color: #e04a40;
+  font-size: 9px;
+  text-align: center;
+  padding-top: 2px;
 }
-@media only screen and (min-width:1600px) {
-    .btn4{
-        padding: 10px 40px 10px 40px;
-    }
+.h5Locked {
+  color: white;
+  font-size: 12px;
+  margin-left: 20px;
+  background-color: #878787;
+  padding: 2px 7px 2px 7px;
+  border-radius: 100px;
+}
+.h5going {
+  color: white;
+  font-size: 12px;
+  margin-left: 20px;
+  background-color: #d8a800;
+  padding: 2px 7px 2px 7px;
+  border-radius: 100px;
+}
+.h5complete {
+  color: white;
+  font-size: 12px;
+  margin-left: 20px;
+  background-color: #815efa;
+  padding: 2px 7px 2px 7px;
+  border-radius: 100px;
+}
+.btn90 {
+  background-color: #815efa;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  width: 100%;
+  padding: 5px 80px 5px 80px;
+}
+@media only screen and (max-width: 800px) {
+  .col2 {
+    margin-top: 15px;
+  }
+  .col4 {
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .col1 {
+    margin-left: -30px;
+  }
+  .col2 {
+    margin-left: -30px;
+  }
+  .col3 {
+    margin-left: -30px;
+  }
+  .col4 {
+    margin-left: -30px;
+  }
+}
+@media only screen and (min-width: 1600px) and (max-width: 2500px) {
+  .head5 {
+    position: absolute;
+    top: 80px;
+  }
+  .btn10 {
+    padding: 5px 180px 5px 180px;
+  }
+  .stakingcards {
+    padding-bottom: 40px;
+  }
+  .btn11 {
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 1200px) {
+  .btn10 {
+    padding: 5px 70px 5px 60px;
+  }
 }

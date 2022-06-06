@@ -3,20 +3,16 @@ import styles from '../styles/Home.module.css'
 import FAQ from '../components/faq';
 import Link from 'next/link'
 import Table from '../components/table';
-import { Connect } from '../components/walletConnectButton';
-import Card1 from "../components/cards"
-import { useAccount } from 'wagmi';
-import {
-  faSearch,
-  faAmbulance,
-  faAnchor,
-  faBars,
-  faToggleOff
 
-} from "@fortawesome/free-solid-svg-icons";
 import CardContainer from '../components/cardContainer';
-export default function Staking({ setIsConnected, isConnected }) {
-
+import Header from '../components/header';
+import useTokenBalance from '../hooks/useTokenBalance';
+import useDashboardData from '../hooks/useDashboardData';
+export default function Staking({ }) {
+  const {
+    totalAmount,
+    pendingRewards
+  } = useDashboardData()
   const addBorder1 = () => {
     let pootTab = document.getElementById("nav-home-tab");
     let historyTab = document.getElementById("nav-profile-tab");
@@ -29,16 +25,7 @@ export default function Staking({ setIsConnected, isConnected }) {
     pootTab.style.borderBottom = "none";
     historyTab.style.borderBottom = "3px solid #885BFF";
   }
-  const showContent = () => {
 
-    let show = document.getElementById("show");
-
-    if (show.style.display === "block") {
-      show.style.display = "none";
-    } else {
-      show.style.display = "block";
-    }
-  }
 
   const resetMenu = () => {
     if (window.innerWidth >= "990") {
@@ -52,16 +39,7 @@ export default function Staking({ setIsConnected, isConnected }) {
   if (typeof window !== "undefined") {
     window.addEventListener("resize", resetMenu)
   }
-  const showContent2 = () => {
 
-    let shows = document.getElementById("shows");
-    if (shows.style.display === "block") {
-      shows.style.display = "none";
-    } else {
-      shows.style.display = "block";
-    }
-
-  }
 
   const resetMenu1 = () => {
     if (window.innerWidth >= "990") {
@@ -76,47 +54,15 @@ export default function Staking({ setIsConnected, isConnected }) {
     window.addEventListener("resize", resetMenu1)
   }
 
-  const { data: account } = useAccount()
-  // const address = data ? data.address:null;
-  // console.log(data,"data is herer")
-// const data =null
+  const balance = useTokenBalance()
+
   return (
 
     <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossOrigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossOrigin="anonymous"></script>
+        <title>Gems Staking</title>
       </Head>
-      <div className={styles.con}>
-        <div className="row">
-          <div className='col-lg-2 col-sm-6 col-6' >
-            <img src="logo.png"/>
-          </div>
-          <div className='col-lg-3 col-sm-6 col-6'>
-            <button className={styles.btn1}>
-              Apply for Subscription
-            </button>
-          </div>
-          <div className='col-lg-2 col-sm-12 col-12'>
-
-            <div className={styles.div2}>
-              <input type="text" className={styles.input11} placeholder=" Search" />
-            </div>
-          </div>
-
-          <div className='col-lg-5 col-sm-12 col-12' style={{ textAlign: "center" }} >
-            <div className={styles.network1}>
-              <Connect btnText={"btnNavBar"}></Connect>
-            </div>
-
-          </div>
-          <div className={styles.baricon} >
-            <i className="fa-solid fa-bars" onClick={showContent} style={{ color: "white", marginLeft: "10px", cursor: "pointer", marginTop: "10px" }}></i>
-            <i className="fa-solid fa-bars" onClick={showContent2} style={{ color: "white", marginRight: "10px", cursor: "pointer", marginTop: "10px", float: "right" }}></i>
-          </div>
-        </div>
-      </div>
+      <Header />
       <div className="container-fluid"  >
         <div className="row" >
 
@@ -187,16 +133,25 @@ export default function Staking({ setIsConnected, isConnected }) {
 
                   <div className='col-sm-4 col-4 col-lg-4' >
                     <p className={styles.para}>Total Value Locked:</p>
-                    <h6 className={styles.head1}>20,834,315 $GEMS</h6>
+                    <h6 className={styles.head1}>{totalAmount ? Number(totalAmount).toLocaleString() : "-"} $GEMS</h6>
                   </div>
 
                   <div className='col-sm-4 col-4 col-lg-4'  >
                     <p className={styles.para}>Available Balance:</p>
-                    <h6 className={styles.head1}>-</h6>
+                    <h6 className={styles.head1}>
+                      {
+                        balance ? balance.formatted +
+                          "  $GEMS" : "-"
+                      }
+                    </h6>
                   </div>
                   <div className='col-sm-4 col-4 col-lg-4' >
                     <p className={styles.para}>Total Earnings:</p>
-                    <h6 className={styles.head1}>-</h6>
+                    <h6 className={styles.head1}>
+                      {
+                        pendingRewards ? Number(pendingRewards).toLocaleString() : "-"
+                      }
+                    </h6>
                   </div>
                 </div>
               </div>
@@ -221,7 +176,7 @@ export default function Staking({ setIsConnected, isConnected }) {
                       role="tabpanel"
                       aria-labelledby="nav-home-tab"
                     >
-                      {account ? <CardContainer /> : <Card1 />}
+                      <CardContainer />
 
                     </div>
                     <div
@@ -243,6 +198,7 @@ export default function Staking({ setIsConnected, isConnected }) {
             </div>
 
           </div>
+
           <div className={styles.walletColumns} style={{ backgroundImage: "linear-gradient(#331939, #191729)" }} >
             <div className={styles.column4} id="shows">
               <div className=" text-white">

@@ -13,8 +13,7 @@ export const Connect = ({ btnText }) => {
                 openConnectModal,
                 mounted,
             }) => {
-                // console.log(account);
-                
+
                 return (
                     <div
                         {...(!mounted && {
@@ -42,7 +41,9 @@ export const Connect = ({ btnText }) => {
 
                             if (chain.unsupported) {
                                 return (
-                                    <button onClick={openChainModal} type="button">
+                                    <button
+                                        className={styles.connectButton}
+                                        onClick={openChainModal} type="button">
                                         Wrong network
                                     </button>
                                 );
