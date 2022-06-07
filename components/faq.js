@@ -155,6 +155,7 @@ const FAQ = () => {
               return (
                 <>
                   <Accordion.Item eventKey={i}
+                    key={i}
                     className={faqstyles.accordionItem}
                   >
                     <Accordion.Header
