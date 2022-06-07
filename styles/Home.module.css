@@ -1,7 +1,7 @@
 .btn1 {
   background-color: transparent;
   color: white;
-  border: 1px solid #885BFF;
+  border: 1px solid #885bff;
   font-size: 14px;
   border-radius: 60px;
   padding-top: 5px;
@@ -9,34 +9,6 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 3px;
-}
-
-.tab1 {
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  padding: 10px;
-  border-bottom: 3px solid #885BFF;
-}
-
-
-.tab2 {
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  padding: 10px;
-
-
-}
-
-.tab1:hover {
-  color: white;
-}
-
-.tab2:hover {
-  color: white;
 }
 
 #example {
@@ -72,7 +44,6 @@
 
 .network1 {
   margin-left: 120px;
-
 }
 
 .pool {
@@ -111,7 +82,6 @@
   padding: 8px;
   border-radius: 100px;
   margin-left: 10px;
-
 }
 
 .imgss {
@@ -136,7 +106,6 @@
   text-align: center;
   margin-top: 20px;
   padding: 5px 20px 5px 20px;
-
 }
 
 .bnb {
@@ -152,13 +121,11 @@
 
 .bnb1 {
   font-size: 14px;
-
 }
 
 .bnbnum1 {
   font-size: 12px;
   float: right;
-
 }
 
 .accordian-button {
@@ -170,11 +137,10 @@
   background-color: transparent;
   padding: 5px 50px 5px 50px;
   border-radius: 100px;
-  border: 2px solid #6A8BFD;
+  border: 2px solid #6a8bfd;
   color: white;
   font-weight: bold;
   font-size: 14px;
-
 }
 
 .heading {
@@ -209,14 +175,10 @@
 }
 
 .details {
-
   font-size: 14px;
   color: white;
   display: inline-block;
   padding-top: -20px;
-
-
-
 }
 
 .myBox {
@@ -266,7 +228,7 @@
   color: white;
   border-radius: 20px;
   width: 270px;
-  padding: 5px 30px 5px 28px
+  padding: 5px 30px 5px 28px;
 }
 
 .div2 {
@@ -281,16 +243,12 @@
   padding-bottom: 20px;
 }
 
-
 .column33 {
   display: block;
-
 }
 
 .column4 {
-
   display: block;
-
 }
 
 @media only screen and (max-width: 800px) {
@@ -300,7 +258,6 @@
 
   .con {
     padding-bottom: 20px;
-
   }
 
   .input11 {
@@ -339,22 +296,18 @@
   .btn1 {
     font-size: 12px;
     padding: 3px 10px 3px 10px;
-
   }
 
   .network1 {
     margin-left: 30px;
     margin-top: 10px;
   }
-
-
 }
 
-@media only screen and (min-width: 800px) and (max-width:991px) {
+@media only screen and (min-width: 800px) and (max-width: 991px) {
   .btn1 {
     font-size: 14px;
     padding: 3px 30px 3px 30px;
-
   }
 
   .div2 {
@@ -365,7 +318,6 @@
     margin-left: 10px;
     margin-top: 10px;
   }
-
 }
 
 @media only screen and (max-width: 400px) {
@@ -381,15 +333,9 @@
   .level1 {
     padding-right: 5px;
   }
-
-
 }
 
-
-
-
-
-@media only screen and (min-width:1300px) {
+@media only screen and (min-width: 1300px) {
   .navColumn {
     min-width: 9%;
     position: fixed;
@@ -406,27 +352,18 @@
 
   .walletColumns {
     max-width: 20%;
-
-
-
-
-
   }
 
   .column33 {
     display: block;
-
   }
 
   .column4 {
-
     display: block;
-
   }
-
 }
 
-@media only screen and (min-width:990px) and (max-width:1300px) {
+@media only screen and (min-width: 990px) and (max-width: 1300px) {
   .navColumn {
     min-width: 16%;
     position: fixed;
@@ -443,34 +380,24 @@
 
   .walletColumns {
     max-width: 24%;
-
-
-
   }
 
   .column33 {
     display: block;
-
   }
 
   .column4 {
-
     display: block;
-
   }
 
   .network1 {
     margin-left: 80px;
   }
-
-
-
 }
 
-@media only screen and (min-width:990px) and (max-width:1178px) {
+@media only screen and (min-width: 990px) and (max-width: 1178px) {
   .navLinks {
     font-size: 13px;
-
   }
 
   .navLinkHome {
@@ -491,23 +418,18 @@
 
   .column33 {
     display: block;
-
   }
 
   .column4 {
-
     display: block;
-
   }
 
   .input11 {
-
     width: 220px;
   }
-
 }
 
-@media only screen and (min-width:600px) and (max-width:990px) {
+@media only screen and (min-width: 600px) and (max-width: 990px) {
   .navColumn {
     min-width: 100% !important;
   }
@@ -522,15 +444,11 @@
 
   .column33 {
     display: none;
-
   }
 
   .column4 {
-
     display: none;
-
   }
-
 
   .baricon {
     display: block;
@@ -541,7 +459,7 @@
   }
 }
 
-@media only screen and (min-width:300px) and (max-width:600px) {
+@media only screen and (min-width: 300px) and (max-width: 600px) {
   .navColumn {
     min-width: 100% !important;
   }
@@ -556,19 +474,13 @@
 
   .column33 {
     display: none;
-
   }
 
   .column4 {
-
     display: none;
-
   }
 
   .baricon {
     display: block;
   }
-
-
-
 }

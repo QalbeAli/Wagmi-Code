@@ -28,3 +28,22 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield !important;
 }
+.nav_border {
+  border-bottom: 1px solid #dee2e6;
+}
+.tab {
+  color: white !important;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+.tab.active {
+  border-bottom-color: #885bff;
+}
+
+.tab:hover {
+  color: white !important;
+}

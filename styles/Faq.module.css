@@ -1,36 +1,33 @@
-.f{
-    color: white;
+.f {
+  color: white;
 }
-.accordBtn{
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 1rem 1.25rem;
-    font-size: 1rem;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-    border: 0;
-    border-radius: 0;
-    overflow-anchor: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
-
+.accordionItem {
+  background-color: #1d1d37;
+  padding-top: 10px;
+  border: none !important;
+  padding-bottom: 10px;
+  color: #fff !important;
+  border-radius: 20px !important;
+  overflow: hidden;
 }
-.accordBtn::after{
-    
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-left: auto;
-    content: "";
-    background-image: url("../public/faqArrow.png");
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    transition: transform .2s ease-in-out;
+.accordionItem .accordion-body {
+  color: #fff !important;
 }
-@media only screen and (max-width: 800px){
-    .f{
-        text-align: center;
-    }
+.accordionHeader button {
+  background-color: #1d1d37 !important;
+  color: #fff !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.accordionHeader button::after {
+  background-image: url(../public/faqArrow.png) !important;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+@media only screen and (max-width: 800px) {
+  .f {
+    text-align: center;
+  }
 }

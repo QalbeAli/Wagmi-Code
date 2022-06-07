@@ -8,6 +8,7 @@ import CardContainer from '../components/cardContainer';
 import Header from '../components/header';
 import useTokenBalance from '../hooks/useTokenBalance';
 import useDashboardData from '../hooks/useDashboardData';
+import { Nav, Tab } from 'react-bootstrap';
 export default function Staking({ }) {
   const {
     totalAmount,
@@ -161,33 +162,26 @@ export default function Staking({ }) {
                   <br></br>
                   <h4 className={styles.pool}>Staking Pools</h4>
                   <br></br>
-                  <nav>
-                    <div className="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                      <a className={styles.tab1} onClick={addBorder1} id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">  All Pools</a>
-                      <a className={styles.tab2} onClick={addBorder2} id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Staking History</a>
+                  <Tab.Container id="left-tabs-example" defaultActiveKey="allpools">
+                    <Nav className='nav_border' >
+                      <Nav.Link
+                        className={'tab'}
+                        eventKey="allpools">All Pools</Nav.Link>
+                      <Nav.Link
+                        className={'tab'}
+                        eventKey="stakehistory">Staking History</Nav.Link>
+                    </Nav>
+                    <br></br>
+                    <Tab.Content>
+                      <Tab.Pane eventKey="allpools">
+                        <CardContainer />
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="stakehistory">
+                        <Table></Table>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Tab.Container>
 
-                    </div>
-                  </nav>
-                  <br></br>
-                  <div className="tab-content" id="nav-tabContent">
-                    <div
-                      className="tab-pane fade show active"
-                      id="nav-home"
-                      role="tabpanel"
-                      aria-labelledby="nav-home-tab"
-                    >
-                      <CardContainer />
-
-                    </div>
-                    <div
-                      className="tab-pane fade"
-                      id="nav-profile"
-                      role="tabpanel"
-                      aria-labelledby="nav-profile-tab"
-                    >
-                      <Table></Table>
-                    </div>
-                  </div>
 
                   <br></br>
                   <br></br>
