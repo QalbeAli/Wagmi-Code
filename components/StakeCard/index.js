@@ -56,7 +56,7 @@ export function StakeCard({ card }) {
                             <span className={cardStyles.h5Locked}>Locked-up</span>
                         }
                     </h5>
-                    <div className="card-body">
+                    <div className={"card-body" + ` ${cardStyles.cardBody}`}>
                         <div className='row' style={{ marginLeft: "2px" }}>
                             <div className='col-lg-4 col-sm 4 col-4'>
                                 <p style={{ color: "#878787", fontSize: "12px" }}>Stake Period</p>
@@ -71,7 +71,7 @@ export function StakeCard({ card }) {
                                 <h6 style={{ color: "white" }}>{apy}%</h6>
                             </div>
                         </div>
-                        <div style={{ marginTop: "20px", marginLeft: "14px" }}>
+                        <div style={{ marginTop: "20px", marginLeft: "14px", flexGrow: 1 }} className={cardStyles.cardBody}>
                             <p style={{ color: "#878787", fontSize: "12px" }}>Pool size</p>
                             <div className="progress" style={{ backgroundColor: "#878787", borderRadius: "20px", height: "10px", marginBottom: "10px" }}>
                                 <div

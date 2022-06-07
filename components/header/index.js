@@ -1,27 +1,37 @@
+import { useEffect } from 'react'
 import styles from '../../styles/Home.module.css'
 import { Connect } from '../walletConnectButton'
 
 export default function Header() {
     const showContent = () => {
+        document.getElementById("left-sidebar").classList.toggle("left_sidebar_show")
 
-        let show = document.getElementById("show");
-
-        if (show.style.display === "block") {
-            show.style.display = "none";
-        } else {
-            show.style.display = "block";
-        }
     }
     const showContent2 = () => {
+        document.getElementById("right-sidebar").classList.toggle("right_sidebar_show")
 
-        let shows = document.getElementById("shows");
-        if (shows.style.display === "block") {
-            shows.style.display = "none";
-        } else {
-            shows.style.display = "block";
-        }
 
     }
+    useEffect(() => {
+        function handleOutsideClick(e) {
+            const leftSideBar = document.getElementById("left-sidebar")
+            const showRightSideBar = document.getElementById("show-right-sidebar")
+            const showLeftSideBar = document.getElementById("show-left-sidebar")
+            const rightSideBar = document.getElementById("right-sidebar")
+            if (!leftSideBar.contains(e.target) && !showLeftSideBar.contains(e.target) && !showLeftSideBar.contains(e.target)) {
+                leftSideBar.classList.remove("left_sidebar_show")
+
+            }
+            if (!rightSideBar.contains(e.target) && !showRightSideBar.contains(e.target)) {
+                rightSideBar.classList.remove("right_sidebar_show")
+            }
+
+        }
+        document.addEventListener("click", handleOutsideClick)
+        return () => {
+            document.removeEventListener("click", handleOutsideClick)
+        }
+    }, [])
     return (
         <div className={styles.con}>
             <div className="row">
@@ -49,8 +59,11 @@ export default function Header() {
                 <div className={styles.baricon} >
                     <i className="fa-solid fa-bars"
                         onClick={showContent}
+                        id="show-left-sidebar"
                         style={{ color: "white", marginLeft: "10px", cursor: "pointer", marginTop: "10px" }}></i>
                     <i className="fa-solid fa-bars"
+                        id="show-right-sidebar"
+
                         onClick={showContent2}
                         style={{ color: "white", marginRight: "10px", cursor: "pointer", marginTop: "10px", float: "right" }}></i>
                 </div>
